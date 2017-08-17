@@ -83,3 +83,10 @@ deploy:
   message: deploy to github pages.
 
 disqus_shortname: leafbird
+
+feed:
+  type: atom
+  path: atom.xml
+  limie: 20
+  hub:
+  content: true
