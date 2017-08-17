@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: leafbird
+title: leafbird.github.io/blog
 subtitle: 
 description: 개발과 관련 없는 일상 이야기를 적습니다
 author: leafbird
@@ -83,6 +83,7 @@ deploy:
   message: deploy to github pages.
 
 disqus_shortname: leafbird
+google_analytics: UA-52787243-2
 
 feed:
   type: atom

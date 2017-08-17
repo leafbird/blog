@@ -2,7 +2,7 @@
 menu:
   Home: /
   Archives: /archives
-rss: /blog/atom.xml
+rss: http://feeds.feedburner.com/leafbird
 
 # Content
 excerpt_link: Read More
