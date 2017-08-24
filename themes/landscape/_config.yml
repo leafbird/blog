@@ -2,7 +2,7 @@
 menu:
   Home: /
   Archives: /archives
-rss: http://feeds.feedburner.com/leafbird
+rss: http://feeds.feedburner.com/leafbird_blog
 
 # Content
 excerpt_link: Read More
@@ -28,7 +28,7 @@ archive_type: 'monthly'
 show_count: true
 
 # Miscellaneous
-google_analytics:
+google_analytics: UA-52787243-2
 favicon: /favicon.png
 twitter:
 google_plus:
