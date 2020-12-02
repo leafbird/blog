@@ -108,7 +108,6 @@ deploy:
   branch: gh-pages
   message: deploy to github pages.
 
-disqus_shortname: leafbird
 google_analytics: UA-52787243-2
 
 feed:
