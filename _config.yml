@@ -104,7 +104,7 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/leafbird/blog.git
+  repo: git@github.com:leafbird/blog.git
   branch: gh-pages
   message: deploy to github pages.
 
