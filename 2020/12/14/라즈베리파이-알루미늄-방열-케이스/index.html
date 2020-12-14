@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nanum+Gothic:300,300italic,400,400italic,700,700italic|Lato:300,300italic,400,400italic,700,700italic|Jua:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"leafbird.github.io","root":"/blog/","images":"/blog/images","scheme":"Mist","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+  </script>
+<meta name="description" content="라즈베리 파이에 관심이 있다면 솔깃해 할만한 방열 케이스를 소개해본다.   좌측이 가장 무난하게 선택하는 공식 케이스다. 케이스에 큰 뜻(?)이 없다면 기본적으로 선택하게 되는데, 기판을 안전하게 보호하기에는 좋게 생겼으나 방열에는 그리 좋지 못하다.  우측이 오늘 소개할 쿨링 케이스이고, 알리에서 주문했다. 이미 케이스를 끼운 오른쪽 파이는 내가 집에서">
+<meta property="og:type" content="article">
+<meta property="og:title" content="라즈베리파이 알루미늄 방열 케이스">
+<meta property="og:url" content="http://leafbird.github.io/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/index.html">
+<meta property="og:site_name" content="leafbird&#x2F;blog">
+<meta property="og:description" content="라즈베리 파이에 관심이 있다면 솔깃해 할만한 방열 케이스를 소개해본다.   좌측이 가장 무난하게 선택하는 공식 케이스다. 케이스에 큰 뜻(?)이 없다면 기본적으로 선택하게 되는데, 기판을 안전하게 보호하기에는 좋게 생겼으나 방열에는 그리 좋지 못하다.  우측이 오늘 소개할 쿨링 케이스이고, 알리에서 주문했다. 이미 케이스를 끼운 오른쪽 파이는 내가 집에서">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="http://leafbird.github.io/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/00.jpg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/01.jpg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/02.jpg">
+<meta property="article:published_time" content="2020-12-14T13:47:13.000Z">
+<meta property="article:modified_time" content="2020-12-14T14:30:09.796Z">
+<meta property="article:author" content="leafbird">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://leafbird.github.io/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/00.jpg">
+
+
+<link rel="canonical" href="http://leafbird.github.io/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'ko'
+  };
+</script>
+<title>라즈베리파이 알루미늄 방열 케이스 | leafbird/blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DW5ESFBDD"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0DW5ESFBDD');
+      }
+    </script>
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/blog/atom.xml" title="leafbird/blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">leafbird/blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          목차
+        </li>
+        <li class="sidebar-nav-overview">
+          흝어보기
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">leafbird</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/blog/archives">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">포스트</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">태그</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/leafbird" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;leafbird" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/leafbird_tw" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;leafbird_tw" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
+    <link itemprop="mainEntityOfPage" href="http://leafbird.github.io/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="leafbird">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="leafbird/blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          라즈베리파이 알루미늄 방열 케이스
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">작성일</span>
+      
+
+      <time title="Post created: 2020-12-14 22:47:13 / Updated at: 23:30:09" itemprop="dateCreated datePublished" datetime="2020-12-14T22:47:13+09:00">2020-12-14</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/12/14/라즈베리파이-알루미늄-방열-케이스/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><a target="_blank" rel="noopener" href="https://www.raspberrypi.org/">라즈베리 파이</a>에 관심이 있다면 솔깃해 할만한 방열 케이스를 소개해본다.</p>
+<img src="/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/00.jpg" class="">
+
+<p>좌측이 가장 무난하게 선택하는 공식 케이스다. 케이스에 큰 뜻(?)이 없다면 기본적으로 선택하게 되는데, 기판을 안전하게 보호하기에는 좋게 생겼으나 방열에는 그리 좋지 못하다. </p>
+<p>우측이 오늘 소개할 쿨링 케이스이고, <a target="_blank" rel="noopener" href="https://ko.aliexpress.com/item/4000883790409.html?spm=a2g0s.9042311.0.0.527c4c4d0YwtGm">알리</a>에서 주문했다. 이미 케이스를 끼운 오른쪽 파이는 내가 집에서 쓰는건데, 이 케이스 한 번 써보고는 만족스러워서 이번에 하나 더 주문했다.</p>
+<p>좌측의 기본 케이스에 담긴 파이는 회사에서 업무에 사용중인 녀석이다. 사무실 벽면의 TV에 붙어서 평상시에는 서버 빌드 정보를 보여주다가 빌드가 깨지거나 서버가 뻗었을 때 경고하는 역할을 한다. 24/7 내내 돌리고 있다보니 쿨링에 약간 신경이 쓰여 케이스를 바꿔 주기로 했다. (사실 엄청 빡신 일을 하고 있는 녀석은 아니어서 굳이 이렇게 까지 할 필요는 없다.)</p>
+<p>보통은 cpu와 기판의 주요한 칩들 위에, 칩 크기만한 사이즈의 방열판을 붙여주어 쿨링을 시켜준다. 이게 쿨링 효과가 얼마나 있을지는 모르겠다. 다만 아무것도 안한 것 보다는 낫겠지 하는 정도의 느낌이다.</p>
+<img src="/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/01.jpg" class="">
+
+<p>오늘 소개하는 케이스는, 케이스 자체가 앞뒤에 붙는 통 알루미늄 라디에이터가 된다. 파이 기판 상의 주요한 칩들 위치에 닿도록 내부가 돌출 되어있다. 케이스에 함께 동봉 되어있는 3M용 열전달 스티커를 통해 칩과 케이스를 연결시켜준다. 알루미늄이라서 손으로 들어보면 꽤나 묵직하다. 괜히 고급스러워 진 듯한 착각을 느끼게 해준다.</p>
+<img src="/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/02.jpg" class="">
+
+<p>알리에 가보면 냉각팬이 딸려있는 케이스도 많이 있는데, 개인적으로 팬을 쓰는건 별로라서 걸렀다. 파이를 항상 켜놓으면서 사용하는데 굳이 전원을 더 써가면서 팬까지 돌리는 건 좀 거추장 스러운 느낌이고, 발열은 좀 더 개선해보고 싶다 하는 경우라면 추천.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/blog/2020/12/12/Apple-M1-macmini/" rel="prev" title="Apple M1 macmini">
+                  <i class="fa fa-chevron-left"></i> Apple M1 macmini
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">leafbird</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/blog/js/utils.js"></script><script src="/blog/js/schemes/muse.js"></script><script src="/blog/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://leafbird.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://leafbird.github.io/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/";
+    this.page.identifier = "2020/12/14/라즈베리파이-알루미늄-방열-케이스/";
+    this.page.title = "라즈베리파이 알루미늄 방열 케이스";
+    };
+  NexT.utils.loadComments('#disqus_thread', () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://leafbird.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
