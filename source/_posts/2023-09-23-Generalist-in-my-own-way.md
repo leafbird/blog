@@ -2,6 +2,8 @@
 title: Generalist in my own way
 date: 2023-09-23 12:27:41
 tags:
+- programming
+- generalist
 ---
 
 {% asset_img namecard.jpeg %}
