@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:300,300italic,400,400italic,700,700italic%7CLato:300,300italic,400,400italic,700,700italic%7CJua:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"leafbird.github.io","root":"/blog/","images":"/blog/images","scheme":"Mist","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/blog/js/config.js"></script>
+
+    <meta name="description" content="batocera, LakkaOS, WindowsPE를 다루어본 경험을 기록한다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LakkaOS - 구형 노트북을 레트로 게임기로 활용">
+<meta property="og:url" content="http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/index.html">
+<meta property="og:site_name" content="leafbird&#x2F;blog">
+<meta property="og:description" content="batocera, LakkaOS, WindowsPE를 다루어본 경험을 기록한다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_05.jpeg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_01.jpeg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/windows_pe.png">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_03.jpeg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_02.jpeg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_04.jpeg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_06.jpeg">
+<meta property="article:published_time" content="2023-10-01T13:57:28.000Z">
+<meta property="article:modified_time" content="2023-10-02T04:38:33.952Z">
+<meta property="article:author" content="leafbird">
+<meta property="article:tag" content="LakkaOS">
+<meta property="article:tag" content="batocera">
+<meta property="article:tag" content="WindowsPE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_05.jpeg">
+
+
+<link rel="canonical" href="http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"ko","comments":true,"permalink":"http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/","path":"2023/10/01/LakkaOS-구형-노트북을-레트로-게임기로-활용/","title":"LakkaOS - 구형 노트북을 레트로 게임기로 활용"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>LakkaOS - 구형 노트북을 레트로 게임기로 활용 | leafbird/blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DW5ESFBDD"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-0DW5ESFBDD","only_pageview":false}</script>
+  <script src="/blog/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/blog/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/blog/rss2.xml" title="leafbird/blog" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">leafbird/blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="검색" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          목차
+        </li>
+        <li class="sidebar-nav-overview">
+          흝어보기
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#batocera-linux"><span class="nav-number">1.</span> <span class="nav-text">batocera.linux</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lakka-OS"><span class="nav-number">2.</span> <span class="nav-text">Lakka OS</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">leafbird</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/blog/archives/">
+          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-name">포스트</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">태그</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/leafbird" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;leafbird" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/leafbird_tw" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;leafbird_tw" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
+    <link itemprop="mainEntityOfPage" href="http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="leafbird">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="leafbird/blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="LakkaOS - 구형 노트북을 레트로 게임기로 활용 | leafbird/blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          LakkaOS - 구형 노트북을 레트로 게임기로 활용
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">작성일</span>
+
+      <time title="Post created: 2023-10-01 22:57:28" itemprop="dateCreated datePublished" datetime="2023-10-01T22:57:28+09:00">2023-10-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Updated at: 2023-10-02 13:38:33" itemprop="dateModified" datetime="2023-10-02T13:38:33+09:00">2023-10-02</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2023/10/01/LakkaOS-구형-노트북을-레트로-게임기로-활용/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_05.jpeg" class="">
+
+<p>batocera, LakkaOS, WindowsPE를 다루어본 경험을 기록한다.</p>
+<span id="more"></span>
+
+<p>지금은 쓰지 않는 오래된 노트북의 활용처를 모색하다가 레트로 게임기로 사용해보기로 했다. 이전에 라즈베리파이로 레트로 게임기 잠깐 설정해본 적이 있어서 대략은 알고 있다. 이 세계가 만만하지 않다는 것을. 롬파일을 구하는 것도 그렇고. 설정하는 것도 그렇고. 그래서 최대한 쉽고 간단한 방법으로 찾아보고자 했다. </p>
+<h2 id="batocera-linux"><a href="#batocera-linux" class="headerlink" title="batocera.linux"></a>batocera.linux</h2><p>바토세라라는 os는 이번에 처음 알았는데, <a target="_blank" rel="noopener" href="https://jantetown.tistory.com/667">설치가 쉽고 간단하다는 글</a>을 보고 호기심이 생겨 시도해 보았다. 내가 받아서 설치한 건 순정 os는 아니고 다른 사용자가 설정에 GUI 스킨에 롬까지 포함해 만든 이미지인 듯 한데(그래서 이거만 설치하면 다 끝난다는 것임..), 다음에 여유가 되면 순정 버전으로 다시 한 번 설치해보고 싶다. </p>
+<img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_01.jpeg" class="">
+
+<p>설치가 정말 간단했다. 링크에 소개된 대로 따라만 했는데 별다른 어려움 없이 설치되고 롬파일도 기본으로 몇가지 들어있어 바로 게임 구동도 가능했다. 순정 os나 리눅스를 설치하는 것처럼 설치디스크를 만들어서 install하는 방식이 아니다. 실제로 설치할 디스크에 <code>balena etcher</code>로 바로 구워야 한다. 노트북 내장 디스크에 설치하고 싶다면 하판을 뜯어서 디스크를 꺼내고 여기에 설치를 해야 한다는 말인데, 영상에서는 이렇게 일을 크게 벌이는 대신에 WindowsPE를 이용한 설치방법을 사용한다.</p>
+<img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/windows_pe.png" class="">
+
+<p><a target="_blank" rel="noopener" href="https://namu.wiki/w/Windows%20PE">WindowsPE</a>는 <code>Windows Preinstallation Environment</code>의 약자라고 하는데 이번에 처음 써봤다. 호오 이런 방법도 있구나. 윈도우 설치 및 복구를 위한 경량판 윈도우로, 윈도우 설치 이전에 설치 동작을 위한 간이형 운영체제이며, 평소에 <code>복구 모드</code>로 진입했을 때가 이 PE 환경이라고 한다. 디스크 없이 온전히 램만을 가지고 간이 OS를 구동하며 exe의 실행이 가능하다. 설치할 대상 노트북을 우선 windows pe로 부팅한 후 <code>balena etcher</code>실행해서 내장 디스크를 타겟으로 이미지를 구워주면 노트북 하판을 뜯을 필요가 없어진다. WinPE는 가지고 있으면 종종 쓸만한 일이 생길 것같아 이번에 usb 설치 디스크로 하나 만들어두었다. </p>
+<h2 id="Lakka-OS"><a href="#Lakka-OS" class="headerlink" title="Lakka OS"></a>Lakka OS</h2><p>바토세라가 큰 어려움 없이 설치되었고 동작에도 문제는 없었지만.. 익숙하지가 않아서인지 썩 마음이 가질 않았다. 구동하자 마자 나오는 미디 배경음도 맘에 안들고… 실사용을 위해서 설정을 조금 진행하다가 그냥 여전히 맘이 내키지 않아 os를 변경하기로 마음먹었다. 그 다음으로 선택한 <a target="_blank" rel="noopener" href="https://www.lakka.tv/">lakka os</a>는 라즈베리 파이에도 설치해본 적이 있어 익숙하다. 그 동안 버전이 많이 올라갔고 많이 깔끔해졌다. 세팅하는 구형 노트북이 QHD(2560*1440)로 약간 특이한 해상도인데, 바토세라 설치때보다 해상도를 훨씬 잘 지원해준다. </p>
+<img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_03.jpeg" class="">
+
+<img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_02.jpeg" class="">
+
+<img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_04.jpeg" class="">
+
+<p>한글도 기본으로 지원되긴 하지만… 게임 실행후 로비 화면으로 돌아오거나 할 때 한글 출력이 깨지는 경우가 발생해 사용하기에 불안정하다. 라즈베리 파이에 설치할 때는 이런 문제가 없는지 검색을 좀 해봐도 유사 사례는 보이지 않는다. 혹시 QHD 해상도에서 오는 동작 차이라서 나만 겪는 문제가 아닐까 싶다.</p>
+<img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_06.jpeg" class="">
+
+<p>mame 롬을 설치하려고 한참을 고생했는데 아직 성공하지 못했다. 일단은 SFC 위주로 몇가지 넣어두고 초기 세팅을 마쳤다. 아들도 마리오를 좋아하니까 이것만 해도 한참을 즐길 수 있다. </p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/blog/tags/LakkaOS/" rel="tag"># LakkaOS</a>
+              <a href="/blog/tags/batocera/" rel="tag"># batocera</a>
+              <a href="/blog/tags/WindowsPE/" rel="tag"># WindowsPE</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/" rel="prev" title="맥에서 마제스터치 컨버터블 2 사용하기">
+                  <i class="fa fa-angle-left"></i> 맥에서 마제스터치 컨버터블 2 사용하기
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">leafbird</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/blog/js/comments.js"></script><script src="/blog/js/utils.js"></script><script src="/blog/js/schemes/muse.js"></script><script src="/blog/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"leafbird","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/blog/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>

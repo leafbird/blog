@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>leafbird/blog</title>
+    <link>http://leafbird.github.io/blog/</link>
+    
+    <atom:link href="http://leafbird.github.io/blog/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description></description>
+    <pubDate>Mon, 02 Oct 2023 04:38:33 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>LakkaOS - 구형 노트북을 레트로 게임기로 활용</title>
+      <link>http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/</link>
+      <guid>http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/</guid>
+      <pubDate>Sun, 01 Oct 2023 13:57:28 GMT</pubDate>
+      
+      <description>&lt;img src=&quot;/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_05.jpeg&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;batocera, LakkaOS, WindowsPE를 다루어본 경험을 기록한다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_05.jpeg" class=""><p>batocera, LakkaOS, WindowsPE를 다루어본 경험을 기록한다.</p><span id="more"></span><p>지금은 쓰지 않는 오래된 노트북의 활용처를 모색하다가 레트로 게임기로 사용해보기로 했다. 이전에 라즈베리파이로 레트로 게임기 잠깐 설정해본 적이 있어서 대략은 알고 있다. 이 세계가 만만하지 않다는 것을. 롬파일을 구하는 것도 그렇고. 설정하는 것도 그렇고. 그래서 최대한 쉽고 간단한 방법으로 찾아보고자 했다. </p><h2 id="batocera-linux"><a href="#batocera-linux" class="headerlink" title="batocera.linux"></a>batocera.linux</h2><p>바토세라라는 os는 이번에 처음 알았는데, <a href="https://jantetown.tistory.com/667">설치가 쉽고 간단하다는 글</a>을 보고 호기심이 생겨 시도해 보았다. 내가 받아서 설치한 건 순정 os는 아니고 다른 사용자가 설정에 GUI 스킨에 롬까지 포함해 만든 이미지인 듯 한데(그래서 이거만 설치하면 다 끝난다는 것임..), 다음에 여유가 되면 순정 버전으로 다시 한 번 설치해보고 싶다. </p><img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_01.jpeg" class=""><p>설치가 정말 간단했다. 링크에 소개된 대로 따라만 했는데 별다른 어려움 없이 설치되고 롬파일도 기본으로 몇가지 들어있어 바로 게임 구동도 가능했다. 순정 os나 리눅스를 설치하는 것처럼 설치디스크를 만들어서 install하는 방식이 아니다. 실제로 설치할 디스크에 <code>balena etcher</code>로 바로 구워야 한다. 노트북 내장 디스크에 설치하고 싶다면 하판을 뜯어서 디스크를 꺼내고 여기에 설치를 해야 한다는 말인데, 영상에서는 이렇게 일을 크게 벌이는 대신에 WindowsPE를 이용한 설치방법을 사용한다.</p><img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/windows_pe.png" class=""><p><a href="https://namu.wiki/w/Windows%20PE">WindowsPE</a>는 <code>Windows Preinstallation Environment</code>의 약자라고 하는데 이번에 처음 써봤다. 호오 이런 방법도 있구나. 윈도우 설치 및 복구를 위한 경량판 윈도우로, 윈도우 설치 이전에 설치 동작을 위한 간이형 운영체제이며, 평소에 <code>복구 모드</code>로 진입했을 때가 이 PE 환경이라고 한다. 디스크 없이 온전히 램만을 가지고 간이 OS를 구동하며 exe의 실행이 가능하다. 설치할 대상 노트북을 우선 windows pe로 부팅한 후 <code>balena etcher</code>실행해서 내장 디스크를 타겟으로 이미지를 구워주면 노트북 하판을 뜯을 필요가 없어진다. WinPE는 가지고 있으면 종종 쓸만한 일이 생길 것같아 이번에 usb 설치 디스크로 하나 만들어두었다. </p><h2 id="Lakka-OS"><a href="#Lakka-OS" class="headerlink" title="Lakka OS"></a>Lakka OS</h2><p>바토세라가 큰 어려움 없이 설치되었고 동작에도 문제는 없었지만.. 익숙하지가 않아서인지 썩 마음이 가질 않았다. 구동하자 마자 나오는 미디 배경음도 맘에 안들고… 실사용을 위해서 설정을 조금 진행하다가 그냥 여전히 맘이 내키지 않아 os를 변경하기로 마음먹었다. 그 다음으로 선택한 <a href="https://www.lakka.tv/">lakka os</a>는 라즈베리 파이에도 설치해본 적이 있어 익숙하다. 그 동안 버전이 많이 올라갔고 많이 깔끔해졌다. 세팅하는 구형 노트북이 QHD(2560*1440)로 약간 특이한 해상도인데, 바토세라 설치때보다 해상도를 훨씬 잘 지원해준다. </p><img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_03.jpeg" class=""><img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_02.jpeg" class=""><img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_04.jpeg" class=""><p>한글도 기본으로 지원되긴 하지만… 게임 실행후 로비 화면으로 돌아오거나 할 때 한글 출력이 깨지는 경우가 발생해 사용하기에 불안정하다. 라즈베리 파이에 설치할 때는 이런 문제가 없는지 검색을 좀 해봐도 유사 사례는 보이지 않는다. 혹시 QHD 해상도에서 오는 동작 차이라서 나만 겪는 문제가 아닐까 싶다.</p><img src="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/img_06.jpeg" class=""><p>mame 롬을 설치하려고 한참을 고생했는데 아직 성공하지 못했다. 일단은 SFC 위주로 몇가지 넣어두고 초기 세팅을 마쳤다. 아들도 마리오를 좋아하니까 이것만 해도 한참을 즐길 수 있다. </p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/LakkaOS/">LakkaOS</category>
+      
+      <category domain="http://leafbird.github.io/blog/tags/batocera/">batocera</category>
+      
+      <category domain="http://leafbird.github.io/blog/tags/WindowsPE/">WindowsPE</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>맥에서 마제스터치 컨버터블 2 사용하기</title>
+      <link>http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <guid>http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Thu, 28 Sep 2023 10:04:29 GMT</pubDate>
+      
+      <description>&lt;img src=&quot;/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2350.jpeg&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;청소 + 좌측 옵션키와 커맨드키 위치 변경 + 채터링 현상 해결&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2350.jpeg" class=""><p>청소 + 좌측 옵션키와 커맨드키 위치 변경 + 채터링 현상 해결</p><span id="more"></span><h2 id="청소부터"><a href="#청소부터" class="headerlink" title="청소부터"></a>청소부터</h2><p>청소는 마음먹기가 어려울 뿐. 간만에 추석 연휴를 맞아 키캡 분리하고 청소 진행.</p><img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2343.jpeg" class=""><img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2345.jpeg" class=""><img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2347.jpeg" class=""><img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2351.jpeg" class=""><h2 id="좌측-옵션키와-커맨드키-위치-변경"><a href="#좌측-옵션키와-커맨드키-위치-변경" class="headerlink" title="좌측 옵션키와 커맨드키 위치 변경"></a>좌측 옵션키와 커맨드키 위치 변경</h2><p>구글 검색을 하다 찾은 <a href="https://m.blog.naver.com/linux7/221146934270">다른 분 블로그 글</a>을 보고 따라서 진행. karabiner에서 왼쪽 옵션에 대한 설정만 넣어주었다. 그리고 <code>Alt키</code>하고 <code>윈도우키</code>만 바꿔 끼워준다.</p><img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/karabiner.png" class=""><h2 id="채터링-현상-해결"><a href="#채터링-현상-해결" class="headerlink" title="채터링 현상 해결"></a>채터링 현상 해결</h2><p>마제 컨버터블2는 한 십년쯤 전에 야심차게 산 키보드인데, 어느시점부턴가 키가 연속으로 입력되는 문제가 있어서 거의 못쓰고 있었다. 일상적인 용도라면 약간 불편을 감수하고 사용할만 하지만… 코딩할때는 한참 몰입할 때 쯤 한번씩 산통을 깨놓는 바람에 사용이 불가하다. </p><img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/chattering.png" class=""><p>이번에 검색을 좀 해보니 이게 채터링 현상(chattering)이라고 하여, 기계식 키보드에서는 연식이 오래되면 일반적으로 발생하는 현상이었다. 블루투스의 간섭으로 생기는 문제인줄 알았는데, 기판 청소를 잘 해주면 해소되기도 하는 물리적인 현상이다. 나 말고도 마제 컨버터블2 사용자들이 많이 겪고 있는 현상이기도 하다. 그래서 이번에 청소할 때 키보드 내부를 다 뜯어서 기판도 청소를 해보고자 하였으나… 나사는 보이는대로 분리해봤는데 뜯지를 못해서 실패.<br>대신에 <a href="https://unshaky.nestederror.com/">Unshakey</a> 라는 프로그램을 알게되어 설치해봤다. 본래는 애플 정품 키보드의 나비식 스위치 입력 오류를 해결하기 위한 툴인듯 하다. 이건 며칠간 실사용 해보면서 현상이 개선 되었는지 살펴볼 예정이다. </p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/keyboard/">keyboard</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Generalist in my own way</title>
+      <link>http://leafbird.github.io/blog/2023/09/23/Generalist-in-my-own-way/</link>
+      <guid>http://leafbird.github.io/blog/2023/09/23/Generalist-in-my-own-way/</guid>
+      <pubDate>Sat, 23 Sep 2023 03:27:41 GMT</pubDate>
+      
+      <description>&lt;img src=&quot;/blog/2023/09/23/Generalist-in-my-own-way/namecard.jpeg&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;나름대로는 &lt;code&gt;제너럴리스트&lt;/code&gt;다.&lt;br&gt;어떤 문제를 만나든 모두 헤쳐나갈 것이다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2023/09/23/Generalist-in-my-own-way/namecard.jpeg" class=""><p>나름대로는 <code>제너럴리스트</code>다.<br>어떤 문제를 만나든 모두 헤쳐나갈 것이다.</p><span id="more"></span><h2 id="스페셜리스트를-꿈꾸며"><a href="#스페셜리스트를-꿈꾸며" class="headerlink" title="스페셜리스트를 꿈꾸며"></a>스페셜리스트를 꿈꾸며</h2><p>프로그래머로 오랜 기간을 지내오면서 개인적으로 가졌던 목표는 <code>스페셜리스트</code>에 더 가까웠다. 이걸 처음부터 진지하게 고민하고 선택했다기 보다는, 신입일 때 일단 하나에만 집중해서 빨리 전문적인 수준으로 성장해야겠다는 막연한 다짐 같은 것. 욕심 부리지 말고 하나라도 잘 하자는 생각. 나름대로의 선택과 집중으로 시작한 방향성이다.<br>혹은 개인의 성격 영향일지도 모르겠다. 일상중에서도 여러가지를 동시에 하기보다는 하나에 집중하는 편이 더 마음이 편하니까. 고등학교때 자습시간에도 음악을 들으면서 노트를 정리하는 친구들을 보면 저게 어떻게 가능한지 부럽기도 하면서 신기해 했다.</p><img src="/blog/2023/09/23/Generalist-in-my-own-way/versus.png" class=""><p>(이미지 출처 : <a href="https://www.linkedin.com/pulse/who-succeeds-todays-job-market-generalist-vs-thiyagarajan-govindasamy">linkedin</a>)</p><p>이런 성향은 프로그래밍 언어라던가, 새로운 기술 트렌드들을 대하는 면에서도 어느정도 연관이 있다. 시대에 뒤쳐지지 않기 위해 관심을 두려고는 하지만 그보다는 지금 꼭 필요한 주제의 기술이나 노하우에 깊이가 있는 프로그래머가 되는 것에 더 무게를 둔다. 업무에서 주력으로 쓰는 개발 언어나 기술스택을 전문가가 될 때까지 계속 깊이있게 공부하는 것이 좀 더 마음이 편하다. 이제 어느정도 알겠다는 생각이 들 때면 또다시 더 깊은 세계가 있다는 것도 같이 깨닫게 될 때가 많으니까. 그럴때면 아직 스스로의 정진이 부족하다는 생각으로 모자란 깊이를 채우고자 노력해왔다.</p><h2 id="N사에서-만났던-전문가들"><a href="#N사에서-만났던-전문가들" class="headerlink" title="N사에서 만났던 전문가들"></a>N사에서 만났던 전문가들</h2><p>N사에서 일하는 동안 참 뛰어난 동료와 리더 분들을 많이 만났다. 운좋게도 좋은 환경에서 능력있는 동료들과 함께 많은 것을 경험하면서 한껏 배울 수 있었다.<br>이런 분들이야말로 신입 개발자일 때 막연히 동경하던 <code>전문가</code>였다. 경험도 많고, 재능도 있는 천재들. 각자의 전문 도메인에 대해선 끝을 알 수 없는 깊이감의 기량을 마음껏 펼쳐보여주는 프로그래머였다.</p><p>보통 큰 조직일 수록 <code>스페셜리스트</code>가 좀 더 인정을 받는 경향이 있다. 이런 곳은 개발할 사람이 상대적으로 넉넉하고, 업무 프로세스도 디테일하게 분업화되는 편이다. (<a href="https://www.youtube.com/watch?v=8M3hmBXpuHo">젤다 왕눈의 엔딩 크레딧</a>을 보아도 프로그래머의 팀 분류가 정말 디테일하다.) 회사는 조직원들이 자신의 일에만 집중할 수 있는 환경을 조성하고자 노력한다. 프로젝트의 리드가 아닌 이상 팀원 한 사람이 개발 프로세스 전반을 두루 다 살펴야할 필요도 없고 권한도 없다. 그보다는 개인이 맡은 분업화된 분야의 일을 전문적으로, 퀄리티 있게 마감하는 것이 요구된다.</p><p>이 때 만났던 실력자들은 과히 <code>스페셜리스트</code>로 불리기에 부족함이 없다. 세상은 넓고 고수는 많다는 것을 몸소 느끼는 순간이 많았다. 이런 분들은 꽤나 오랜 시간, 경우에 따라는 작은 회사가 게임을 2~3개는 족히 개발해 출시까지 했을 긴 시간 동안에도 개인의 전문분야 한 스팟에 역량을 집중적으로 쌓아가면서 탁월한 전문성을 연마하는 경우도 있다.<br>그분들에 비하면 나는 게임 개발 프로젝트 초기부터 런칭과 서비스까지 포함하는 개발 전반을 다루어봤다는 넓이있는 경험이 장점이었다. 게임 핵심 컨텐츠 구현 외에도 필수적으로 개발이 뒤따르는 영역들 - 게임서버 개발로만 본다면 로그인 처리나 계정 관리, db 운영, 해외 서비스 리전별 버전 관리, 게임로그 수집이나 분석 등 - 이 생각해보면 참 많이 있는데, 얇게라도 게임 개발의 전반을 다루어 본것은 그나마 대기업 위주의 프로젝트를 거쳐온 <code>전문가</code> 분들에게는 생소한 경험일테니, 이렇게 보면 나는 <code>제너럴리스트</code>가 더 맞겠구나 하는 생각이 들었다.</p><h2 id="지금-전장에-들고-나가야-할-무기"><a href="#지금-전장에-들고-나가야-할-무기" class="headerlink" title="지금 전장에 들고 나가야 할 무기"></a>지금 전장에 들고 나가야 할 무기</h2><img src="/blog/2023/09/23/Generalist-in-my-own-way/sword.webp" class=""><blockquote><p>만든 것 중 최고의 명검이오.<br>신이 그대의 앞길을 막는다면<br>그 신조차 베어버릴 것이오.<br> – 영화 ‘킬 빌’ 중에서.</p></blockquote><p>부끄럽게도 지금은 <code>CTO</code>라는 너무 무거운 직함을 달고 일하고 있다. N사에서 뵈었던 우원식 CTO님이나, 심마로 CTO님 정도는 되어야 감히 불리울 수 있는 이름이 아닐까. 아직도 공석에서는 스스로를 소개할 때 <code>프로그램 팀장</code>이라고만 말한다. 하지만 <code>팀장</code> 그조차도 내게는 너무 부담스러운 단어다. </p><p>지금의 나는 회사에서 한가지 일에만 집중하기가 쉽지 않다. 회사는 내가 프로그래밍에만 집중하는 환경을 만들어주지 않는다. 나는 팀원들을 살피고, 다른 파트와 개발 현안을 논의하고, 타부서 매니저들과 함께 프로젝트 개발 계획을 수립해야 한다. 팀 세팅을 위해 이력서를 검토한 후 기술 면접도 진행하고. 때로는 우리 프로젝트가 아닌 다른 프로젝트의 이슈도 확인해야 하고. 외부업체와의 미팅도 진행해야 한다. (회사가 더 작았을 땐 랜선도 내가 깔고 공유기 세팅도 서버 설치도 내가 했지만.. SE님이 입사해 주셔서 해방되었습니다. 감사합니다 _ _)</p><p>심지어 지금은 겨우 프로그래밍할 시간을 확보하게 되더라도 서버보단 클라이언트 구현에 들이는 시간이 더 많다. 유니티 엔진을 학습하고 UI 프레임워크의 구조를 잡는다. 지금 내모습은 어릴 때 막연하게 생각했던 <code>스페셜리스트</code>에서 확실하게 더 멀어진 느낌이다.</p><p>지난주에 김창준님의 <a href="https://www.yes24.com/Product/Goods/67350256">함께 자라기 - 애자일로 가는 길</a>이란 책을 읽었는데, 후반부에 <code>제너럴리스트</code>란 표현을 쓰신 부분이 개인적으로는 참 인상적으로 느껴졌다. 학습 능력이 좋은 팀에 대해 설명하는 글의 마지막에 아래와 같은 요약 정리가 있다.</p><blockquote><ol><li>전문가들 모아서 팀 만든다고 잘하는 것 아니고</li><li>오히려 성과가 떨어질 수 있고</li><li>정보 공유하고 협력을 잘하기 위한 명시적인 도움이 필요하며</li><li>소셜 스킬 등이 뛰어난 제너럴리스트가 있으면 도움이 된다. </li></ol><p>– 함께 자라기 - 애자일로 가는 길. 김창준. 166p</p></blockquote><p><code>소셜 스킬 등이 뛰어난 제너럴리스트가 있으면 도움이 된다.</code></p><p>이 부분을 읽고 (책 속 챕터 주제와는 좀 거리감이 있을 수 있으나) 나는 적잖은 안도감을 느꼈다.<br>그래. 생각해보면 <code>제너럴리스트</code>는 지금의 내게 꽤나 중요한 자질이 아닌가. </p><p>요즘은 옛날에 했던 사소한 경험들도 크게 도움이 되는 경우가 많다. 캐주얼 게임을 만들면서 해외 퍼블리셔와 일해봤던 경험이라던지. dx9 자체엔진 개발 시절 우리도 WOW같은 UI 가져보자면서 lua와 xml로 UI 시스템을 만들어봤던 것부터, 지극히 개인적인 관심으로 찝적거려본 웹 프론트엔드 개발도. 인디게임 한 번 해보겠다고 혼자 한 번 익혀보던 유니티 2D 경험도 지금은 매우 큰 자산이 된다. 그런 삽질들이 없었다면 지금처럼 이렇게 넓고 다양한 도메인의 이슈들을 챙기는 것이 훨씬 더 어렵고 힘들었을 것이다.</p><p>나는 관리자나 리드, 팀장 같은 것은 별로 관심이 없고, 그저 코어한 서버 엔진 프로그래밍에 온전하게 집중할 때가 가장 빛이 난다고 스스로 생각하면서, 개발에 전력을 다하지 못하는게 못내 아쉽다는 생각이었는데. 가만보니 <strong>지금 내가 하고 있는 이 복잡 다단한 일들이, 어쩌면 나를 가장 빛내주는 일이라는 생각이 든다.</strong> <code>소셜 스킬 등이 뛰어난 제너럴리스트</code>가 도움이 되는 인재라고 하니, 불평 불만은 접어두고 그럴 시간에 소셜 스킬의 성장에나 좀더 관심을 기울일 필요가 있겠다는 생각도 든다. </p><h2 id="이미-내-손에-쥐어져있다"><a href="#이미-내-손에-쥐어져있다" class="headerlink" title="이미 내 손에 쥐어져있다."></a>이미 내 손에 쥐어져있다.</h2><img src="/blog/2023/09/23/Generalist-in-my-own-way/master_sword.jpeg" class=""><p>게임 서버 프로그래밍에만 온전하게 매진해 왔다고 생각했지만 문득, 이제와 내 모습을 되돌아보니 내 나름대로는 <code>제너럴리스트</code>가 되어있다. 우리의 프로젝트 규모와 구조를 생각할 때 지금 내게 꼭 필요한 자질이기도 하고, 하필 그게 운명처럼 지금 내 손에 쥐어져 있기도 하다.</p><p>앞으로 어떤 문제를 만나든 모두 헤쳐나갈 것이다.<br>지금껏 그래왔듯이.</p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/programming/">programming</category>
+      
+      <category domain="http://leafbird.github.io/blog/tags/generalist/">generalist</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2023/09/23/Generalist-in-my-own-way/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>vscode에서 닷넷 개발하기</title>
+      <link>http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/</link>
+      <guid>http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/</guid>
+      <pubDate>Sun, 17 Sep 2023 05:49:31 GMT</pubDate>
+      
+      <description>&lt;img src=&quot;/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/vscode.JPG&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;vscode에서 &lt;a href=&quot;https://code.visualstudio.com/docs/languages/dotnet&quot;&gt;c# 개발을 지원하는 새로운 확장&lt;/a&gt;이 얼마전에 나왔다.&lt;br&gt;요즘 며칠간 둘러보았는데, 생각보다 괜찮은 느낌이다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/vscode.JPG" class=""><p>vscode에서 <a href="https://code.visualstudio.com/docs/languages/dotnet">c# 개발을 지원하는 새로운 확장</a>이 얼마전에 나왔다.<br>요즘 며칠간 둘러보았는데, 생각보다 괜찮은 느낌이다.</p><span id="more"></span><h2 id="왜-갑자기"><a href="#왜-갑자기" class="headerlink" title="왜 갑자기"></a>왜 갑자기</h2><p>m1 맥미니가 나왔을 때부터 집에서 macOS을 쓰기 시작했으니, 이제 2년 반 쯤 지났다. 그 뒤로는 집에서 거의 윈도우를 사용하지 않는다. 아이폰, 에어팟, 애플워치 등등 애플 장비가 많으니 여기서 누릴 수 있는 기기들간의 연속성이 윈도우를 깔끔히 잊게 해주었다. 스팀 게임과 프로그래밍에 대한 생각만 양보한다면 아쉬울 것이 없다.</p><p>그러다가 요즘 문득 다시 개인 프로젝트에 대한 갈증이 조금씩 일어난다. 얼마전부터 새로 depot을 하나 열고 조금씩 해보고 있는데, 이번에는 회사 내에서 비슷한 뜻이 있는 멤버들을 모아 같이 <a href="https://www.google.com/search?q=%EB%AA%A8%EA%B0%81%EC%BD%94">모각코</a> 를 진행해 보면 어떨까 싶었고, 2명의 멤버를 추가로 모아 이번주부터 시작하게 됐다. 요즘 읽고 있는 김창준님의 <a href="https://www.yes24.com/Product/Goods/67350256">함께 자라기</a> 에서 어느정도 영향을 받은 듯 하다. </p><p>처음에는 mac에서 굳이 개발을 할 생각은 없었지만.. 이젠 윈도우 장비를 거의 사용하지 않다보니 여기서 닷넷 개발하기 위한 환경을 좀 알아보게 되었다. vscode는 회사에서도 보조 IDE로 사용중(pwsh 디버깅에 code가 필수)이라 익숙한 편이고, 새로 나온 닷넷 개발 확장도 꽤나 괜찮다. 이전에 있었던 <a href="https://visualstudio.microsoft.com/ko/vs/mac/">vs for mac</a> 보다 훨씬 더 나은 느낌이다.</p><h2 id="vs-보다-편할-순-없다-하지만-해-본다"><a href="#vs-보다-편할-순-없다-하지만-해-본다" class="headerlink" title="vs 보다 편할 순 없다. 하지만 해 본다."></a>vs 보다 편할 순 없다. 하지만 해 본다.</h2><img src="/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/dragonball.jpg" class=""><p>많이 좋아지긴 했어도 아쉬움은 있다. 내가 당장 익숙하지 않다는 것이 가장 큰 부분이지만, 디버깅 환경도 vs보단 불편해서 코드 양이 많은 프로젝트라면 여기선 힘들 것 같다. 하지만 간단한 토이 프로젝트 정도는 충분히 가능해보여서, 이번 프로젝트는 불편함을 감수하고 vscode로 완주해볼 생각이다.  </p><p>이번에 mac에서의 개발 환경을 위해 몇 가지 설정을 변경했는데, </p><ul><li>git의 editor, difftool, mergetool을 gvim -&gt; vscode로 변경</li><li>vscode에 <a href="https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim">neovim 플러그인</a> 설치</li><li><del>회사에서 쓰는 vs에 vsvim 설치</del></li></ul><p>느껴지는가. vim으로 deep dive하는 내 마음이.</p><p>vscode에서 좀 더 주류(?) 플러그인이라 할 수 있는 <a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">vscodevim</a>을 여지껏 잘 쓰고 있긴 했는데.. 본격적으로 쓰려고 보니 한글 타이핑에 문제가 있다. 모음+자음 조합을 제대로 하지 못해 글자 조합이 꺠지는 현상이 있는데, neovim으로 갈아타고 해결했다는 검색글이 있어 사용하게 됐다.</p><p>회사에서 가장 메인으로 쓰는 개발환경에 <a href="https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim">VsVim</a> 한 번 설치했다가, 어우… 갑자기 손발이 꽁꽁 묶인 것처럼 너무 답답한 느낌이 들어 바로 퇴각했다. 좀 더 익숙해지고 나면 다시 도전할 생각이다. </p><h2 id="무엇을-얻을-것인가"><a href="#무엇을-얻을-것인가" class="headerlink" title="무엇을 얻을 것인가"></a>무엇을 얻을 것인가</h2><p>비록 협업이 아닌 모각코의 포맷이지만 개인 프로젝트를 다른 분들과 함께 진행하는 것은 처음이다. 모임의 멤버들에게도 공유할 겸 이번 프로젝트의 목표를 정리해본다.</p><ul><li>간단한 크롤러를 만들 예정. 사내 슬랙봇에 붙여서 동료들에게 정보를 제공한다.</li><li>가벼운 툴 정도는 맥북에서 편하게 개발할 수 있다.</li><li>git에 익숙해진다. 이번엔 commit 히스토리도 관리해 가면서 진행할거야.</li><li>vim을 좀 더 익숙하게 사용할 수 있다. 해피해킹을 위해.</li><li>회사 업무에선 적용 못한 요즘의 닷넷 물건들을 살펴본다. (ex: <a href="https://learn.microsoft.com/ko-kr/dotnet/api/system.text.json?view=net-7.0">System.Text.Json</a>)</li></ul><h2 id="느리지만-꾸준히"><a href="#느리지만-꾸준히" class="headerlink" title="느리지만 꾸준히"></a>느리지만 꾸준히</h2><p>바쁘다는 핑계로 오래도록 개인 프로젝트를 진행하지 못했는데, 이번에는 꾸준히 진행해보려고 한다. 오랜만에 공부할 거리들을 뒤적이다 보니, 재밌어 보이는 것도 많고 배우고 싶은 것들도 많이 보인다. 욕심내지 않고 하나씩 익혀 나가보자. </p><p>느리더라도 꾸준히. </p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/mac/">mac</category>
+      
+      <category domain="http://leafbird.github.io/blog/tags/vscode/">vscode</category>
+      
+      <category domain="http://leafbird.github.io/blog/tags/vim/">vim</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>인생을 보는 겸허한 마음</title>
+      <link>http://leafbird.github.io/blog/2023/03/01/%EC%9D%B8%EC%83%9D%EC%9D%84-%EB%B3%B4%EB%8A%94-%EA%B2%B8%ED%97%88%ED%95%9C-%EB%A7%88%EC%9D%8C/</link>
+      <guid>http://leafbird.github.io/blog/2023/03/01/%EC%9D%B8%EC%83%9D%EC%9D%84-%EB%B3%B4%EB%8A%94-%EA%B2%B8%ED%97%88%ED%95%9C-%EB%A7%88%EC%9D%8C/</guid>
+      <pubDate>Wed, 01 Mar 2023 11:55:20 GMT</pubDate>
+      
+      <description>&lt;img src=&quot;/blog/2023/03/01/%EC%9D%B8%EC%83%9D%EC%9D%84-%EB%B3%B4%EB%8A%94-%EA%B2%B8%ED%97%88%ED%95%9C-%EB%A7%88%EC%9D%8C/homeless.jpg&quot; class=&quot;&quot;&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2023/03/01/%EC%9D%B8%EC%83%9D%EC%9D%84-%EB%B3%B4%EB%8A%94-%EA%B2%B8%ED%97%88%ED%95%9C-%EB%A7%88%EC%9D%8C/homeless.jpg" class=""><span id="more"></span><p>아프리카를 제법 잘 알게 되면서부터 나는 인간이 평생 지닐 수 있는 것에 대해 대단히 겸허한 마음을 갖게 되었다. 일생 동안 어찌됐든 비와 이슬을 막아주는 집에 살 수 있었고, 매일 먹을 것이 있는 생활이 가능했다면 그 사람의 인생은 기본적으로 ‘성공’이다. </p><p>만일 그 집이 깨끗하며, 목욕탕과 화장실이 있으며, 건강을 해칠 정도의 더위와 추위에서 보호되며, 매일 뽀송뽀송한 이불에서 잘 수 있고, 누추하지 않은 옷을 입을 수 있고, 영양이 골고루 섞인 맛있는 식사를 하며, 전쟁에 휘말리지 않고, 병이 들었을 때는 진료를 받을 수 있는 생활을 할 수 있었다면 그 사람의 인생은 지구 수준에서 보면 ‘대단한 행운’이었다. </p><p>만일 그 사람이 자신이 좋아하는 공부를 하며, 사회의 일원으로 활동하며, 사랑도 알게 되며, 인생의 한 부분을 선택할 수 있었고, 자유스럽게 여행을 하며, 자신이 좋아하는 독서를 하며, 취미 생활을 할 수 있게 되고, 가족이나 친구들로부터 신뢰와 존경과 사랑을 받았다면 그것만으로도 그 사람의 인생은 그야말로 ‘대성공’인 것이다. </p><ul><li>소노 아야코. ‘계로록’</li></ul>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://leafbird.github.io/blog/2023/03/01/%EC%9D%B8%EC%83%9D%EC%9D%84-%EB%B3%B4%EB%8A%94-%EA%B2%B8%ED%97%88%ED%95%9C-%EB%A7%88%EC%9D%8C/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>실사 영화 &#39;바람의 검심&#39;</title>
+      <link>http://leafbird.github.io/blog/2023/02/25/%EC%8B%A4%EC%82%AC-%EC%98%81%ED%99%94-%EB%B0%94%EB%9E%8C%EC%9D%98-%EA%B2%80%EC%8B%AC/</link>
+      <guid>http://leafbird.github.io/blog/2023/02/25/%EC%8B%A4%EC%82%AC-%EC%98%81%ED%99%94-%EB%B0%94%EB%9E%8C%EC%9D%98-%EA%B2%80%EC%8B%AC/</guid>
+      <pubDate>Sat, 25 Feb 2023 12:09:36 GMT</pubDate>
+      
+      <description>&lt;img src=&quot;/blog/2023/02/25/%EC%8B%A4%EC%82%AC-%EC%98%81%ED%99%94-%EB%B0%94%EB%9E%8C%EC%9D%98-%EA%B2%80%EC%8B%AC/kenshin.jpg&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;코믹스 원작의 팬으로서 우려가 많았기에 감상을 꺼려했는데, 이제야 본 것을 후회할 만큼 만족스럽다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2023/02/25/%EC%8B%A4%EC%82%AC-%EC%98%81%ED%99%94-%EB%B0%94%EB%9E%8C%EC%9D%98-%EA%B2%80%EC%8B%AC/kenshin.jpg" class=""><p>코믹스 원작의 팬으로서 우려가 많았기에 감상을 꺼려했는데, 이제야 본 것을 후회할 만큼 만족스럽다.</p><span id="more"></span><p>히무라 켄신, 카미야 카오루, 사가라 사노스케, 사이토 하지메, 타카니 메구미… 그냥 캐릭터들이 등장하는 걸 보는 것 만으로도 만족스럽다. 어릴때 참 좋아했던 만화속 인물들과 스토리를 다시보니 옛날 생각이 많이 난다.<br>코믹스 원작의 실사화인 만큼 원작 캐릭터 분위기를 100% 낼 순 없을거라고 생각했다. 작품의 히로인(?) 카미야 카오루는 누가 맡은들 원작 팬들을 만족시킬 수 없었을거다. 날렵한 얼굴선이 키포인트인 사이토 하지메는 좀 싱크율이 낮긴 했지… 그래도 이만하면 정말 잘 풀어낸 것 같다. 켄신 역을 맡은 <a href="https://namu.wiki/w/%EC%82%AC%ED%86%A0%20%ED%83%80%EC%BC%80%EB%A3%A8">남자배우 (사토 타케루)</a>가 정말 중요했을텐데 내 생각엔 이보다 실사화를 더 잘하기 힘들만큼 표현했다고 본다. 이후에 나온 나머지 네 편의 실사 영화들도 모두 다 봐야겠다.</p><img src="/blog/2023/02/25/%EC%8B%A4%EC%82%AC-%EC%98%81%ED%99%94-%EB%B0%94%EB%9E%8C%EC%9D%98-%EA%B2%80%EC%8B%AC/kenshin_00.jpg" class=""><blockquote><p>검은 흉기, 검술은 살인술. 어떤 대의명분을 붙여도 그것이 진실이다. 지금 카오루 양이 한 말은 자기 손으로 피를 뭍힌 적이 없는 자가 떠벌이는 탁상공론. 하지만 난 그 탁상공론을 진실보다 더 믿고 싶어.</p></blockquote>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/%EC%98%81%ED%99%94/">영화</category>
+      
+      <category domain="http://leafbird.github.io/blog/tags/%EB%B0%94%EB%9E%8C%EC%9D%98-%EA%B2%80%EC%8B%AC/">바람의 검심</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2023/02/25/%EC%8B%A4%EC%82%AC-%EC%98%81%ED%99%94-%EB%B0%94%EB%9E%8C%EC%9D%98-%EA%B2%80%EC%8B%AC/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>날씨의 아이</title>
+      <link>http://leafbird.github.io/blog/2023/02/19/%EB%82%A0%EC%94%A8%EC%9D%98-%EC%95%84%EC%9D%B4/</link>
+      <guid>http://leafbird.github.io/blog/2023/02/19/%EB%82%A0%EC%94%A8%EC%9D%98-%EC%95%84%EC%9D%B4/</guid>
+      <pubDate>Sun, 19 Feb 2023 13:49:48 GMT</pubDate>
+      
+      <description>&lt;img src=&quot;/blog/2023/02/19/%EB%82%A0%EC%94%A8%EC%9D%98-%EC%95%84%EC%9D%B4/poster.jpg&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;이 감독의 작품을 보면, 내가 숱하게 보며 지나치는 일상의 장면들이 이렇게 예뻤던가 하는 생각을 한다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2023/02/19/%EB%82%A0%EC%94%A8%EC%9D%98-%EC%95%84%EC%9D%B4/poster.jpg" class=""><p>이 감독의 작품을 보면, 내가 숱하게 보며 지나치는 일상의 장면들이 이렇게 예뻤던가 하는 생각을 한다.</p><span id="more"></span><p>영화를 다 보고나서 검색을 좀 하다보니 전작보다는 부정적인 평이 많은 듯 하다. 아마 <code>너의 이름은</code>이 너무 대중적으로 성공을 해버려서 그런거겠지. 두 영화가 서로 시리즈는 아니지만, 전편을 뛰어넘는 속편이 나오기 힘든 것과 동일한 이유일 것 같다.</p><p>인터넷의 평들을 보니 전작과 유사한 점이 많은 것 때문에 안좋은 평가를 받는 듯 한데, 이것도 참 사람마다 상황마다 다르게 받아들여지는 것 같아. 게임도 영화도 비슷한데 작품의 평가라는게 참 주관적이라는 생각이 든다.<br>지쳐있던 어느 주말 머리에 휴식을 주고 싶어 선택한 작품으로 내게는 아주 만족이었다. 내가 <code>신카이 마코토의 작품이네?</code>라고 생각했을 때 예상했던 작화, 음악, 스토리와 연출 등이 모두 익숙하게 그대로 있어 주어서 내게는 오히려 반가웠다. 그냥 모니터에 익숙한 감독의 작품을 띄워놓고 잠깐 쉬고 싶었던 내게 딱 맞았던 선택. 얼마전에 극장에서 보고 왔던 <code>바빌론</code>이란 작품은 <code>이거 라라랜드 만들었던 감독 작품이네?</code>라고 생각했을 때의 기대감과 제법 거리가 있었거든.</p><p>일러스트 화보집을 주문해볼까? 하고 생각했지만 집이 좁아서 물건을 소장하는 것은 참기로 했다. 나중에 한 번 또 뇌를 쉬게 해주고 싶을 날이 오면 그 땐 <code>너의 이름은</code>도 다시 한 번 봐야겠어.</p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/%EC%98%81%ED%99%94/">영화</category>
+      
+      <category domain="http://leafbird.github.io/blog/tags/%EC%8B%A0%EC%B9%B4%EC%9D%B4-%EB%A7%88%EC%BD%94%ED%86%A0/">신카이 마코토</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2023/02/19/%EB%82%A0%EC%94%A8%EC%9D%98-%EC%95%84%EC%9D%B4/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>프랭크 밀러 - 배트맨 이어 원</title>
+      <link>http://leafbird.github.io/blog/2023/02/09/%ED%94%84%EB%9E%AD%ED%81%AC-%EB%B0%80%EB%9F%AC-%EB%B0%B0%ED%8A%B8%EB%A7%A8-%EC%9D%B4%EC%96%B4-%EC%9B%90/</link>
+      <guid>http://leafbird.github.io/blog/2023/02/09/%ED%94%84%EB%9E%AD%ED%81%AC-%EB%B0%80%EB%9F%AC-%EB%B0%B0%ED%8A%B8%EB%A7%A8-%EC%9D%B4%EC%96%B4-%EC%9B%90/</guid>
+      <pubDate>Thu, 09 Feb 2023 05:31:38 GMT</pubDate>
+      
+      <description>&lt;img src=&quot;/blog/2023/02/09/%ED%94%84%EB%9E%AD%ED%81%AC-%EB%B0%80%EB%9F%AC-%EB%B0%B0%ED%8A%B8%EB%A7%A8-%EC%9D%B4%EC%96%B4-%EC%9B%90/batman_00.jpg&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;한 줄 평 : 마! 이기 배트맨이다잉!&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2023/02/09/%ED%94%84%EB%9E%AD%ED%81%AC-%EB%B0%80%EB%9F%AC-%EB%B0%B0%ED%8A%B8%EB%A7%A8-%EC%9D%B4%EC%96%B4-%EC%9B%90/batman_00.jpg" class=""><p>한 줄 평 : 마! 이기 배트맨이다잉!</p><span id="more"></span><img src="/blog/2023/02/09/%ED%94%84%EB%9E%AD%ED%81%AC-%EB%B0%80%EB%9F%AC-%EB%B0%B0%ED%8A%B8%EB%A7%A8-%EC%9D%B4%EC%96%B4-%EC%9B%90/batman_01.jpg" class=""><img src="/blog/2023/02/09/%ED%94%84%EB%9E%AD%ED%81%AC-%EB%B0%80%EB%9F%AC-%EB%B0%B0%ED%8A%B8%EB%A7%A8-%EC%9D%B4%EC%96%B4-%EC%9B%90/batman_02.jpg" class=""><img src="/blog/2023/02/09/%ED%94%84%EB%9E%AD%ED%81%AC-%EB%B0%80%EB%9F%AC-%EB%B0%B0%ED%8A%B8%EB%A7%A8-%EC%9D%B4%EC%96%B4-%EC%9B%90/batman_03.jpg" class="">]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/%EB%B0%B0%ED%8A%B8%EB%A7%A8/">배트맨</category>
+      
+      <category domain="http://leafbird.github.io/blog/tags/%EB%A7%8C%ED%99%94/">만화</category>
+      
+      <category domain="http://leafbird.github.io/blog/tags/%EB%B9%84%EC%A3%BC%EC%96%BC-%EB%85%B8%EB%B2%A8/">비주얼 노벨</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2023/02/09/%ED%94%84%EB%9E%AD%ED%81%AC-%EB%B0%80%EB%9F%AC-%EB%B0%B0%ED%8A%B8%EB%A7%A8-%EC%9D%B4%EC%96%B4-%EC%9B%90/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>죽을 때까지 코딩하며 사는 법</title>
+      <link>http://leafbird.github.io/blog/2023/01/29/%EC%A3%BD%EC%9D%84-%EB%95%8C%EA%B9%8C%EC%A7%80-%EC%BD%94%EB%94%A9%ED%95%98%EB%A9%B0-%EC%82%AC%EB%8A%94-%EB%B2%95/</link>
+      <guid>http://leafbird.github.io/blog/2023/01/29/%EC%A3%BD%EC%9D%84-%EB%95%8C%EA%B9%8C%EC%A7%80-%EC%BD%94%EB%94%A9%ED%95%98%EB%A9%B0-%EC%82%AC%EB%8A%94-%EB%B2%95/</guid>
+      <pubDate>Sun, 29 Jan 2023 01:39:04 GMT</pubDate>
+      
+      <description>&lt;img src=&quot;/blog/2023/01/29/%EC%A3%BD%EC%9D%84-%EB%95%8C%EA%B9%8C%EC%A7%80-%EC%BD%94%EB%94%A9%ED%95%98%EB%A9%B0-%EC%82%AC%EB%8A%94-%EB%B2%95/book_00.jpg&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;연초를 맞아 도서관 앱을 열었다. 책 제목만 보고 무심결에 읽기를 시작했는데, 모처럼만에 정말 재미있는 독서를 했다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2023/01/29/%EC%A3%BD%EC%9D%84-%EB%95%8C%EA%B9%8C%EC%A7%80-%EC%BD%94%EB%94%A9%ED%95%98%EB%A9%B0-%EC%82%AC%EB%8A%94-%EB%B2%95/book_00.jpg" class=""><p>연초를 맞아 도서관 앱을 열었다. 책 제목만 보고 무심결에 읽기를 시작했는데, 모처럼만에 정말 재미있는 독서를 했다.</p><span id="more"></span><h3 id="오랜만의-독서뽕"><a href="#오랜만의-독서뽕" class="headerlink" title="오랜만의 독서뽕"></a>오랜만의 독서뽕</h3><p>유튜브, 넷플릭스, 디즈니 플러스의 바다에 빠져사느라 이렇게 활자를 읽는 시간을 길게 가져본 적이 참 오랜만인 듯 하다. 그나마 연초의 힘을 빌어 도서관 앱을 간신히 열었을 때도 흥미있는 책을 만날거란 기대는 딱히 없었는데, 뜻밖에 재미있게 책을 읽었다. 책이 어렵지 않아 읽는데 부담이 없고, 다루고 있는 주제들이 평소의 주된 관심사들과 많이 일치하고 있어 그런 듯 하다. 책에서 <code>테일러 주의</code>라고 명명한 조직문화는 읽는 동안 많은 생각을 하게했다.<br>저자의 의견에 상당부분 공감했지만 일부 생각이 다른 부분도 있었는데, 의견의 일치 여부를 떠나서 이런 공통된 주제를 가진 다른이의 의견을 들어볼 수 있다는 것 자체가 너무 즐거웠다. 요즘은 펜데믹 이후로 사람을 만나는 일 자체도 줄었거니와… 잡담으로라도 개발에 관한 이런 이야기들을 나누어 본 것 자체가 아주 오랜만이라 그렇지 않을까. </p><h3 id="저자는-어떤-회사에-다닐까-저자는-어떤-코드를-짤까"><a href="#저자는-어떤-회사에-다닐까-저자는-어떤-코드를-짤까" class="headerlink" title="저자는 어떤 회사에 다닐까? 저자는 어떤 코드를 짤까?"></a>저자는 어떤 회사에 다닐까? 저자는 어떤 코드를 짤까?</h3><p>이 책은 굉장히 많은 다른 책들을 참고하고 인용하면서 이야기를 진행해간다. 책을 읽을 수록 저자분이 궁금해진다. 다량의 독서도 놀랍지만 독서 노트를 어떻게 정리하시길래 이렇게 필요에 맞게 내용을 인용하시는 걸까? 조직문화에 대해 이렇게 확고한 신념을 가진 저자는 지금 어떤 회사에 다니고 있을까? 아님 혹시 창업을 하셨을까? 이런 분이 만드는 코드는 어떤 설계를 가졌고, 어떻게 동작할까?<br>기회가 닿는다면 저자분을 한 번 만나보고 싶다. 책을 읽는 동안에도 업계의 선배님에게 여러가지 조언을 듣는 듯한 느낌이었는데, 실제로 사석에서 만나 보다 다양한 대화를 나눠보고 싶다고 생각했다. </p><h3 id="죽을-때까지-코딩하며-사는-것은-나에게도-오래된-바램"><a href="#죽을-때까지-코딩하며-사는-것은-나에게도-오래된-바램" class="headerlink" title="죽을 때까지 코딩하며 사는 것은 나에게도 오래된 바램"></a>죽을 때까지 코딩하며 사는 것은 나에게도 오래된 바램</h3><p>이건 나도 역시 20대 때부터 입버릇처럼 해온 말이고, 나 뿐만 아닌 많은 프로그래머들이 품고 있는 생각이다. 프로그래밍이 재미있기 때문에 시작했고, 지금도 여전히 재미있기 때문이다.</p><blockquote><p>필자에게 왜 프로그래밍을 하느냐고 묻는다면, 주저없이 ‘재미(fun)’라고 답할 것이다. 한 가지 덧붙이자면, 만약 프로그래밍보다 더 재미있는 일이 있다고 생각한다면, 역시 주저함 없이 프로그래밍 대신 그 일에 몰두할 것이다. 재미없는 일을 억지로 하면서 보내기에는 인생은 너무 짧지 않는가.<br>[마이크로 소프트웨어 잡지 특집 컬럼 - 이만용 리눅스 코리아 CTO의 글 중…]</p></blockquote><p>하지만 오래도록 개발자로 일하면서 드는 생각은, 모든 프로그래머가 나랑 같은 생각은 아니라는 점이다. 애초에 입시 전쟁이나 부모님의 강요라든지.. 뭐 등등 여러가지 외부 요인으로 인해 처음부터 재미를 모르는 채로 일하는 프로그래머들도 생각보다 많이 있다. 또 처음에는 누구보다 불타오르는 열정이 있었건만 오랜 시간동안 모질고 험한 개발자의 삶을 살면서 점차 의욕을 잃게되는 프로그래머도 많다 - 정말 많다. 시간은 속절없이 흘러 어느덧 개발 경력이 꽤나 길어졌는데… 주위를 둘러보니 같이 첫발을 떼었던 불꽃같은 프로그래머들은 이제 얼마 남지 않았고, 열정과 즐거움도 이제는 많이 희미해져 있다.</p><blockquote><p>… 우리 사회 전반의 문제입니다. 우리도 마찬가지죠. 그래서, 우리나라 소프트웨어 개발 조직들은 산업화 시대 공장을 운영하듯 운영되어 왔습니다. 그러다 보니, 개발자들이 코드에 대한 열정을 가지는 건, 회사 입장에서는 거추장스러운 것이었고요.<br>이런 조직문화에 적응하다 보니, 개발자들 스스로도 그런 열정은 버리고, 회사가 만들어 달라는 것 빨리 만들어 주다가, 적당히 나이 먹으 면 이 지긋지긋한 일을 때려쳐야겠다고 마음먹게 된 거죠.</p></blockquote><h3 id="이-책은-현재-우리-팀과-회사가-어떤-모습인지-돌아보게-한다"><a href="#이-책은-현재-우리-팀과-회사가-어떤-모습인지-돌아보게-한다" class="headerlink" title="이 책은 현재 우리 팀과 회사가 어떤 모습인지 돌아보게 한다"></a>이 책은 현재 우리 팀과 회사가 어떤 모습인지 돌아보게 한다</h3><p>이 책 제목만 보면 <code>개발자 개인</code>이 오래도록 일하기 위해 해야 하는 것들에 초점이 맞춰져 있는 것 같지만, 조직 문화라거나 개발 방법론 등등 그 이상의 다양한 주제들을 다룬다. 이제는 팀의 개발 문화에 어느정도 책임을 져야 하는 입장이다보니, 지금의 회사와 팀의 분위기는 어떤지 생각해보게 된다. 팀원들 모두가 개발의 과정 자체를 즐거워하며 몰입할 수 있는 상태를 만들어야 할텐데.. 어떻게 그 곳에 도달할 수 있을까.</p><blockquote><p>우리가 다니는 회사, 우리가 사는 사회가 그 영향을 받아서, 우리에게 비전을 제시하지 못한다 해도, 우리의 삶에 의미가 있으려면, 우리는 우리 스스로 비전을 가져야 합니다. 개발자로서 갖는 비전은 행복과 열정을 가져다 줄 수 있습니다. 우리가 직업으로 삼고 있는 코딩은 정말 재미있는 일이거든요.</p><blockquote><p>열정 때문에 공짜라도 기꺼이 추구할 일을 생업으로 삼도록 신이 주신 특권을 누릴 수 있는 사람은 극 소수에 불과하다. 저자는 매우 감사드린다.<br>프레더릭 브룩스, &lt;맨먼스 미신 출간 20주년 기념판&gt;, 에필로그, 398쪽</p></blockquote></blockquote><p>재미있는 일을 하며 사는 것은 브룩스의 말처럼 <code>신이 주신 특권</code>이라 할 만한 행복이다. 나를 포함한 많은 프로그래머들이 이 행복을 오래도록 누릴 수 있으면 좋겠다. </p><p>죽을 때까지.</p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/%EB%8F%84%EC%84%9C/">도서</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2023/01/29/%EC%A3%BD%EC%9D%84-%EB%95%8C%EA%B9%8C%EC%A7%80-%EC%BD%94%EB%94%A9%ED%95%98%EB%A9%B0-%EC%82%AC%EB%8A%94-%EB%B2%95/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>루카 - 픽사가 만들었지만 지브리가 보인다</title>
+      <link>http://leafbird.github.io/blog/2023/01/24/%EB%A3%A8%EC%B9%B4-%ED%94%BD%EC%82%AC%EA%B0%80-%EB%A7%8C%EB%93%A4%EC%97%88%EC%A7%80%EB%A7%8C-%EC%A7%80%EB%B8%8C%EB%A6%AC%EA%B0%80-%EB%B3%B4%EC%9D%B8%EB%8B%A4/</link>
+      <guid>http://leafbird.github.io/blog/2023/01/24/%EB%A3%A8%EC%B9%B4-%ED%94%BD%EC%82%AC%EA%B0%80-%EB%A7%8C%EB%93%A4%EC%97%88%EC%A7%80%EB%A7%8C-%EC%A7%80%EB%B8%8C%EB%A6%AC%EA%B0%80-%EB%B3%B4%EC%9D%B8%EB%8B%A4/</guid>
+      <pubDate>Tue, 24 Jan 2023 10:50:14 GMT</pubDate>
+      
+      <description>&lt;img src=&quot;/blog/2023/01/24/%EB%A3%A8%EC%B9%B4-%ED%94%BD%EC%82%AC%EA%B0%80-%EB%A7%8C%EB%93%A4%EC%97%88%EC%A7%80%EB%A7%8C-%EC%A7%80%EB%B8%8C%EB%A6%AC%EA%B0%80-%EB%B3%B4%EC%9D%B8%EB%8B%A4/luca.jpg&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;며칠 전에 &lt;a href=&quot;https://leafbird.github.io/blog/2023/01/21/%EC%86%8C%EC%9A%B8-%ED%83%9C%EC%96%B4%EB%82%9C-%EA%B2%83-%EB%A7%8C%EC%9C%BC%EB%A1%9C%EB%8F%84-%EC%B6%A9%EB%B6%84%ED%9E%88-%EA%B0%80%EC%B9%98%EC%9E%88%EB%8A%94-%EC%82%B6/&quot;&gt;소울&lt;/a&gt;을 아주 재미있게 보고 나서, 탄력을 받아 연달아 픽사 작품 하나를 더 골라잡았다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2023/01/24/%EB%A3%A8%EC%B9%B4-%ED%94%BD%EC%82%AC%EA%B0%80-%EB%A7%8C%EB%93%A4%EC%97%88%EC%A7%80%EB%A7%8C-%EC%A7%80%EB%B8%8C%EB%A6%AC%EA%B0%80-%EB%B3%B4%EC%9D%B8%EB%8B%A4/luca.jpg" class=""><p>며칠 전에 <a href="https://leafbird.github.io/blog/2023/01/21/%EC%86%8C%EC%9A%B8-%ED%83%9C%EC%96%B4%EB%82%9C-%EA%B2%83-%EB%A7%8C%EC%9C%BC%EB%A1%9C%EB%8F%84-%EC%B6%A9%EB%B6%84%ED%9E%88-%EA%B0%80%EC%B9%98%EC%9E%88%EB%8A%94-%EC%82%B6/">소울</a>을 아주 재미있게 보고 나서, 탄력을 받아 연달아 픽사 작품 하나를 더 골라잡았다.</p><span id="more"></span><p>다 보고 난 느낌은 꽤나 다르다. <code>소울</code>을 봤을 때는 굉장히 익숙한 느낌이 들었다. 기존에 내가 보아오던 픽사의 작품들과 비슷한 느낌을 받으면서 <code>그래 맞아, 이게 픽사 작품이지</code>하는 생각을 들게 했다.<br><code>루카</code>는 달랐다. 조금 색다른 느낌이 들었다. 이게 픽사의 작품 맞나? 인사이드 아웃 제작진 작품이라고? 정말인가? 하는 생각이 들었다.<br>영화를 보고 나면 늘 그렇듯 <a href="https://namu.wiki/w/%EB%A3%A8%EC%B9%B4(%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98)">나무위키 페이지</a>를 찾아가 작품에 관한 이런저런 이야기들을 읽어본다. 음 이 작품은 애초에 미야자키 하야오에게 영향을 받은 작품이구나. 작중 배경이 되는 항구도시의 이름 포르토로소(Porto Rosso)도 지브리 애니메이션 붉은 돼지(Porco Rosso)의 오마주 였다고 한다.</p><p>예상했던 것과 다른 느낌 덕분에 생소한 느낌이 들었다. 픽사에서도 이 작품을 기획하고 상영하기까지 많은 논의를 했을거다. 그들에게 이 작품의 도전은 치밀한 계산으로 쌓아올린 결과물일까. 무수한 아이디어 회의중에 건진 신선한 발상이었을까. 예전처럼 dvd로 영화를 봤다면 부록으로 딸려왔을 제작 뒷 이야기가 궁금해지는 작품이다.</p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/%EC%98%81%ED%99%94/">영화</category>
+      
+      <category domain="http://leafbird.github.io/blog/tags/%ED%94%BD%EC%82%AC/">픽사</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2023/01/24/%EB%A3%A8%EC%B9%B4-%ED%94%BD%EC%82%AC%EA%B0%80-%EB%A7%8C%EB%93%A4%EC%97%88%EC%A7%80%EB%A7%8C-%EC%A7%80%EB%B8%8C%EB%A6%AC%EA%B0%80-%EB%B3%B4%EC%9D%B8%EB%8B%A4/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>소울 - 태어난 것 만으로도 충분히 가치있는 삶</title>
+      <link>http://leafbird.github.io/blog/2023/01/21/%EC%86%8C%EC%9A%B8-%ED%83%9C%EC%96%B4%EB%82%9C-%EA%B2%83-%EB%A7%8C%EC%9C%BC%EB%A1%9C%EB%8F%84-%EC%B6%A9%EB%B6%84%ED%9E%88-%EA%B0%80%EC%B9%98%EC%9E%88%EB%8A%94-%EC%82%B6/</link>
+      <guid>http://leafbird.github.io/blog/2023/01/21/%EC%86%8C%EC%9A%B8-%ED%83%9C%EC%96%B4%EB%82%9C-%EA%B2%83-%EB%A7%8C%EC%9C%BC%EB%A1%9C%EB%8F%84-%EC%B6%A9%EB%B6%84%ED%9E%88-%EA%B0%80%EC%B9%98%EC%9E%88%EB%8A%94-%EC%82%B6/</guid>
+      <pubDate>Sat, 21 Jan 2023 12:46:27 GMT</pubDate>
+      
+      <description>&lt;img src=&quot;/blog/2023/01/21/%EC%86%8C%EC%9A%B8-%ED%83%9C%EC%96%B4%EB%82%9C-%EA%B2%83-%EB%A7%8C%EC%9C%BC%EB%A1%9C%EB%8F%84-%EC%B6%A9%EB%B6%84%ED%9E%88-%EA%B0%80%EC%B9%98%EC%9E%88%EB%8A%94-%EC%82%B6/soul.jpg&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;(제목은 &lt;a href=&quot;https://namu.wiki/w/%EC%86%8C%EC%9A%B8(%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98)&quot;&gt;나무위키 페이지&lt;/a&gt;에서 본 것 중 가장 인상적인 김성훈 기자님의 평을 옮겨 적었습니다)&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2023/01/21/%EC%86%8C%EC%9A%B8-%ED%83%9C%EC%96%B4%EB%82%9C-%EA%B2%83-%EB%A7%8C%EC%9C%BC%EB%A1%9C%EB%8F%84-%EC%B6%A9%EB%B6%84%ED%9E%88-%EA%B0%80%EC%B9%98%EC%9E%88%EB%8A%94-%EC%82%B6/soul.jpg" class=""><p>(제목은 <a href="https://namu.wiki/w/%EC%86%8C%EC%9A%B8(%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98)">나무위키 페이지</a>에서 본 것 중 가장 인상적인 김성훈 기자님의 평을 옮겨 적었습니다)</p><span id="more"></span><p>디즈니 플러스에 들어갈 때마다 항상 썸네일을 보면서, 저거 언젠가 집중해서 감상해야지 하고 늘 넘어가기만 했었는데, 드디어 구정 연휴를 맞이하여 제대로 감상. 픽사의 작품이라면 늘 관심을 갖기도 했고 제이미 폭스도 좋아하는 배우여서 늘 찜리스트에 들어있던 작품이었다. </p><p>예상했던 것과 꽤 다른 주제의 작품이다. 문득 오늘 하루의 내가 즐거웠고 행복했는지 돌아보게 만들었다.</p><p>영화의 가장 핵심 주제를 드러내는 부분이 있다. 그토록 고대하던 공연을 성공적으로 마치고도 생각외로 별다른 감흥을 느끼지 못했던 주인공이, 빈 집에 돌아와 피아노를 치면서 일상의 소소한 기억에서 행복을 느끼는 장면. 아무 대사도 없이. 작품의 주제를 분명하고 묵직하게 전달한다. 이것이 픽사의 힘이라고 생각한다. 제작진들의 연출력에 박수를 보냅니다.</p><p>행복은 강도가 아니라 빈도.<br>모든 이들의 하루하루가 작은 별빛들로 가득 반짝이기를.</p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/%EC%98%81%ED%99%94/">영화</category>
+      
+      <category domain="http://leafbird.github.io/blog/tags/%ED%94%BD%EC%82%AC/">픽사</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2023/01/21/%EC%86%8C%EC%9A%B8-%ED%83%9C%EC%96%B4%EB%82%9C-%EA%B2%83-%EB%A7%8C%EC%9C%BC%EB%A1%9C%EB%8F%84-%EC%B6%A9%EB%B6%84%ED%9E%88-%EA%B0%80%EC%B9%98%EC%9E%88%EB%8A%94-%EC%82%B6/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>속초 가족 여행</title>
+      <link>http://leafbird.github.io/blog/2023/01/08/%EC%86%8D%EC%B4%88-%EA%B0%80%EC%A1%B1-%EC%97%AC%ED%96%89/</link>
+      <guid>http://leafbird.github.io/blog/2023/01/08/%EC%86%8D%EC%B4%88-%EA%B0%80%EC%A1%B1-%EC%97%AC%ED%96%89/</guid>
+      <pubDate>Sun, 08 Jan 2023 01:10:35 GMT</pubDate>
+      
+      <description>&lt;p&gt;2023-1-2 ~ 2023-1-4. 속초 롯데 리조트&lt;/p&gt;
+&lt;img src=&quot;/blog/2023/01/08/%EC%86%8D%EC%B4%88-%EA%B0%80%EC%A1%B1-%EC%97%AC%ED%96%89/travel-1.png&quot; class=&quot;&quot;&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>2023-1-2 ~ 2023-1-4. 속초 롯데 리조트</p><img src="/blog/2023/01/08/%EC%86%8D%EC%B4%88-%EA%B0%80%EC%A1%B1-%EC%97%AC%ED%96%89/travel-1.png" class=""><span id="more"></span><p>아들의 겨울 방학에 가족여행을 다녀오려고 오래전부터 생각했었다. </p><p>원래는 완도항에서 배에 차를 싣고 제주도에 다녀오려고 했었다가.. 이래저리 여건이 맞지 않아 보류하고 대신 종빈이형이 추천했던 속도 롯데 리조트에 다녀왔다.</p><p>여행 일정 자체가 평일이라 그런건지, 원래 그런건지. 아님 계절상 그런 것인지. 여행지가 한적하고 조용해서 참 좋다. 날이 따듯할 때 다시 와보고 싶은데, 아마 지금보다는 사람이 더 많겠지. 중앙 시장에 먹을 것도 많고, 인적없이 한적한 겨울바다도 좋았다. </p><p>크게 생각 안하고 왔었지만 여기가 만석 닭강정의 본고지다. 중앙시장 초입부터 만석 닭강정이 있다. 순대국, 회국수, 활어회, 오징어순대 등등 실컷 먹고 왔다. 윤이는 원래 회를 별로 안좋아하는데, 외옹치항에서 바로 썰어온 광어회를 맛있게 먹었다.</p><img src="/blog/2023/01/08/%EC%86%8D%EC%B4%88-%EA%B0%80%EC%A1%B1-%EC%97%AC%ED%96%89/travel-2.png" class=""><p>요새는 블로그에 글도 잘 안쓰고 해서 사진을 많이 안찍었는데, 포스팅 하려니 사진이 너무 없구나. 다음부턴 사진좀 더 찍고 블로그에 올려야겠다. </p><p>리조트는 생긴지 얼마 되지 않아 건물이나 시설이 깨끗하다. 워터파크가 너무 어린이용이라 비추라는 말이 있지만 우린 아들래미 때문에 가는데 뭐 어때 더 좋은걸. 그리고 무엇보다 슈퍼차저가 그냥 지하3층에 있다. 충전 걱정 안해도 되니 너무 좋다. 서울 양양 고속도로(동해 고속도로)를 타면 150km 가까이 외길 직진인데, 그동안 NOA 켜두고 오면 운전도 정말 편하다.</p><img src="/blog/2023/01/08/%EC%86%8D%EC%B4%88-%EA%B0%80%EC%A1%B1-%EC%97%AC%ED%96%89/travel-3.png" class=""><p>호텔 객실은 외부 인피티니풀 무료이용이 된다. 우리는 콘도를 잡았기 때문에 워터파크 입장을 해야 인피니티풀에 갈 수 있다. 워터파크는 종일권 / 오후권 두 가지 뿐인데, 우리는 아침에 개장마자 마자 갔기 때문에 종일권밖에 선택의 여지가 없었다. 하지만 외출이 가능해서, 오전에 실컷 놀고 점심먹으러 나갈 때 락커 열쇠를 보관해두었다가 오후에 다시 들어가 놀았다(종일권은.. 그래야만 할 가격이다).</p><div class="video-container"><iframe src="https://www.youtube.com/embed/zGsqGy5fZ8s" frameborder="0" loading="lazy" allowfullscreen></iframe></div><p>여행지 정해놓고 검색하다 보니 백종원님이 소개한 회국수가 있길래.. 다녀왔지. 역시 바닷가에 오니 해산물이 싱싱하고 좋다.</p><p>우리가 묵었던 숙소 근처에 설악항이 있고, 설악산 입구가 있다. 언젠가 설악산을 가게 되면 여기서 출발하면 좋겠다 생각했다. 바다도 보고, 산도 보고.</p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/%EC%97%AC%ED%96%89/">여행</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2023/01/08/%EC%86%8D%EC%B4%88-%EA%B0%80%EC%A1%B1-%EC%97%AC%ED%96%89/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>A Star Is Born</title>
+      <link>http://leafbird.github.io/blog/2022/07/23/A-Star-Is-Born/</link>
+      <guid>http://leafbird.github.io/blog/2022/07/23/A-Star-Is-Born/</guid>
+      <pubDate>Sat, 23 Jul 2022 10:34:50 GMT</pubDate>
+      
+      <description>&lt;img src=&quot;/blog/2022/07/23/A-Star-Is-Born/poster.jpg&quot; class=&quot;&quot;&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2022/07/23/A-Star-Is-Born/poster.jpg" class=""><span id="more"></span><div class="video-container"><iframe src="https://www.youtube.com/embed/1oaFijnnRxc" frameborder="0" loading="lazy" allowfullscreen></iframe></div><p>넷플릭스에 들어갔다가 보이길래 냅다 감상.<br>이거 전부터 보고 싶던 영화였는데 잘됐다. </p><p>제목도 그렇고, 영화 초반에는 <code>재능</code>에 대한 이야기가 잠깐 나오길래 혹시 선천적 재능과 후천적 노력에 대한 이야기인가 싶었는데, 그냥 전형적인 느낌의 로맨스 장르에 가까웠다. </p><p>그래도 여주인공 <code>앨리</code>의 아버지가 프랭크 시나트라에 대해 말하던 대사는 참 인상적이다. 그보다 훨씬 열정적이고 재능있는 무명 가수들을 여러명 알고 있다. 하지만 그렇다고 해서 그들이 모두 다 스타가 되지는 않는다. 파란눈을 가진 프랭크가 말끔한 신사복을 입고 카메라 앞에 서서 노래를 하는 순간, 그 때 그는 시나트라가 되는 것이다. 뭐 이런 말이었다. </p><p>나중에 <a href="https://namu.wiki/w/%EC%8A%A4%ED%83%80%20%EC%9D%B4%EC%A6%88%20%EB%B3%B8">나무위키</a>를 통해 복습하다보니 원작은 1937년에 나왔고 여러차례 리메이크된 뮤지컬 영화였다.</p><p>전형적인 느낌이라고 해서 실망스러웠다는 말은 아니다. 예전에 극장에 상영할 때부터 보고 싶었던 영화였다. <code>레이디 가가</code>라는 가수에 대한 호기심 때문이었던 것 같다. </p><p>이 길고 긴 펜데믹은 대체 언제 끝이날지 모르겠지만, 그 때문인지 요즘은 문득 라이브 공연을 가보고 싶다는 생각이 많이 든다. 요즘은 그래서 집에서 유튜브를 볼때도 라이브 공연 직캠이나, 팝가수 내한 공연 같은 영상을 종종 찾아다닌다. </p><p>이 영화를 보고 주저없이 Play 버튼을 누른 것도 그런 영향이 없지 않았다. 레이디 가가의 거침없이 쏟아내는 보컬을 들으니 막힌 속이 뻥 뚫리는 느낌이다. 레이디 가가는 이 영화에서 음악뿐 아니라 연기에서도 호평을 받으며 많은 수상을 했다고 한다. <a href="https://namu.wiki/w/%ED%95%98%EC%9A%B0%EC%8A%A4%20%EC%98%A4%EB%B8%8C%20%EA%B5%AC%EC%B0%8C">하우스 오브 구찌</a> 라는 영화에도 나왔다고 해. 다음엔 이 영화를 봐야겠네 :)</p>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://leafbird.github.io/blog/2022/07/23/A-Star-Is-Born/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>라즈베리파이 알루미늄 방열 케이스</title>
+      <link>http://leafbird.github.io/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/</link>
+      <guid>http://leafbird.github.io/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/</guid>
+      <pubDate>Mon, 14 Dec 2020 13:47:13 GMT</pubDate>
+      
+      <description>&lt;p&gt;&lt;a href=&quot;https://www.raspberrypi.org/&quot;&gt;라즈베리 파이&lt;/a&gt;에 관심이 있다면 솔깃해 할만한 방열 케이스를 소개해본다.&lt;/p&gt;
+&lt;img src=&quot;/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/00.jpg&quot; class=&quot;&quot;&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p><a href="https://www.raspberrypi.org/">라즈베리 파이</a>에 관심이 있다면 솔깃해 할만한 방열 케이스를 소개해본다.</p><img src="/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/00.jpg" class=""><span id="more"></span><p>좌측이 가장 무난하게 선택하는 공식 케이스다. 케이스에 큰 뜻(?)이 없다면 기본적으로 선택하게 되는데, 기판을 안전하게 보호하기에는 좋게 생겼으나 방열에는 그리 좋지 못하다. </p><p>우측이 오늘 소개할 쿨링 케이스이고, <a href="https://ko.aliexpress.com/item/4000883790409.html?spm=a2g0s.9042311.0.0.527c4c4d0YwtGm">알리</a>에서 주문했다. 이미 케이스를 끼운 오른쪽 파이는 내가 집에서 쓰는건데, 이 케이스 한 번 써보고는 만족스러워서 이번에 하나 더 주문했다.</p><p>좌측의 기본 케이스에 담긴 파이는 회사에서 업무에 사용중인 녀석이다. 사무실 벽면의 TV에 붙어서 평상시에는 서버 빌드 정보를 보여주다가 빌드가 깨지거나 서버가 뻗었을 때 경고하는 역할을 한다. 24/7 내내 돌리고 있다보니 쿨링에 약간 신경이 쓰여 케이스를 바꿔 주기로 했다. (사실 엄청 빡신 일을 하고 있는 녀석은 아니어서 굳이 이렇게 까지 할 필요는 없다.)</p><p>보통은 cpu와 기판의 주요한 칩들 위에, 칩들의 각 크기만한 사이즈의 방열판을 붙여주어 쿨링을 시켜준다. 파이 버전마다 좀 다르지만 cpu 말고도 2개 정도 더 있다. 이게 쿨링 효과가 얼마나 있을지는 모르겠다. 다만 아무것도 안한 것 보다는 낫겠지 하는 정도의 느낌이다.</p><img src="/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/01.jpg" class=""><p>오늘 소개하는 케이스는, 케이스 자체가 앞뒤에 붙는 통 알루미늄 라디에이터가 된다. 파이 기판 상의 주요한 칩들 위치에 닿도록 내부가 돌출 되어있다. 케이스에 함께 동봉 되어있는 열 전도용 3M 스티커를 통해 칩과 케이스를 연결시켜준다. 알루미늄이라서 손으로 들어보면 꽤나 묵직하다. 괜히 고급스러워 진 듯한 착각을 느끼게 해준다.</p><img src="/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/02.jpg" class=""><p>알리에 가보면 냉각팬이 딸려있는 케이스도 많이 있는데, 개인적으로 팬을 쓰는건 별로라서 걸렀다. 파이를 항상 켜놓으면서 사용하는데 굳이 전원을 더 써가면서 팬까지 돌리는 건 좀 거추장 스러운 느낌이고, 발열은 좀 더 개선해보고 싶다 하는 경우라면 추천.</p>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://leafbird.github.io/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Apple M1 macmini</title>
+      <link>http://leafbird.github.io/blog/2020/12/12/Apple-M1-macmini/</link>
+      <guid>http://leafbird.github.io/blog/2020/12/12/Apple-M1-macmini/</guid>
+      <pubDate>Sat, 12 Dec 2020 13:09:07 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;잡스는-PowerPC에서-Intel-칩으로의-전환을-발표했다&quot;&gt;&lt;a href=&quot;#잡스는-PowerPC에서-Intel-칩으로의-전환을-발표했다&quot; class=&quot;headerlink&quot; title=&quot;잡스는 PowerPC에서 Intel 칩으로의 전환을 발표했다.&quot;&gt;&lt;/a&gt;잡스는 PowerPC에서 Intel 칩으로의 전환을 발표했다.&lt;/h2&gt;&lt;p&gt;잡스 형님의 프레젠테이션은 정말 인상적이었다. 청바지 주머니에서 아이팟 나노를 처음 꺼내던 모습도, 서류봉투에서 맥북 에어를 처음 꺼내던 모습도 오랜 시간이 지나도록 선명한 기억으로 남아있다. 잡스는 어떻게 해야 상대방에게 전달하려는 핵심 내용에 제대로 무게를 실어 강조할 수 있는가를 정말 잘 아는 발표자였다.&lt;/p&gt;
+&lt;img src=&quot;/blog/2020/12/12/Apple-M1-macmini/apple_intel1.jpg&quot; class=&quot;&quot;&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="잡스는-PowerPC에서-Intel-칩으로의-전환을-발표했다"><a href="#잡스는-PowerPC에서-Intel-칩으로의-전환을-발표했다" class="headerlink" title="잡스는 PowerPC에서 Intel 칩으로의 전환을 발표했다."></a>잡스는 PowerPC에서 Intel 칩으로의 전환을 발표했다.</h2><p>잡스 형님의 프레젠테이션은 정말 인상적이었다. 청바지 주머니에서 아이팟 나노를 처음 꺼내던 모습도, 서류봉투에서 맥북 에어를 처음 꺼내던 모습도 오랜 시간이 지나도록 선명한 기억으로 남아있다. 잡스는 어떻게 해야 상대방에게 전달하려는 핵심 내용에 제대로 무게를 실어 강조할 수 있는가를 정말 잘 아는 발표자였다.</p><img src="/blog/2020/12/12/Apple-M1-macmini/apple_intel1.jpg" class=""><span id="more"></span><p>2005년 PowerPC 프로세스 대신 인텔 칩을 사용할 것이라고 발표하던 모습 역시 오래도록 강한 인상으로 남아있다. 혹시라도 못 본 사람이 있거나, 기억에서 희미해진 사람이 있다면 아래에 영상이 있다. 일단은 잡스가 먼저 ‘올해 6월부터 인텔칩으로 맥을 만들게’라고 말하고 (보통의 공돌이가 발표한다면 여기서 끝났다. 팩트만을 정확히 전달했으므로 더이상의 첨언은 무쓸모한것이다) 우리가 어떻게 준비하고 있는지 알려주겠다고 하자, Intel의 CEO가 직접 방진복을 입고 무대에 나와서는 잡스에게 걸어가 인텔의 칩(? 저거 동그란거 뭐냐 아무튼)을 전달해주는 장면을 연출한다.</p><div class="video-container"><iframe src="https://www.youtube.com/embed/cp49Tmmtmf8" frameborder="0" loading="lazy" allowfullscreen></iframe></div><p>그러고는 벌써 15년이 흘렀다.</p><p>올해 WWDC 2020에서 이제 인텔 칩을 더이상 사용하지 않을것이고 자체 제작한 칩으로 단계적 전환한다고 발표한 내용을 처음 접했을 때에도 나는 이 프레젠테이션이 먼저 생각났다. 이 기가 맥힌(…) 프레젠테이션을 조금 더 과거로 밀어내는 것 같은 느낌이었다. </p><h2 id="애플의-M1칩은-시장에서-나쁘지-않은-평가를-받고있다"><a href="#애플의-M1칩은-시장에서-나쁘지-않은-평가를-받고있다" class="headerlink" title="애플의 M1칩은 시장에서 나쁘지 않은 평가를 받고있다."></a>애플의 M1칩은 시장에서 나쁘지 않은 평가를 받고있다.</h2><img src="/blog/2020/12/12/Apple-M1-macmini/02.jpg" class=""><p>11월 17일 부터였나. 인텔칩 대신 애플의 M1칩을 탑재한 맥이 소비자들에게 전달되기 시작했다. </p><p>출시전 여러가지로 우려의 시선들이 많았던 것에 비해서는 제법 좋은 반응들이 들려온다. 가격, 성능, 발열, 소음, 전력소비 등 여러가지 면에서 기존의 제품보다 나아졌다는 후기와 벤치마크들이 올라왔다. </p><p>개인적으로는 x86_64 ISA가 아니라 arm 기반의 RISC 칩이기 때문에 소프트웨어 호환성 측면이 이번 애플 실리콘 맥의 가장 치명적인 단점일 것이라고 생각했으나, 기존의 소프트웨어들도 Rosetta 2가 어지간하면 잘 번역해 준다는 이야기도 들려온다. </p><p>M1 칩의 사용 후기와 벤치마크 정보등을 보다보니 이건 애플이 결정을 잘 한거였다. 잡스의 발표가 떠오르며 느끼던 아쉬움 보다는 점차 새로운 칩에 대한 궁금증과 호기심이 더 커져갔다. 요새 AMD도 치고올라오고 애플까지 손절하게 됐으니 한동안 독주해왔던 인텔은 이제 무슨 스킬을 시전할 것인가도 궁금해진다.</p><p>여러가지로 M1칩은 최근의 가장 큰 관심사였다. M1에 관련한 뉴스와 후기들을 보면서 반도체 시장에 대한 뉴스나, PC 하드웨어 분야에 대한 소식들도 최근의 내용으로 업데이트하는 계기가 되었다.</p><h2 id="그래서-나도-장만했지롱"><a href="#그래서-나도-장만했지롱" class="headerlink" title="그래서 나도 장만했지롱"></a>그래서 나도 장만했지롱</h2><img src="/blog/2020/12/12/Apple-M1-macmini/00.jpeg" class=""><p>…서론이 무척 길었으나 결론은 지름 신고 였습니다. </p><img src="/blog/2020/12/12/Apple-M1-macmini/01.jpeg" class=""><p>어제 밤에 개봉해서 아직 사용한 시간이 그렇게 길지 않다. 사용기에 대해서 올려보자면 좀 더 시간이 있어야 할 거라서, 오늘은 간단히 지름 신고겸 몇 가지 첫인상만 적어보고자 했다.</p><p>일단 당장에 만족스러운 점은 기존에 사용중이던 조립PC와 비교했을 때 너무 조용하다는 점과, 훨씬 작다는 점이다. 크기는 이거 뭐… 1/10도 안되는거 같다. 아이폰에서 찍은 사진을 옮기는 것도 편하고, 애플 워치로 로그인이 자동으로 되는 것도 마음에든다. </p><p>맥을 오랜만에 다시 갖게 되었다. 꽤나 오래전에 흰둥이 맥북을 잠시 쓰던 때가 있었다. 앱스토어에서 앱 구매한 히스토리들을 보니.. 대략 8년 전 인듯. 올해에는 회사에서 업무상 맥에서 작업하는 시간이 좀 있었는데, 덕분에 MacOS 와는 어느정도 다시 친해져 있었다.</p><p>이 글은 M1 맥미니에서 작성했다. node@15를 애플 실리콘 native로 성공적으로 설치한 기념으로  당장에 hexo-cli 내려받아 글 한 번 적어보았다. </p><p>나름대로는 깔끔떠는 편인지라, 처음에는 rosetta를 아예 사용하지 않고, <code>애플 실리콘 전용으로 전환이 끝난 네이티브 소프트웨어만 써야지. 어차피 주요한 소프트웨어들은 금방 네이티브로 전환될거야</code> 하고 생각했는데, 이게.. 생각보다 너무 seamless하게 처리되어서, 쉽지가 않다. 아무 생각없이 쓰다보면 이게 로제타 변환을 거친 x86 프로그램인지, 네이티브로 도는 arm 프로그램인지 인지하기도 힘들다. 앱스토어에서 받을때나 실제 사용중일 때에도 너무 티가 안나는데, 애플은 일부러 사용자에게 크게 체감되지 않도록 하려고 아키텍쳐 정보를 굳이 눈에 띄게 노출하지는 않은 것 같다. </p><p>맥은 메인 개발 장비로 사용할 예정은 아니다. 회사에서 개발 장비로 사용하기에 충분한 노트북을 하나 받았기에.. 맥은 단순한 소비용도로만 생각하고 부담없이 M1을 선택했다. 게임은.. 요즘 시간이 없어서 어차피 못하고 있으니까. 아들이랑 주말에 가끔 하는 switch 게임 정도가 전부여서 역시 크게 문제될게 없었다.</p><p>앞으로 한동안은 새로운 환경을 익히면서 보내게 될 시간이 기대가 된다. 삽질도 많이 하겠지만, 배우는 것도 많고 재미도 있을거야.</p>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://leafbird.github.io/blog/2020/12/12/Apple-M1-macmini/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>다시 글을 적기로 했다</title>
+      <link>http://leafbird.github.io/blog/2020/12/08/%EB%8B%A4%EC%8B%9C-%EA%B8%80%EC%9D%84-%EC%A0%81%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8B%A4/</link>
+      <guid>http://leafbird.github.io/blog/2020/12/08/%EB%8B%A4%EC%8B%9C-%EA%B8%80%EC%9D%84-%EC%A0%81%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8B%A4/</guid>
+      <pubDate>Mon, 07 Dec 2020 15:37:21 GMT</pubDate>
+      
+        
+        
+      <description>&lt;img src=&quot;/blog/2020/12/08/%EB%8B%A4%EC%8B%9C-%EA%B8%80%EC%9D%84-%EC%A0%81%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8B%A4/00.jpg&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;며칠 전부터</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2020/12/08/%EB%8B%A4%EC%8B%9C-%EA%B8%80%EC%9D%84-%EC%A0%81%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8B%A4/00.jpg" class=""><p>며칠 전부터 일이 조금 한가해졌다.</p><p>한동안은 아무 생각 없이 그냥 잘 쉬었는데, 며칠 반복되다 보니 좀 더 생산적으로 놀고 싶은(?) 생각이 들었다. 일 핑계로 만나지 못했던 지인들을 만나면 좋겠다는 생각을 제일 먼저 했지만 그것도 코로나 때문에 당장은 쉽지가 않다.</p><p>한동안 짱구를 좀 굴려보다가 블로그를 다시 쓰기로 했다. </p><p>블로그에 글을 적은 지가 아주 오래되었다. 이전에도 SNS를 사용하게 되고 나서는 장문의 글을 적는 일이 점점 줄어들고 있었다. 일이 바빠지면서 블로그를 안 쓰게 된 것도 있겠지만, 생각해보면 이미 그전에도 ‘글’의 생산과 소비는 트위터와 페이스북으로 자연스럽게 넘어가고 있었다.</p><p>어쭙잖은 글이라도 계속 써버릇해야 조금이라도 나아질 기미가 보일텐데, 너무 오랫동안 쉬었다. 일상적인 글부터 조금씩 시작해서 <a href="https://leafbird.github.io/devnote/">기술블로그</a>에도 다시 포스팅을 재개하는 것을 목표로 잡았다.</p>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://leafbird.github.io/blog/2020/12/08/%EB%8B%A4%EC%8B%9C-%EA%B8%80%EC%9D%84-%EC%A0%81%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8B%A4/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>너의 이름은</title>
+      <link>http://leafbird.github.io/blog/2017/08/24/%EB%84%88%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%80/</link>
+      <guid>http://leafbird.github.io/blog/2017/08/24/%EB%84%88%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%80/</guid>
+      <pubDate>Thu, 24 Aug 2017 14:54:31 GMT</pubDate>
+      
+      <description>&lt;img src=&quot;/blog/2017/08/24/%EB%84%88%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%80/your-name.jpg&quot; class=&quot;&quot;&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/7_lUqV3pM0o&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;뒤늦은 감상. &lt;/p&gt;
+&lt;p&gt;오랜만에 마음이 몽글몽글 해진다. 여유가 되면 나중에 한 번 더 보고싶다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<img src="/blog/2017/08/24/%EB%84%88%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%80/your-name.jpg" class=""><div class="video-container"><iframe src="https://www.youtube.com/embed/7_lUqV3pM0o" frameborder="0" loading="lazy" allowfullscreen></iframe></div><p>뒤늦은 감상. </p><p>오랜만에 마음이 몽글몽글 해진다. 여유가 되면 나중에 한 번 더 보고싶다.</p><span id="more"></span><p>신카이 마코토 감독이 이만큼 알려지기 전에 기존의 작품들을 몇 가지 보아두었던 터였다. 그래서 이번 작품도 기존의 느낌과 비슷하겠지 했는데, 개인적으로는 많이 변화했다고 느꼈다. 제작 과정 영상을 찾아보니 기존의 신카이 미술팀에 지브리 출신 작화팀이 합류하였다고 하는데, 이 새로운 작화팀의 영향이 느껴져서 그런듯. </p><p>늘 그렇듯 디테일하고 아름다운 배경 작화들이 맘에든다. 긴장하고 있던 마음이 완화되는 느낌이다. </p><p>신카이 감독의 작품에는 남녀주인공이 아슬아슬 스쳐지나는 안타까운 장면들이 많다. 이번에도 어김없이 주인공들은 닿을 듯 말 듯 스쳐버리고 마는구나 싶었는데… 그래도 이번엔 엔딩은 해피해서 참 다행이었다.</p><div class="video-container"><iframe src="https://www.youtube.com/embed/XCZjgs8kRJk" frameborder="0" loading="lazy" allowfullscreen></iframe></div>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/%EC%98%81%ED%99%94/">영화</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2017/08/24/%EB%84%88%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%80/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>혹성탈출: 종의 전쟁</title>
+      <link>http://leafbird.github.io/blog/2017/08/23/%ED%98%B9%EC%84%B1%ED%83%88%EC%B6%9C-%EC%A2%85%EC%9D%98-%EC%A0%84%EC%9F%81/</link>
+      <guid>http://leafbird.github.io/blog/2017/08/23/%ED%98%B9%EC%84%B1%ED%83%88%EC%B6%9C-%EC%A2%85%EC%9D%98-%EC%A0%84%EC%9F%81/</guid>
+      <pubDate>Tue, 22 Aug 2017 15:42:23 GMT</pubDate>
+      
+      <description>&lt;h2 id=&quot;콰이강의-다리&quot;&gt;&lt;a href=&quot;#콰이강의-다리&quot; class=&quot;headerlink&quot; title=&quot;콰이강의 다리&quot;&gt;&lt;/a&gt;콰이강의 다리&lt;/h2&gt;&lt;img src=&quot;/blog/2017/08/23/%ED%98%B9%EC%84%B1%ED%83%88%EC%B6%9C-%EC%A2%85%EC%9D%98-%EC%A0%84%EC%9F%81/the-bridge-on-the-river-kwai.jpg&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;우리 세대의 영화는 아니지만, &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EC%BD%B0%EC%9D%B4_%EA%B0%95%EC%9D%98_%EB%8B%A4%EB%A6%AC&quot;&gt;콰이강의 다리&lt;/a&gt;라는 1957년 미국 영화가 있다. 아카데미 영화제에서 수많은 상을 휩쓸었던 이 영화는 2차 대전을 배경으로 한다. 나도 영화를 직접 본 건 아니지만 제목은 어디서 많이 들어본 듯 하다. 왠지 EBS같은 데서 가끔씩 방영해 주었을 것 같은 느낌의 영화다.&lt;br&gt;약간 각색은 되었지만 이 영화는 프랑스의 소설가 피에르 불(Pierre Boulle)의 소설을 원작으로 했다. 이 프랑스 작가는 실제로 2차 세계대전 당시 군인으로 참전했었기에, 전쟁의 분위기와 심리등을 잘 묘사해 작품에 담아냈다. 그렇기에 소설 ‘콰이강의 다리’는 많은 독자들에게 사랑을 받아 영화화 되기에 이른다. &lt;/p&gt;
+&lt;p&gt;여기까지 적어보면 굉장히 그럴싸하다. 별로 이상한 점이 없다. 참전 용사가 전시 배경의 소설을 써서 사랑을 받았다. 그의 문학성이 뒷받침 되기만 했다면 충분히 있을만한 이야기 아닌가.&lt;br&gt;1952년에 소설 콰이강의 다리가 발간되었고, 1957년에 이 소설이 영화화 되어 첫 상영을 시작한다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="콰이강의-다리"><a href="#콰이강의-다리" class="headerlink" title="콰이강의 다리"></a>콰이강의 다리</h2><img src="/blog/2017/08/23/%ED%98%B9%EC%84%B1%ED%83%88%EC%B6%9C-%EC%A2%85%EC%9D%98-%EC%A0%84%EC%9F%81/the-bridge-on-the-river-kwai.jpg" class=""><p>우리 세대의 영화는 아니지만, <a href="https://ko.wikipedia.org/wiki/%EC%BD%B0%EC%9D%B4_%EA%B0%95%EC%9D%98_%EB%8B%A4%EB%A6%AC">콰이강의 다리</a>라는 1957년 미국 영화가 있다. 아카데미 영화제에서 수많은 상을 휩쓸었던 이 영화는 2차 대전을 배경으로 한다. 나도 영화를 직접 본 건 아니지만 제목은 어디서 많이 들어본 듯 하다. 왠지 EBS같은 데서 가끔씩 방영해 주었을 것 같은 느낌의 영화다.<br>약간 각색은 되었지만 이 영화는 프랑스의 소설가 피에르 불(Pierre Boulle)의 소설을 원작으로 했다. 이 프랑스 작가는 실제로 2차 세계대전 당시 군인으로 참전했었기에, 전쟁의 분위기와 심리등을 잘 묘사해 작품에 담아냈다. 그렇기에 소설 ‘콰이강의 다리’는 많은 독자들에게 사랑을 받아 영화화 되기에 이른다. </p><p>여기까지 적어보면 굉장히 그럴싸하다. 별로 이상한 점이 없다. 참전 용사가 전시 배경의 소설을 써서 사랑을 받았다. 그의 문학성이 뒷받침 되기만 했다면 충분히 있을만한 이야기 아닌가.<br>1952년에 소설 콰이강의 다리가 발간되었고, 1957년에 이 소설이 영화화 되어 첫 상영을 시작한다.</p><span id="more"></span><h2 id="우주로-날아간-개-라이카"><a href="#우주로-날아간-개-라이카" class="headerlink" title="우주로 날아간 개. 라이카"></a>우주로 날아간 개. 라이카</h2><p>2차 세계대전이 끝나고 나자 미국과 소련은 우주 개척에 이상한 자존심 대결을 벌이기 시작한다. 두 국가는 서로 앞다투어 우주에 진출하려고 노력한다. 영화 콰이강의 다리가 첫 상영을 시작하던 1957년, 소련에서는 우주선 <a href="https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%91%B8%ED%8A%B8%EB%8B%88%ED%81%AC_2%ED%98%B8">스푸트니크 2호</a>를 발사한다.</p><img src="/blog/2017/08/23/%ED%98%B9%EC%84%B1%ED%83%88%EC%B6%9C-%EC%A2%85%EC%9D%98-%EC%A0%84%EC%9F%81/laika.jpg" class=""><p>이 우주선에는 우주로 날아간 최초의 생물체 <a href="https://goo.gl/NEAKDf">라이카</a>가 탑승했다. 라이카는 우주 적응 훈련을 받은 멍멍이였지만, 불안정했던 당시의 발사 시설과 장비 이상의 문제로 발사 몇시간 만에 질식사했다. 라이카의 죽음이 예상밖의 일이긴 했으나 애초부터 무사히 지구로 귀환한다는 계획은 존재하지 않았다. 소련의 과학자들은 우주 공간에서 라이카의 신체변화를 살펴본 후, 일주일 정도 후에는 준비된 장치를 이용해 직접 안락사 시킬 생각이었다. 스푸트니크2호는 발사후 5개월이 넘게 위성 궤도를 돌다가 대기권으로 돌입하며 소멸했다.</p><h2 id="붉은털-원숭이-에이블-다람쥐-원숭이-베이커-침팬지-햄"><a href="#붉은털-원숭이-에이블-다람쥐-원숭이-베이커-침팬지-햄" class="headerlink" title="붉은털 원숭이 에이블, 다람쥐 원숭이 베이커, 침팬지 햄"></a>붉은털 원숭이 에이블, 다람쥐 원숭이 베이커, 침팬지 햄</h2><img src="/blog/2017/08/23/%ED%98%B9%EC%84%B1%ED%83%88%EC%B6%9C-%EC%A2%85%EC%9D%98-%EC%A0%84%EC%9F%81/Baker.jpg" class=""><p>그러고 2년이 지난 1959년, 생물체를 위성궤도에 먼저 올려놓은 소련에게 패배감을 느끼던 나사는 <a href="https://ko.wikipedia.org/wiki/%EB%B2%A0%EC%9D%B4%EC%BB%A4%EC%99%80_%EC%97%90%EC%9D%B4%EB%B8%94">베이커와 에이블</a>이라는 두 마리의 원숭이를 로켓에 실어 우주로 발사한다. 그리고 이들은 무사히 대기권으로 재진입했고, 우주 공간을 다녀오고 생존한 최초의 영장류가 되었다. </p><p>그 뒤로도 소련과 미국은 계속해서 동물을 우주로 보내는 시도를 계속한다. 러시아는 주로 개를, 미국은 영장류를 보냈다.<br>1961년 나사는 침팬지 <a href="https://goo.gl/1s86SK">햄</a>을 태운 우주선을 쏘았고, 16분 39초의 준궤도 여행을 마친 햄도 역시 무사히 귀환했다. </p><img src="/blog/2017/08/23/%ED%98%B9%EC%84%B1%ED%83%88%EC%B6%9C-%EC%A2%85%EC%9D%98-%EC%A0%84%EC%9F%81/ham.jpg" class=""><div class="video-container"><iframe src="https://www.youtube.com/embed/FyjDJIH4zXM" frameborder="0" loading="lazy" allowfullscreen></iframe></div><p>이렇게 각종 동물들이 우주를 경험하고 무사히 귀환하기 시작 하던 시대. 인간이 우주에 갈 수도 있을거라고 기대하기 시작하던 우주 개척의 황금기. 이때 신문의 1면에는 우주에서 무사귀환한 침팬지의 얼굴이 실렸을 것이다.<br>조금씩 진전을 보이는 우주 개척의 소식을 접하면서 소설가 피에르 불은 많은 영감과 자극을 받았을 것이다.<br>그는 우주로 간 동물들, 시간의 상대성, 생물의 진화와 같은 여러가지 과학적 소재를 담아 1963년에 <code>혹성탈출</code>이라는 신작 소설을 출간한다.</p><h2 id="혹성탈출-오리지널-5부작"><a href="#혹성탈출-오리지널-5부작" class="headerlink" title="혹성탈출: 오리지널 5부작"></a>혹성탈출: 오리지널 5부작</h2><p>1968년에 개봉해 5부작으로 인기를 끌었던 오리지널 영화는 지금의 현생 인류(?)가 보기에는 너무나 열악한 특수효과와 분장에 거부감이 크게 느껴지는 구닥다리 작품이다. 하지만 글의 앞부분에 이렇게 장황하게 시대적인 이야기를 늘어놓은 이유는 그 당시의 분위기를 한 번 감안해 보기 위함이다. 참전의 경험을 바탕으로 2차대전의 분위기를 그려낸 작품을 쓰던 소설가가 난데없이 SF의 시초격인 글을 쓰게 된 배경을. 그리고 이 소재와 이야기에 한껏 빠져들었던 이날의 대중들의 분위기를.</p><p>사실 우주에 대한 인류의 관심이 가장 정점을 찍었던 순간은 아폴로 11호가 달에 착륙해 발도장을 찍었을 즈음이 아닐까 짐작해 보는데, 닐 암스트롱이 달에 착륙한 것은 1969년, 혹성탈출의 오리지널 1편이 상영한 것은 1968년이다. 그 뒤로 이어지는 혹성탈출의 시리즈들은 정확하게 동물과 사람들이 우주를 드나들기 시작하던 시대에 상영한 작품이고, 충분히 이때의 시대적 버프를 받고 흥행했을거라 예상해본다. </p><p>작품의 소재나 설정 자체만으로도 충분히 신성하고 참신하지만, 우주에 대한 시대적 기대감이 이 작품을 대하는 관객을 더욱 가슴뛰게 만들었을 것이다.</p><p>음.. 옛날 얘기는 여기까지. 주변 사람 몇몇에게 이야기를 꺼내봐도 보통 혹성탈출에 대해 잘 모르거나, 별로 관심이 없는 것 같아서… 나름대로 소개를 목적으로 글을 한 번 적어보았다. 팬심의 힘으로.</p><h2 id="혹성탈출-종의-전쟁"><a href="#혹성탈출-종의-전쟁" class="headerlink" title="혹성탈출: 종의 전쟁"></a>혹성탈출: 종의 전쟁</h2><img src="/blog/2017/08/23/%ED%98%B9%EC%84%B1%ED%83%88%EC%B6%9C-%EC%A2%85%EC%9D%98-%EC%A0%84%EC%9F%81/war-for-planet-of-the-apes-poster-2.png" class="" title="핵간지 시저형"><p>아. 영화 정말 재밌게 보았다. 이번 리부트 3부작 모두 너무 만족스럽게 잘 감상했다. </p><p>어디까지가 cg이고, 어디부터가 실제 앤디 서키스의 연기인지 잘 구분이 되지 않지만, 시저의 연기는 정말 대단하다. 대사 하나 없이 시저의 얼굴만 클로즈업 되어도 그의 기분을 느낄 수 있다. 이게 그냥 혼자만의 착각인지 모르겠으나.. 나는 영화를 보면서 여기에서 오는 만족감이 참 컸으니 내가 좋으면 좋은거 아닌가. 시저의 눈빛을 본 것 만으로 내가 이 영화에 투자한 시간과 티켓값이 전혀 아깝지 않았다. </p><p>다만 한가지 아쉬운 것은 이런 여운과 만족감을 함께 공유할 덕후가 주변에 없다는 것이다. 와이프는 내가 유인원 사진을 열심히 뒤져가면서 하악거리고 있는 것을 결코 이해할 수 없다는 표정을 짓고 있다. 그나마 라라랜드에 함께 감동했을 때는 와이프랑 영화 이야기를 할 수 있어서 좋았는데… 이번 것은 어렵겠구만.</p><p>다른 창작물도 다 비슷할 터인데, 게임을 만들 때에도 플레이어에게 감정의 공명(共鳴)을 일으키는 것이 참 어렵다. 게임 월드를 크으게 만들고, 최신 그래픽 기법으로 무장을 하고, 액션과 이펙트를 펑펑 터뜨리고 쏟아부어도 어딘가 애매하게 한가지가 빠진 것 같은 허전함이 들 때가 많다. </p><p>그렇기에 시저의 모습은 더 인상깊었다. 아주 잔잔하고 밋밋하여 별 것 없는 장면인데… 가만히 보고 있으면 몰입이 되더란 말이지. 관객이 작품 속으로 빠져들게 하는 키 포인트가 무엇인가를 한동안 생각해 보았다. 감독이 잘 해서 그런가? 배우가 연기가 좋아서인가? 아님 시나리오? 연출? 게임을 만들어 오면서 항상 애매하게 빠진 것 같았던 그 한가지 요소는 뭐지?</p><p>어려운 질문이다. 내가 여기에 쉽게 답을 낼 수 있다면 헐리우드에 가서 영화사를 차려야하는게 맞겠지.<br>질문의 답이 맞는지는 모르겠지만, 질문 뒤에 머리에 남는 것은 영화속 유인원들의 굵고 짧은 대사다.</p><blockquote><p>Apes Together Strong.<br>유인원은 뭉치면 강하다.</p></blockquote>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/%EC%98%81%ED%99%94/">영화</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2017/08/23/%ED%98%B9%EC%84%B1%ED%83%88%EC%B6%9C-%EC%A2%85%EC%9D%98-%EC%A0%84%EC%9F%81/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>개인 블로그도 이사합니다</title>
+      <link>http://leafbird.github.io/blog/2017/08/18/%EA%B0%9C%EC%9D%B8-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%8F%84-%EC%9D%B4%EC%82%AC%ED%95%A9%EB%8B%88%EB%8B%A4/</link>
+      <guid>http://leafbird.github.io/blog/2017/08/18/%EA%B0%9C%EC%9D%B8-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%8F%84-%EC%9D%B4%EC%82%AC%ED%95%A9%EB%8B%88%EB%8B%A4/</guid>
+      <pubDate>Fri, 18 Aug 2017 07:09:33 GMT</pubDate>
+      
+      <description>&lt;p&gt;앞으로는 정적 블로그만 사용하고 싶은 마음에 우선 이사를 단행합니다.&lt;br&gt;그렇다고 블로그를 다시 예전처럼 자주 할 것 같지는 않지만, 가끔 쓰더라도 이제는 예전같은 블로그 서비스를 사용하기는 싫군요.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>앞으로는 정적 블로그만 사용하고 싶은 마음에 우선 이사를 단행합니다.<br>그렇다고 블로그를 다시 예전처럼 자주 할 것 같지는 않지만, 가끔 쓰더라도 이제는 예전같은 블로그 서비스를 사용하기는 싫군요.</p><span id="more"></span><p>새로운 정적 블로그 엔진은 <a href="https://hexo.io/">hexo</a>를 선택했습니다. 이 친구가 전에 잠깐 써보았던 <a href="http://octopress.org/">octopress</a>보다 마음에 들어요.<br>그래서 <a href="https://leafbird.github.io/devnote/">개발용 블로그</a>도 hexo로 갈아탈 예정입니다. javascript는 별로 안 좋아하지만, ruby는 정말 한 번도 안써봤기 때문에 내심 부담스러웠는데, 차라리 node로 만든 hexo가 더 낫겠다고 생각했습니다.</p><p>혹시나 정적 블로그 엔진의 선택을 고민중이시라면 hexo를 추천합니다. 검색해보면 원작자가 대만사람이라 문제가 생기면 검색이 어렵다… 뭐 이런 말이 있어서 저도 걱정을 좀 했지만, 그렇게 큰 문제 생길일이 별로 없을 듯 합니다. <del>그리고 저는 대만어보다 ruby가 더 무서웠어요..</del> </p><p>실은 그저께 <a href="http://www.foxmovies.com/movies/war-for-the-planet-of-the-apes">혹성 탈출 - 종의 전쟁</a>을 보고 왔는데, 너무 재미있어서 간만에 블로그에 글이나 하나 남겨볼까 했었거든요.<br>근데 오랜만에 티스토리에 로그인하고 글쓰기 버튼을 누르는 순간… 넘흐 쓰기가 싫더군요. </p><p><img src="/blog/images/planet-of-the-apes.jpg"></p><p>그러니 곧 머지않아 시저형님(…)에 대한 저의 덕심 포스팅이 올라오겠죠 :)</p><p>어제는 영화 포스팅 하나 해보겠다고 블로그를 뒤집어 엎고 hexo를 배우느라.. 새벽 한 시가 넘어서 잠들었습니다만, 오랜만에 재미있었습니다. web쪽은 정말 단시간에 많은 변화가 일어나는 것 같아요. 이번에 본 <a href="https://www.browsersync.io/">browsersync</a>란 도구가 제일 신박했는데 이게 어떤거냐면… </p><p>아… 음.. 근데 여기는 개발 관련 블로그가 아니었지..<br>그건 나중에 다른 포스팅에서 정리해 볼게요 ㅎ</p>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://leafbird.github.io/blog/2017/08/18/%EA%B0%9C%EC%9D%B8-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%8F%84-%EC%9D%B4%EC%82%AC%ED%95%A9%EB%8B%88%EB%8B%A4/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>hexo 기본 사용법 및 Tip</title>
+      <link>http://leafbird.github.io/blog/2017/08/17/hexo-%EA%B8%B0%EB%B3%B8-%EC%82%AC%EC%9A%A9%EB%B2%95-%EB%B0%8F-tip/</link>
+      <guid>http://leafbird.github.io/blog/2017/08/17/hexo-%EA%B8%B0%EB%B3%B8-%EC%82%AC%EC%9A%A9%EB%B2%95-%EB%B0%8F-tip/</guid>
+      <pubDate>Thu, 17 Aug 2017 07:43:15 GMT</pubDate>
+      
+      <description>&lt;p&gt;hexo는 octopress에 비해 사용법이 어렵지 않아서 구글링만 하면 쉽게 정보를 얻을 수 있다.&lt;/p&gt;
+&lt;p&gt;설치하면서 봤던 유용한 글 링크와 기본적인 팁들 몇개만 저장의 의미로 옮겨둔다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>hexo는 octopress에 비해 사용법이 어렵지 않아서 구글링만 하면 쉽게 정보를 얻을 수 있다.</p><p>설치하면서 봤던 유용한 글 링크와 기본적인 팁들 몇개만 저장의 의미로 옮겨둔다.</p><span id="more"></span><ul><li><a href="http://futurecreator.github.io/2016/06/21/hexo-basic-usage/">Hexo 기본 사용법</a></li><li><a href="http://futurecreator.github.io/2016/06/19/hexo-tag-plugins/">Hexo 태그 플러그인 (Tag plugins) 살펴보기</a></li><li><a href="https://hyunseob.github.io/2016/02/23/start-hexo/">Hexo 시작하기</a></li><li><a href="https://saystone.github.io/2017/04/04/How-to-add-a-theme-on-Hexo-using-submodule/">Git 의 submodule 을 사용하여 Hexo 에 테마 추가하기</a></li><li><a href="http://www.codeblocq.com/2015/12/Add-Disqus-comments-in-Hexo/">Add Disqus comments in Hexo</a><ul><li>지금의 기본테마 landscape는 disqus 기본 작업이 되어있다. 어지간한 테마에는 다 되어있을듯.</li><li>위 사이트에 hexo의 다른 설정(google analytic 연동이라든지)에 대한 설명도 많다.</li></ul></li></ul><h2 id="새-글-작성"><a href="#새-글-작성" class="headerlink" title="새 글 작성"></a>새 글 작성</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt; <span class="comment"># 새로운 파일을 만든다</span></span><br><span class="line">$ hexo publish &lt;포스트명&gt;    <span class="comment"># _draft -&gt; _posts로 이동된다.</span></span><br></pre></td></tr></table></figure><h2 id="배포하기"><a href="#배포하기" class="headerlink" title="배포하기"></a>배포하기</h2><p>public 폴더 하위에 정적 파일을 만드는 것과, 파일을 올리는 절차가 나뉘어있다.</p><p>로컬에서 <code>hexo server</code>를 실행할 때 보이는 페이지들은 <code>public</code> 폴더와 무관하다. </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate                     <span class="comment"># public 폴더 생성하기</span></span><br><span class="line">$ hexo clean                        <span class="comment"># public 폴더 정리하기</span></span><br><span class="line">$ hexo deploy                       <span class="comment"># 생성된 파일들을 배포한다.</span></span><br><span class="line"></span><br><span class="line">$ hexo generate --deploy            <span class="comment"># 생성 + 배포를 한꺼번에</span></span><br><span class="line">$ hexo deploy --generate            <span class="comment"># 생성 + 배포를 한꺼번에</span></span><br></pre></td></tr></table></figure><h2 id="설치-관련-disqus-활성화"><a href="#설치-관련-disqus-활성화" class="headerlink" title="설치 관련 : disqus 활성화"></a>설치 관련 : disqus 활성화</h2><p>config에 <code>disqus_shortname</code> 항목을 신규추가하고, disqus의 사이트 이름을 넣는다.</p><p>테마 파일들은 config의 값 설정 여부를 통해 disqus를 활성화할지 결정한다.</p><h2 id="설치-관련-google-analystic-활성화"><a href="#설치-관련-google-analystic-활성화" class="headerlink" title="설치 관련 : google analystic 활성화"></a>설치 관련 : google analystic 활성화</h2><p>역시 config에 <code>google_analytics</code> 항목을 신규로 넣으면서 고유키를 지정한다. </p><p>테마 파일들은 이 설정을 확인해 나머지 처리를 활성화한다.</p><h2 id="설치-관련-사용하면-좋은-utility"><a href="#설치-관련-사용하면-좋은-utility" class="headerlink" title="설치 관련 : 사용하면 좋은 utility"></a>설치 관련 : 사용하면 좋은 utility</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-browsersync --save <span class="comment"># 브라우저 실시간 갱신</span></span><br><span class="line">npm install hexo-deployer-git --save <span class="comment"># git 배포. 사실상 필수.</span></span><br><span class="line">npm install hexo-generator-feed --save <span class="comment"># rss 생성. 사실상 필수.</span></span><br></pre></td></tr></table></figure><h2 id="Tip-로컬-서버에서-draft문서도-함께-보기"><a href="#Tip-로컬-서버에서-draft문서도-함께-보기" class="headerlink" title="Tip: 로컬 서버에서 draft문서도 함께 보기"></a>Tip: 로컬 서버에서 draft문서도 함께 보기</h2><p>기본 draft 문서까지 포함해서 보려면 아래처럼 실행</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server --draft</span><br></pre></td></tr></table></figure><h2 id="Tip-테마-설치할-때-git-submodule-활용하기"><a href="#Tip-테마-설치할-때-git-submodule-활용하기" class="headerlink" title="Tip: 테마 설치할 때 git submodule 활용하기"></a>Tip: 테마 설치할 때 git <code>submodule</code> 활용하기</h2><p>설치는 git <code>submodule</code>을 이용해서 설치한다</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git submodule add https://&lt;원본경로&gt; themes/&lt;이름&gt;</span><br></pre></td></tr></table></figure><p>다른 환경에서 depot을 클론할 때는 submodule도 함께 받아야 한다.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git submodule update --init --recursive</span><br></pre></td></tr></table></figure><p>참고 : </p><ul><li><a href="https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%88">https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%88</a></li></ul>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://leafbird.github.io/blog/2017/08/17/hexo-%EA%B8%B0%EB%B3%B8-%EC%82%AC%EC%9A%A9%EB%B2%95-%EB%B0%8F-tip/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>

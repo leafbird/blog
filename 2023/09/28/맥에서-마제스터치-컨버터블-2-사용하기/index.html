@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:300,300italic,400,400italic,700,700italic%7CLato:300,300italic,400,400italic,700,700italic%7CJua:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"leafbird.github.io","root":"/blog/","images":"/blog/images","scheme":"Mist","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/blog/js/config.js"></script>
+
+    <meta name="description" content="청소 + 좌측 옵션키와 커맨드키 위치 변경 + 채터링 현상 해결">
+<meta property="og:type" content="article">
+<meta property="og:title" content="맥에서 마제스터치 컨버터블 2 사용하기">
+<meta property="og:url" content="http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/index.html">
+<meta property="og:site_name" content="leafbird&#x2F;blog">
+<meta property="og:description" content="청소 + 좌측 옵션키와 커맨드키 위치 변경 + 채터링 현상 해결">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2350.jpeg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2343.jpeg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2345.jpeg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2347.jpeg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2351.jpeg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/karabiner.png">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/chattering.png">
+<meta property="article:published_time" content="2023-09-28T10:04:29.000Z">
+<meta property="article:modified_time" content="2023-10-01T13:33:46.208Z">
+<meta property="article:author" content="leafbird">
+<meta property="article:tag" content="keyboard">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2350.jpeg">
+
+
+<link rel="canonical" href="http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"ko","comments":true,"permalink":"http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/","path":"2023/09/28/맥에서-마제스터치-컨버터블-2-사용하기/","title":"맥에서 마제스터치 컨버터블 2 사용하기"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>맥에서 마제스터치 컨버터블 2 사용하기 | leafbird/blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DW5ESFBDD"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-0DW5ESFBDD","only_pageview":false}</script>
+  <script src="/blog/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/blog/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/blog/rss2.xml" title="leafbird/blog" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">leafbird/blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="검색" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          목차
+        </li>
+        <li class="sidebar-nav-overview">
+          흝어보기
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%EC%B2%AD%EC%86%8C%EB%B6%80%ED%84%B0"><span class="nav-number">1.</span> <span class="nav-text">청소부터</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EC%A2%8C%EC%B8%A1-%EC%98%B5%EC%85%98%ED%82%A4%EC%99%80-%EC%BB%A4%EB%A7%A8%EB%93%9C%ED%82%A4-%EC%9C%84%EC%B9%98-%EB%B3%80%EA%B2%BD"><span class="nav-number">2.</span> <span class="nav-text">좌측 옵션키와 커맨드키 위치 변경</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EC%B1%84%ED%84%B0%EB%A7%81-%ED%98%84%EC%83%81-%ED%95%B4%EA%B2%B0"><span class="nav-number">3.</span> <span class="nav-text">채터링 현상 해결</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">leafbird</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/blog/archives/">
+          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-name">포스트</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">태그</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/leafbird" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;leafbird" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/leafbird_tw" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;leafbird_tw" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
+    <link itemprop="mainEntityOfPage" href="http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="leafbird">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="leafbird/blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="맥에서 마제스터치 컨버터블 2 사용하기 | leafbird/blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          맥에서 마제스터치 컨버터블 2 사용하기
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">작성일</span>
+
+      <time title="Post created: 2023-09-28 19:04:29" itemprop="dateCreated datePublished" datetime="2023-09-28T19:04:29+09:00">2023-09-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Updated at: 2023-10-01 22:33:46" itemprop="dateModified" datetime="2023-10-01T22:33:46+09:00">2023-10-01</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2023/09/28/맥에서-마제스터치-컨버터블-2-사용하기/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2350.jpeg" class="">
+
+<p>청소 + 좌측 옵션키와 커맨드키 위치 변경 + 채터링 현상 해결</p>
+<span id="more"></span>
+
+<h2 id="청소부터"><a href="#청소부터" class="headerlink" title="청소부터"></a>청소부터</h2><p>청소는 마음먹기가 어려울 뿐. 간만에 추석 연휴를 맞아 키캡 분리하고 청소 진행.</p>
+<img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2343.jpeg" class="">
+
+<img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2345.jpeg" class="">
+
+<img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2347.jpeg" class="">
+
+<img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/IMG_2351.jpeg" class="">
+
+<h2 id="좌측-옵션키와-커맨드키-위치-변경"><a href="#좌측-옵션키와-커맨드키-위치-변경" class="headerlink" title="좌측 옵션키와 커맨드키 위치 변경"></a>좌측 옵션키와 커맨드키 위치 변경</h2><p>구글 검색을 하다 찾은 <a target="_blank" rel="noopener" href="https://m.blog.naver.com/linux7/221146934270">다른 분 블로그 글</a>을 보고 따라서 진행. karabiner에서 왼쪽 옵션에 대한 설정만 넣어주었다. 그리고 <code>Alt키</code>하고 <code>윈도우키</code>만 바꿔 끼워준다.</p>
+<img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/karabiner.png" class="">
+
+<h2 id="채터링-현상-해결"><a href="#채터링-현상-해결" class="headerlink" title="채터링 현상 해결"></a>채터링 현상 해결</h2><p>마제 컨버터블2는 한 십년쯤 전에 야심차게 산 키보드인데, 어느시점부턴가 키가 연속으로 입력되는 문제가 있어서 거의 못쓰고 있었다. 일상적인 용도라면 약간 불편을 감수하고 사용할만 하지만… 코딩할때는 한참 몰입할 때 쯤 한번씩 산통을 깨놓는 바람에 사용이 불가하다. </p>
+<img src="/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/chattering.png" class="">
+
+<p>이번에 검색을 좀 해보니 이게 채터링 현상(chattering)이라고 하여, 기계식 키보드에서는 연식이 오래되면 일반적으로 발생하는 현상이었다. 블루투스의 간섭으로 생기는 문제인줄 알았는데, 기판 청소를 잘 해주면 해소되기도 하는 물리적인 현상이다. 나 말고도 마제 컨버터블2 사용자들이 많이 겪고 있는 현상이기도 하다. 그래서 이번에 청소할 때 키보드 내부를 다 뜯어서 기판도 청소를 해보고자 하였으나… 나사는 보이는대로 분리해봤는데 뜯지를 못해서 실패.<br>대신에 <a target="_blank" rel="noopener" href="https://unshaky.nestederror.com/">Unshakey</a> 라는 프로그램을 알게되어 설치해봤다. 본래는 애플 정품 키보드의 나비식 스위치 입력 오류를 해결하기 위한 툴인듯 하다. 이건 며칠간 실사용 해보면서 현상이 개선 되었는지 살펴볼 예정이다. </p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/blog/tags/keyboard/" rel="tag"># keyboard</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/blog/2023/09/23/Generalist-in-my-own-way/" rel="prev" title="Generalist in my own way">
+                  <i class="fa fa-angle-left"></i> Generalist in my own way
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/" rel="next" title="LakkaOS - 구형 노트북을 레트로 게임기로 활용">
+                  LakkaOS - 구형 노트북을 레트로 게임기로 활용 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">leafbird</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/blog/js/comments.js"></script><script src="/blog/js/utils.js"></script><script src="/blog/js/schemes/muse.js"></script><script src="/blog/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"leafbird","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/blog/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>

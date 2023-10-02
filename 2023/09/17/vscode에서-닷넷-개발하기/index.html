@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:300,300italic,400,400italic,700,700italic%7CLato:300,300italic,400,400italic,700,700italic%7CJua:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"leafbird.github.io","root":"/blog/","images":"/blog/images","scheme":"Mist","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/blog/js/config.js"></script>
+
+    <meta name="description" content="vscode에서 c# 개발을 지원하는 새로운 확장이 얼마전에 나왔다.요즘 며칠간 둘러보았는데, 생각보다 괜찮은 느낌이다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vscode에서 닷넷 개발하기">
+<meta property="og:url" content="http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/index.html">
+<meta property="og:site_name" content="leafbird&#x2F;blog">
+<meta property="og:description" content="vscode에서 c# 개발을 지원하는 새로운 확장이 얼마전에 나왔다.요즘 며칠간 둘러보았는데, 생각보다 괜찮은 느낌이다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/vscode.JPG">
+<meta property="og:image" content="http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/dragonball.jpg">
+<meta property="article:published_time" content="2023-09-17T05:49:31.000Z">
+<meta property="article:modified_time" content="2023-09-18T23:16:52.778Z">
+<meta property="article:author" content="leafbird">
+<meta property="article:tag" content="mac">
+<meta property="article:tag" content="vscode">
+<meta property="article:tag" content="vim">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/vscode.JPG">
+
+
+<link rel="canonical" href="http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"ko","comments":true,"permalink":"http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/","path":"2023/09/17/vscode에서-닷넷-개발하기/","title":"vscode에서 닷넷 개발하기"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>vscode에서 닷넷 개발하기 | leafbird/blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DW5ESFBDD"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-0DW5ESFBDD","only_pageview":false}</script>
+  <script src="/blog/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/blog/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/blog/rss2.xml" title="leafbird/blog" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">leafbird/blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="검색" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          목차
+        </li>
+        <li class="sidebar-nav-overview">
+          흝어보기
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%EC%99%9C-%EA%B0%91%EC%9E%90%EA%B8%B0"><span class="nav-number">1.</span> <span class="nav-text">왜 갑자기</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vs-%EB%B3%B4%EB%8B%A4-%ED%8E%B8%ED%95%A0-%EC%88%9C-%EC%97%86%EB%8B%A4-%ED%95%98%EC%A7%80%EB%A7%8C-%ED%95%B4-%EB%B3%B8%EB%8B%A4"><span class="nav-number">2.</span> <span class="nav-text">vs 보다 편할 순 없다. 하지만 해 본다.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EB%AC%B4%EC%97%87%EC%9D%84-%EC%96%BB%EC%9D%84-%EA%B2%83%EC%9D%B8%EA%B0%80"><span class="nav-number">3.</span> <span class="nav-text">무엇을 얻을 것인가</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EB%8A%90%EB%A6%AC%EC%A7%80%EB%A7%8C-%EA%BE%B8%EC%A4%80%ED%9E%88"><span class="nav-number">4.</span> <span class="nav-text">느리지만 꾸준히</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">leafbird</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/blog/archives/">
+          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-name">포스트</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">태그</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/leafbird" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;leafbird" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/leafbird_tw" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;leafbird_tw" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
+    <link itemprop="mainEntityOfPage" href="http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="leafbird">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="leafbird/blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="vscode에서 닷넷 개발하기 | leafbird/blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          vscode에서 닷넷 개발하기
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">작성일</span>
+
+      <time title="Post created: 2023-09-17 14:49:31" itemprop="dateCreated datePublished" datetime="2023-09-17T14:49:31+09:00">2023-09-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Updated at: 2023-09-19 08:16:52" itemprop="dateModified" datetime="2023-09-19T08:16:52+09:00">2023-09-19</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2023/09/17/vscode에서-닷넷-개발하기/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><img src="/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/vscode.JPG" class="">
+
+<p>vscode에서 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/docs/languages/dotnet">c# 개발을 지원하는 새로운 확장</a>이 얼마전에 나왔다.<br>요즘 며칠간 둘러보았는데, 생각보다 괜찮은 느낌이다.</p>
+<span id="more"></span>
+
+<h2 id="왜-갑자기"><a href="#왜-갑자기" class="headerlink" title="왜 갑자기"></a>왜 갑자기</h2><p>m1 맥미니가 나왔을 때부터 집에서 macOS을 쓰기 시작했으니, 이제 2년 반 쯤 지났다. 그 뒤로는 집에서 거의 윈도우를 사용하지 않는다. 아이폰, 에어팟, 애플워치 등등 애플 장비가 많으니 여기서 누릴 수 있는 기기들간의 연속성이 윈도우를 깔끔히 잊게 해주었다. 스팀 게임과 프로그래밍에 대한 생각만 양보한다면 아쉬울 것이 없다.</p>
+<p>그러다가 요즘 문득 다시 개인 프로젝트에 대한 갈증이 조금씩 일어난다. 얼마전부터 새로 depot을 하나 열고 조금씩 해보고 있는데, 이번에는 회사 내에서 비슷한 뜻이 있는 멤버들을 모아 같이 <a target="_blank" rel="noopener" href="https://www.google.com/search?q=%EB%AA%A8%EA%B0%81%EC%BD%94">모각코</a> 를 진행해 보면 어떨까 싶었고, 2명의 멤버를 추가로 모아 이번주부터 시작하게 됐다. 요즘 읽고 있는 김창준님의 <a target="_blank" rel="noopener" href="https://www.yes24.com/Product/Goods/67350256">함께 자라기</a> 에서 어느정도 영향을 받은 듯 하다. </p>
+<p>처음에는 mac에서 굳이 개발을 할 생각은 없었지만.. 이젠 윈도우 장비를 거의 사용하지 않다보니 여기서 닷넷 개발하기 위한 환경을 좀 알아보게 되었다. vscode는 회사에서도 보조 IDE로 사용중(pwsh 디버깅에 code가 필수)이라 익숙한 편이고, 새로 나온 닷넷 개발 확장도 꽤나 괜찮다. 이전에 있었던 <a target="_blank" rel="noopener" href="https://visualstudio.microsoft.com/ko/vs/mac/">vs for mac</a> 보다 훨씬 더 나은 느낌이다.</p>
+<h2 id="vs-보다-편할-순-없다-하지만-해-본다"><a href="#vs-보다-편할-순-없다-하지만-해-본다" class="headerlink" title="vs 보다 편할 순 없다. 하지만 해 본다."></a>vs 보다 편할 순 없다. 하지만 해 본다.</h2><img src="/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/dragonball.jpg" class="">
+
+<p>많이 좋아지긴 했어도 아쉬움은 있다. 내가 당장 익숙하지 않다는 것이 가장 큰 부분이지만, 디버깅 환경도 vs보단 불편해서 코드 양이 많은 프로젝트라면 여기선 힘들 것 같다. 하지만 간단한 토이 프로젝트 정도는 충분히 가능해보여서, 이번 프로젝트는 불편함을 감수하고 vscode로 완주해볼 생각이다.  </p>
+<p>이번에 mac에서의 개발 환경을 위해 몇 가지 설정을 변경했는데, </p>
+<ul>
+<li>git의 editor, difftool, mergetool을 gvim -&gt; vscode로 변경</li>
+<li>vscode에 <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim">neovim 플러그인</a> 설치</li>
+<li><del>회사에서 쓰는 vs에 vsvim 설치</del></li>
+</ul>
+<p>느껴지는가. vim으로 deep dive하는 내 마음이.</p>
+<p>vscode에서 좀 더 주류(?) 플러그인이라 할 수 있는 <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">vscodevim</a>을 여지껏 잘 쓰고 있긴 했는데.. 본격적으로 쓰려고 보니 한글 타이핑에 문제가 있다. 모음+자음 조합을 제대로 하지 못해 글자 조합이 꺠지는 현상이 있는데, neovim으로 갈아타고 해결했다는 검색글이 있어 사용하게 됐다.</p>
+<p>회사에서 가장 메인으로 쓰는 개발환경에 <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim">VsVim</a> 한 번 설치했다가, 어우… 갑자기 손발이 꽁꽁 묶인 것처럼 너무 답답한 느낌이 들어 바로 퇴각했다. 좀 더 익숙해지고 나면 다시 도전할 생각이다. </p>
+<h2 id="무엇을-얻을-것인가"><a href="#무엇을-얻을-것인가" class="headerlink" title="무엇을 얻을 것인가"></a>무엇을 얻을 것인가</h2><p>비록 협업이 아닌 모각코의 포맷이지만 개인 프로젝트를 다른 분들과 함께 진행하는 것은 처음이다. 모임의 멤버들에게도 공유할 겸 이번 프로젝트의 목표를 정리해본다.</p>
+<ul>
+<li>간단한 크롤러를 만들 예정. 사내 슬랙봇에 붙여서 동료들에게 정보를 제공한다.</li>
+<li>가벼운 툴 정도는 맥북에서 편하게 개발할 수 있다.</li>
+<li>git에 익숙해진다. 이번엔 commit 히스토리도 관리해 가면서 진행할거야.</li>
+<li>vim을 좀 더 익숙하게 사용할 수 있다. 해피해킹을 위해.</li>
+<li>회사 업무에선 적용 못한 요즘의 닷넷 물건들을 살펴본다. (ex: <a target="_blank" rel="noopener" href="https://learn.microsoft.com/ko-kr/dotnet/api/system.text.json?view=net-7.0">System.Text.Json</a>)</li>
+</ul>
+<h2 id="느리지만-꾸준히"><a href="#느리지만-꾸준히" class="headerlink" title="느리지만 꾸준히"></a>느리지만 꾸준히</h2><p>바쁘다는 핑계로 오래도록 개인 프로젝트를 진행하지 못했는데, 이번에는 꾸준히 진행해보려고 한다. 오랜만에 공부할 거리들을 뒤적이다 보니, 재밌어 보이는 것도 많고 배우고 싶은 것들도 많이 보인다. 욕심내지 않고 하나씩 익혀 나가보자. </p>
+<p>느리더라도 꾸준히. </p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/blog/tags/mac/" rel="tag"># mac</a>
+              <a href="/blog/tags/vscode/" rel="tag"># vscode</a>
+              <a href="/blog/tags/vim/" rel="tag"># vim</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/blog/2023/03/01/%EC%9D%B8%EC%83%9D%EC%9D%84-%EB%B3%B4%EB%8A%94-%EA%B2%B8%ED%97%88%ED%95%9C-%EB%A7%88%EC%9D%8C/" rel="prev" title="인생을 보는 겸허한 마음">
+                  <i class="fa fa-angle-left"></i> 인생을 보는 겸허한 마음
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/blog/2023/09/23/Generalist-in-my-own-way/" rel="next" title="Generalist in my own way">
+                  Generalist in my own way <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">leafbird</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/blog/js/comments.js"></script><script src="/blog/js/utils.js"></script><script src="/blog/js/schemes/muse.js"></script><script src="/blog/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"leafbird","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/blog/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>

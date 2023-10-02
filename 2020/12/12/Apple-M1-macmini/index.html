@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:300,300italic,400,400italic,700,700italic%7CLato:300,300italic,400,400italic,700,700italic%7CJua:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"leafbird.github.io","root":"/blog/","images":"/blog/images","scheme":"Mist","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/blog/js/config.js"></script>
+
+    <meta name="description" content="잡스는 PowerPC에서 Intel 칩으로의 전환을 발표했다.잡스 형님의 프레젠테이션은 정말 인상적이었다. 청바지 주머니에서 아이팟 나노를 처음 꺼내던 모습도, 서류봉투에서 맥북 에어를 처음 꺼내던 모습도 오랜 시간이 지나도록 선명한 기억으로 남아있다. 잡스는 어떻게 해야 상대방에게 전달하려는 핵심 내용에 제대로 무게를 실어 강조할 수 있는가를 정말 잘 아">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Apple M1 macmini">
+<meta property="og:url" content="http://leafbird.github.io/blog/2020/12/12/Apple-M1-macmini/index.html">
+<meta property="og:site_name" content="leafbird&#x2F;blog">
+<meta property="og:description" content="잡스는 PowerPC에서 Intel 칩으로의 전환을 발표했다.잡스 형님의 프레젠테이션은 정말 인상적이었다. 청바지 주머니에서 아이팟 나노를 처음 꺼내던 모습도, 서류봉투에서 맥북 에어를 처음 꺼내던 모습도 오랜 시간이 지나도록 선명한 기억으로 남아있다. 잡스는 어떻게 해야 상대방에게 전달하려는 핵심 내용에 제대로 무게를 실어 강조할 수 있는가를 정말 잘 아">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="http://leafbird.github.io/blog/2020/12/12/Apple-M1-macmini/apple_intel1.jpg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2020/12/12/Apple-M1-macmini/02.jpg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2020/12/12/Apple-M1-macmini/00.jpeg">
+<meta property="og:image" content="http://leafbird.github.io/blog/2020/12/12/Apple-M1-macmini/01.jpeg">
+<meta property="article:published_time" content="2020-12-12T13:09:07.000Z">
+<meta property="article:modified_time" content="2023-01-21T13:47:28.121Z">
+<meta property="article:author" content="leafbird">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://leafbird.github.io/blog/2020/12/12/Apple-M1-macmini/apple_intel1.jpg">
+
+
+<link rel="canonical" href="http://leafbird.github.io/blog/2020/12/12/Apple-M1-macmini/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"ko","comments":true,"permalink":"http://leafbird.github.io/blog/2020/12/12/Apple-M1-macmini/","path":"2020/12/12/Apple-M1-macmini/","title":"Apple M1 macmini"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Apple M1 macmini | leafbird/blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DW5ESFBDD"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-0DW5ESFBDD","only_pageview":false}</script>
+  <script src="/blog/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/blog/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/blog/rss2.xml" title="leafbird/blog" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">leafbird/blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="검색" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          목차
+        </li>
+        <li class="sidebar-nav-overview">
+          흝어보기
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%EC%9E%A1%EC%8A%A4%EB%8A%94-PowerPC%EC%97%90%EC%84%9C-Intel-%EC%B9%A9%EC%9C%BC%EB%A1%9C%EC%9D%98-%EC%A0%84%ED%99%98%EC%9D%84-%EB%B0%9C%ED%91%9C%ED%96%88%EB%8B%A4"><span class="nav-number">1.</span> <span class="nav-text">잡스는 PowerPC에서 Intel 칩으로의 전환을 발표했다.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EC%95%A0%ED%94%8C%EC%9D%98-M1%EC%B9%A9%EC%9D%80-%EC%8B%9C%EC%9E%A5%EC%97%90%EC%84%9C-%EB%82%98%EC%81%98%EC%A7%80-%EC%95%8A%EC%9D%80-%ED%8F%89%EA%B0%80%EB%A5%BC-%EB%B0%9B%EA%B3%A0%EC%9E%88%EB%8B%A4"><span class="nav-number">2.</span> <span class="nav-text">애플의 M1칩은 시장에서 나쁘지 않은 평가를 받고있다.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EA%B7%B8%EB%9E%98%EC%84%9C-%EB%82%98%EB%8F%84-%EC%9E%A5%EB%A7%8C%ED%96%88%EC%A7%80%EB%A1%B1"><span class="nav-number">3.</span> <span class="nav-text">그래서 나도 장만했지롱</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">leafbird</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/blog/archives/">
+          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-name">포스트</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">18</span>
+        <span class="site-state-item-name">태그</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/leafbird" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;leafbird" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/leafbird_tw" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;leafbird_tw" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
+    <link itemprop="mainEntityOfPage" href="http://leafbird.github.io/blog/2020/12/12/Apple-M1-macmini/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="leafbird">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="leafbird/blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Apple M1 macmini | leafbird/blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Apple M1 macmini
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">작성일</span>
+
+      <time title="Post created: 2020-12-12 22:09:07" itemprop="dateCreated datePublished" datetime="2020-12-12T22:09:07+09:00">2020-12-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Updated at: 2023-01-21 22:47:28" itemprop="dateModified" datetime="2023-01-21T22:47:28+09:00">2023-01-21</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/blog/2020/12/12/Apple-M1-macmini/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/12/12/Apple-M1-macmini/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="잡스는-PowerPC에서-Intel-칩으로의-전환을-발표했다"><a href="#잡스는-PowerPC에서-Intel-칩으로의-전환을-발표했다" class="headerlink" title="잡스는 PowerPC에서 Intel 칩으로의 전환을 발표했다."></a>잡스는 PowerPC에서 Intel 칩으로의 전환을 발표했다.</h2><p>잡스 형님의 프레젠테이션은 정말 인상적이었다. 청바지 주머니에서 아이팟 나노를 처음 꺼내던 모습도, 서류봉투에서 맥북 에어를 처음 꺼내던 모습도 오랜 시간이 지나도록 선명한 기억으로 남아있다. 잡스는 어떻게 해야 상대방에게 전달하려는 핵심 내용에 제대로 무게를 실어 강조할 수 있는가를 정말 잘 아는 발표자였다.</p>
+<img src="/blog/2020/12/12/Apple-M1-macmini/apple_intel1.jpg" class="">
+
+<span id="more"></span>
+
+<p>2005년 PowerPC 프로세스 대신 인텔 칩을 사용할 것이라고 발표하던 모습 역시 오래도록 강한 인상으로 남아있다. 혹시라도 못 본 사람이 있거나, 기억에서 희미해진 사람이 있다면 아래에 영상이 있다. 일단은 잡스가 먼저 ‘올해 6월부터 인텔칩으로 맥을 만들게’라고 말하고 (보통의 공돌이가 발표한다면 여기서 끝났다. 팩트만을 정확히 전달했으므로 더이상의 첨언은 무쓸모한것이다) 우리가 어떻게 준비하고 있는지 알려주겠다고 하자, Intel의 CEO가 직접 방진복을 입고 무대에 나와서는 잡스에게 걸어가 인텔의 칩(? 저거 동그란거 뭐냐 아무튼)을 전달해주는 장면을 연출한다.</p>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/cp49Tmmtmf8" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<p>그러고는 벌써 15년이 흘렀다.</p>
+<p>올해 WWDC 2020에서 이제 인텔 칩을 더이상 사용하지 않을것이고 자체 제작한 칩으로 단계적 전환한다고 발표한 내용을 처음 접했을 때에도 나는 이 프레젠테이션이 먼저 생각났다. 이 기가 맥힌(…) 프레젠테이션을 조금 더 과거로 밀어내는 것 같은 느낌이었다. </p>
+<h2 id="애플의-M1칩은-시장에서-나쁘지-않은-평가를-받고있다"><a href="#애플의-M1칩은-시장에서-나쁘지-않은-평가를-받고있다" class="headerlink" title="애플의 M1칩은 시장에서 나쁘지 않은 평가를 받고있다."></a>애플의 M1칩은 시장에서 나쁘지 않은 평가를 받고있다.</h2><img src="/blog/2020/12/12/Apple-M1-macmini/02.jpg" class="">
+
+<p>11월 17일 부터였나. 인텔칩 대신 애플의 M1칩을 탑재한 맥이 소비자들에게 전달되기 시작했다. </p>
+<p>출시전 여러가지로 우려의 시선들이 많았던 것에 비해서는 제법 좋은 반응들이 들려온다. 가격, 성능, 발열, 소음, 전력소비 등 여러가지 면에서 기존의 제품보다 나아졌다는 후기와 벤치마크들이 올라왔다. </p>
+<p>개인적으로는 x86_64 ISA가 아니라 arm 기반의 RISC 칩이기 때문에 소프트웨어 호환성 측면이 이번 애플 실리콘 맥의 가장 치명적인 단점일 것이라고 생각했으나, 기존의 소프트웨어들도 Rosetta 2가 어지간하면 잘 번역해 준다는 이야기도 들려온다. </p>
+<p>M1 칩의 사용 후기와 벤치마크 정보등을 보다보니 이건 애플이 결정을 잘 한거였다. 잡스의 발표가 떠오르며 느끼던 아쉬움 보다는 점차 새로운 칩에 대한 궁금증과 호기심이 더 커져갔다. 요새 AMD도 치고올라오고 애플까지 손절하게 됐으니 한동안 독주해왔던 인텔은 이제 무슨 스킬을 시전할 것인가도 궁금해진다.</p>
+<p>여러가지로 M1칩은 최근의 가장 큰 관심사였다. M1에 관련한 뉴스와 후기들을 보면서 반도체 시장에 대한 뉴스나, PC 하드웨어 분야에 대한 소식들도 최근의 내용으로 업데이트하는 계기가 되었다.</p>
+<h2 id="그래서-나도-장만했지롱"><a href="#그래서-나도-장만했지롱" class="headerlink" title="그래서 나도 장만했지롱"></a>그래서 나도 장만했지롱</h2><img src="/blog/2020/12/12/Apple-M1-macmini/00.jpeg" class="">
+
+<p>…서론이 무척 길었으나 결론은 지름 신고 였습니다. </p>
+<img src="/blog/2020/12/12/Apple-M1-macmini/01.jpeg" class="">
+
+<p>어제 밤에 개봉해서 아직 사용한 시간이 그렇게 길지 않다. 사용기에 대해서 올려보자면 좀 더 시간이 있어야 할 거라서, 오늘은 간단히 지름 신고겸 몇 가지 첫인상만 적어보고자 했다.</p>
+<p>일단 당장에 만족스러운 점은 기존에 사용중이던 조립PC와 비교했을 때 너무 조용하다는 점과, 훨씬 작다는 점이다. 크기는 이거 뭐… 1/10도 안되는거 같다. 아이폰에서 찍은 사진을 옮기는 것도 편하고, 애플 워치로 로그인이 자동으로 되는 것도 마음에든다. </p>
+<p>맥을 오랜만에 다시 갖게 되었다. 꽤나 오래전에 흰둥이 맥북을 잠시 쓰던 때가 있었다. 앱스토어에서 앱 구매한 히스토리들을 보니.. 대략 8년 전 인듯. 올해에는 회사에서 업무상 맥에서 작업하는 시간이 좀 있었는데, 덕분에 MacOS 와는 어느정도 다시 친해져 있었다.</p>
+<p>이 글은 M1 맥미니에서 작성했다. node@15를 애플 실리콘 native로 성공적으로 설치한 기념으로  당장에 hexo-cli 내려받아 글 한 번 적어보았다. </p>
+<p>나름대로는 깔끔떠는 편인지라, 처음에는 rosetta를 아예 사용하지 않고, <code>애플 실리콘 전용으로 전환이 끝난 네이티브 소프트웨어만 써야지. 어차피 주요한 소프트웨어들은 금방 네이티브로 전환될거야</code> 하고 생각했는데, 이게.. 생각보다 너무 seamless하게 처리되어서, 쉽지가 않다. 아무 생각없이 쓰다보면 이게 로제타 변환을 거친 x86 프로그램인지, 네이티브로 도는 arm 프로그램인지 인지하기도 힘들다. 앱스토어에서 받을때나 실제 사용중일 때에도 너무 티가 안나는데, 애플은 일부러 사용자에게 크게 체감되지 않도록 하려고 아키텍쳐 정보를 굳이 눈에 띄게 노출하지는 않은 것 같다. </p>
+<p>맥은 메인 개발 장비로 사용할 예정은 아니다. 회사에서 개발 장비로 사용하기에 충분한 노트북을 하나 받았기에.. 맥은 단순한 소비용도로만 생각하고 부담없이 M1을 선택했다. 게임은.. 요즘 시간이 없어서 어차피 못하고 있으니까. 아들이랑 주말에 가끔 하는 switch 게임 정도가 전부여서 역시 크게 문제될게 없었다.</p>
+<p>앞으로 한동안은 새로운 환경을 익히면서 보내게 될 시간이 기대가 된다. 삽질도 많이 하겠지만, 배우는 것도 많고 재미도 있을거야.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/blog/2020/12/08/%EB%8B%A4%EC%8B%9C-%EA%B8%80%EC%9D%84-%EC%A0%81%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8B%A4/" rel="prev" title="다시 글을 적기로 했다">
+                  <i class="fa fa-angle-left"></i> 다시 글을 적기로 했다
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/" rel="next" title="라즈베리파이 알루미늄 방열 케이스">
+                  라즈베리파이 알루미늄 방열 케이스 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">leafbird</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/blog/js/comments.js"></script><script src="/blog/js/utils.js"></script><script src="/blog/js/schemes/muse.js"></script><script src="/blog/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"leafbird","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/blog/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>
