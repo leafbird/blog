@@ -1,8 +1,6 @@
 # blog
 
-<img src="https://img.shields.io/github/languages/code-size/leafbird/blog" />
-<img src="https://img.shields.io/github/repo-size/leafbird/blog" />
-<img src="https://img.shields.io/github/last-commit/leafbird/blog" />
+<img src="https://img.shields.io/github/languages/code-size/leafbird/blog" /> <img src="https://img.shields.io/github/repo-size/leafbird/blog" /> <img src="https://img.shields.io/github/last-commit/leafbird/blog" />
 
 ![Alt text](./screenshot/intro.png)
 
