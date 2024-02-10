@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:300,300italic,400,400italic,700,700italic%7CLato:300,300italic,400,400italic,700,700italic%7CJua:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"leafbird.github.io","root":"/blog/","images":"/blog/images","scheme":"Mist","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/blog/js/config.js"></script>
+
+    <meta name="description" content="구슬이 서말이라도 꿰어야 보배.깃헙에다가 조금씩 꿰어보기로 했다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="흩어진 메모들을 정리하기로 마음먹었다">
+<meta property="og:url" content="http://leafbird.github.io/blog/2024/02/03/%ED%9D%A9%EC%96%B4%EC%A7%84-%EB%A9%94%EB%AA%A8%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0%EB%A1%9C-%EB%A7%88%EC%9D%8C%EB%A8%B9%EC%97%88%EB%8B%A4/index.html">
+<meta property="og:site_name" content="leafbird&#x2F;blog">
+<meta property="og:description" content="구슬이 서말이라도 꿰어야 보배.깃헙에다가 조금씩 꿰어보기로 했다.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="http://leafbird.github.io/blog/2024/02/03/%ED%9D%A9%EC%96%B4%EC%A7%84-%EB%A9%94%EB%AA%A8%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0%EB%A1%9C-%EB%A7%88%EC%9D%8C%EB%A8%B9%EC%97%88%EB%8B%A4/memo_00.png">
+<meta property="og:image" content="http://leafbird.github.io/blog/2024/02/03/%ED%9D%A9%EC%96%B4%EC%A7%84-%EB%A9%94%EB%AA%A8%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0%EB%A1%9C-%EB%A7%88%EC%9D%8C%EB%A8%B9%EC%97%88%EB%8B%A4/memo_01.png">
+<meta property="og:image" content="http://leafbird.github.io/blog/2024/02/03/%ED%9D%A9%EC%96%B4%EC%A7%84-%EB%A9%94%EB%AA%A8%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0%EB%A1%9C-%EB%A7%88%EC%9D%8C%EB%A8%B9%EC%97%88%EB%8B%A4/logo.png">
+<meta property="article:published_time" content="2024-02-03T13:25:14.000Z">
+<meta property="article:modified_time" content="2024-02-09T04:29:39.164Z">
+<meta property="article:author" content="leafbird">
+<meta property="article:tag" content="memo">
+<meta property="article:tag" content="til">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://leafbird.github.io/blog/2024/02/03/%ED%9D%A9%EC%96%B4%EC%A7%84-%EB%A9%94%EB%AA%A8%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0%EB%A1%9C-%EB%A7%88%EC%9D%8C%EB%A8%B9%EC%97%88%EB%8B%A4/memo_00.png">
+
+
+<link rel="canonical" href="http://leafbird.github.io/blog/2024/02/03/%ED%9D%A9%EC%96%B4%EC%A7%84-%EB%A9%94%EB%AA%A8%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0%EB%A1%9C-%EB%A7%88%EC%9D%8C%EB%A8%B9%EC%97%88%EB%8B%A4/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"ko","comments":true,"permalink":"http://leafbird.github.io/blog/2024/02/03/%ED%9D%A9%EC%96%B4%EC%A7%84-%EB%A9%94%EB%AA%A8%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0%EB%A1%9C-%EB%A7%88%EC%9D%8C%EB%A8%B9%EC%97%88%EB%8B%A4/","path":"2024/02/03/흩어진-메모들을-정리하기로-마음먹었다/","title":"흩어진 메모들을 정리하기로 마음먹었다"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>흩어진 메모들을 정리하기로 마음먹었다 | leafbird/blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DW5ESFBDD"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-0DW5ESFBDD","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/blog/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/blog/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/blog/rss2.xml" title="leafbird/blog" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">leafbird/blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="검색" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          목차
+        </li>
+        <li class="sidebar-nav-overview">
+          흝어보기
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EB%AF%B8%EB%A3%A8%EB%8D%98-%EC%A0%95%EB%A6%AC%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%9C%EB%8B%A4"><span class="nav-number">1.</span> <span class="nav-text">미루던 정리를 시작한다</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EB%85%B8%EC%85%98-%EC%98%B5%EC%8B%9C%EB%94%94%EC%96%B8"><span class="nav-number">2.</span> <span class="nav-text">노션? 옵시디언?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EA%B9%83%ED%97%99-%EA%B3%A0%EC%88%98%EB%93%A4%EC%9D%98-TIL%EC%9D%84-%EB%B3%B4%EA%B3%A0-%EB%A7%8E%EC%9D%80-%EC%98%81%EA%B0%90%EC%9D%84-%EB%B0%9B%EC%95%98%EB%8B%A4"><span class="nav-number">3.</span> <span class="nav-text">깃헙 고수들의 TIL을 보고 많은 영감을 받았다</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#related-link"><span class="nav-number">4.</span> <span class="nav-text">related link</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">leafbird</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/blog/archives/">
+          <span class="site-state-item-count">33</span>
+          <span class="site-state-item-name">포스트</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">36</span>
+        <span class="site-state-item-name">태그</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/leafbird" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;leafbird" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/leafbird_tw" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;leafbird_tw" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
+    <link itemprop="mainEntityOfPage" href="http://leafbird.github.io/blog/2024/02/03/%ED%9D%A9%EC%96%B4%EC%A7%84-%EB%A9%94%EB%AA%A8%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0%EB%A1%9C-%EB%A7%88%EC%9D%8C%EB%A8%B9%EC%97%88%EB%8B%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="leafbird">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="leafbird/blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="흩어진 메모들을 정리하기로 마음먹었다 | leafbird/blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          흩어진 메모들을 정리하기로 마음먹었다
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">작성일</span>
+
+      <time title="Post created: 2024-02-03 22:25:14" itemprop="dateCreated datePublished" datetime="2024-02-03T22:25:14+09:00">2024-02-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Updated at: 2024-02-09 13:29:39" itemprop="dateModified" datetime="2024-02-09T13:29:39+09:00">2024-02-09</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/blog/2024/02/03/%ED%9D%A9%EC%96%B4%EC%A7%84-%EB%A9%94%EB%AA%A8%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0%EB%A1%9C-%EB%A7%88%EC%9D%8C%EB%A8%B9%EC%97%88%EB%8B%A4/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/02/03/흩어진-메모들을-정리하기로-마음먹었다/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>구슬이 서말이라도 꿰어야 보배.<br>깃헙에다가 조금씩 꿰어보기로 했다. </p>
+<img src="/blog/2024/02/03/%ED%9D%A9%EC%96%B4%EC%A7%84-%EB%A9%94%EB%AA%A8%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0%EB%A1%9C-%EB%A7%88%EC%9D%8C%EB%A8%B9%EC%97%88%EB%8B%A4/memo_00.png" class="">
+
+<span id="more"></span>
+
+<h3 id="미루던-정리를-시작한다"><a href="#미루던-정리를-시작한다" class="headerlink" title="미루던 정리를 시작한다"></a>미루던 정리를 시작한다</h3><p>메모 정리는 한참을 미뤄오던 일인데, 며칠 전부터 조금씩 실천에 옮기기 시작했다. 오랜 시간동안 여기저기 끄적여둔 것이 제법 쌓여서, 모두 다시 읽고 정리하려면 시간이 꽤나 걸릴 것이라 엄두를 못 내고 있었다. 근데 이거 뭐.. 기한이 정해진 것도 아니고. 시간 될 때마다 한 두 개씩 천천히 옮기다 보면 언젠간 다 정리 되겠지. </p>
+<p>완벽한 걸 욕심내다가 시작도 못할 바에는 어설프고 오래 걸려도 한 발씩 일단 내딛는 것이 더 나을 때가 있다. 나이가 들고 개인 시간이 줄어들면서 점점 확고하게 드는 생각이다.</p>
+<h3 id="노션-옵시디언"><a href="#노션-옵시디언" class="headerlink" title="노션? 옵시디언?"></a>노션? 옵시디언?</h3><p>이제는 문서 작성용 솔루션을 사용하는 것에 좀 회의적인 편이다. 예전부터 괜찮다 싶은 솔루션들을 몇 번 정해서 내용을 정리해 봤는데, 갑작스레 서비스가 중단되면 데이터가 날아가버리기도 하고, 다른 솔루션으로 옮기는 데에도 공수가 들어서 백업을 포기하기도 했다. 그래서 요즘은 <code>특정 툴 만의 편리한 기능</code> 같은 것은 아무리 홍보해도 그다지 관심이 가질 않게 되었다. 요즘은 그냥 <code>.md</code> 파일로만 정리해 두는 것이 그냥 제일 마음에 든다. </p>
+<img src="/blog/2024/02/03/%ED%9D%A9%EC%96%B4%EC%A7%84-%EB%A9%94%EB%AA%A8%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0%EB%A1%9C-%EB%A7%88%EC%9D%8C%EB%A8%B9%EC%97%88%EB%8B%A4/memo_01.png" class="">
+
+<p>md 파일을 깃헙에 올리기로 결정한 것은 요즘 실행하고 있는 깃헙 commit streak 이어가기의 영향도 크다. 작년 가을쯤부터 깃헙 1일 1커밋 이상 만드는 것을 목표로 잡고 실천하고 있다. 개인 프로젝트를 하더라도 항상 코딩만 하는 것은 아니기 때문에, 자료 조사나 공부만 하는 날은 커밋을 만들기가 애매하다. 메모를 깃헙으로 관리하면 이런 때도 공부한 내용 요약, 개발일지 작성 등으로 commit을 채울 수 있다.</p>
+<h3 id="깃헙-고수들의-TIL을-보고-많은-영감을-받았다"><a href="#깃헙-고수들의-TIL을-보고-많은-영감을-받았다" class="headerlink" title="깃헙 고수들의 TIL을 보고 많은 영감을 받았다"></a>깃헙 고수들의 TIL을 보고 많은 영감을 받았다</h3><p>이미 메모나 문서 관리를 깃헙에서 하는 사람들이 많이 있다. <a target="_blank" rel="noopener" href="https://github.com/topics/til">토픽에서 til로 검색해</a>보면 많이 찾을 수 있는데, 인기있는 depot들을 몇 군데 둘러보면서 다른 사람들이 문서를 정리하는 방법에 대해 많은 영감을 받았다.</p>
+<img src="/blog/2024/02/03/%ED%9D%A9%EC%96%B4%EC%A7%84-%EB%A9%94%EB%AA%A8%EB%93%A4%EC%9D%84-%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0%EB%A1%9C-%EB%A7%88%EC%9D%8C%EB%A8%B9%EC%97%88%EB%8B%A4/logo.png" class="" width="200">
+
+<p>나도 이번에 readme.md 파일에 문서 파일들을 자동으로 목록화 해주는 <a target="_blank" rel="noopener" href="https://github.com/leafbird/SitemapMaker">csx script</a>를 만들고 별개 패키지로 만들었다. github action에 물려서 실행할 생각으로 빌드가 필요 없는 csx로 만들었는데, 내가 혼자 쓰기에는 로컬에서 사용하는 게 좀 더 편한 것 같아 당분간 이렇게 사용할 생각이다. 다른 사이드 프로젝트가 끝나고 나면 나중에 좀 더 보강을 해보고 싶기는 하다.</p>
+<h3 id="related-link"><a href="#related-link" class="headerlink" title="related link"></a>related link</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/jbranchaud/til">https://github.com/jbranchaud/til</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/simonw/til">https://github.com/simonw/til</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/leafbird/devwiki.git">https://github.com/leafbird/devwiki.git</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/leafbird/SitemapMaker.git">https://github.com/leafbird/SitemapMaker.git</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/blog/tags/memo/" rel="tag"># memo</a>
+              <a href="/blog/tags/til/" rel="tag"># til</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/blog/2024/01/24/%EB%8D%B0%EC%8A%A4%ED%81%AC-%EC%85%8B%EC%97%85/" rel="prev" title="데스크 셋업">
+                  <i class="fa fa-angle-left"></i> 데스크 셋업
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/blog/2024/02/10/%EC%98%A4%EB%91%90%EC%82%B0-%ED%86%B5%EC%9D%BC%EC%A0%84%EB%A7%9D%EB%8C%80/" rel="next" title="오두산 통일전망대">
+                  오두산 통일전망대 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">leafbird</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/blog/js/comments.js"></script><script src="/blog/js/utils.js"></script><script src="/blog/js/schemes/muse.js"></script><script src="/blog/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"leafbird","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/blog/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>
