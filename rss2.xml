@@ -9,8 +9,40 @@
     <atom:link href="http://leafbird.github.io/blog/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 10 Mar 2024 08:27:43 GMT</pubDate>
+    <pubDate>Tue, 02 Apr 2024 12:22:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>삶을 변화시키는 방법</title>
+      <link>http://leafbird.github.io/blog/2024/04/02/%EC%82%B6%EC%9D%84-%EB%B3%80%ED%99%94%EC%8B%9C%ED%82%A4%EB%8A%94-%EB%B0%A9%EB%B2%95/</link>
+      <guid>http://leafbird.github.io/blog/2024/04/02/%EC%82%B6%EC%9D%84-%EB%B3%80%ED%99%94%EC%8B%9C%ED%82%A4%EB%8A%94-%EB%B0%A9%EB%B2%95/</guid>
+      <pubDate>Tue, 02 Apr 2024 12:22:45 GMT</pubDate>
+      
+      <description>&lt;p&gt;Q. 변화를 하려는 사람들에게 팁을 주신다면. 어떻게 해야 더 잘 변화할 수 있는지.&lt;/p&gt;
+&lt;img src=&quot;/blog/2024/04/02/%EC%82%B6%EC%9D%84-%EB%B3%80%ED%99%94%EC%8B%9C%ED%82%A4%EB%8A%94-%EB%B0%A9%EB%B2%95/capture.jpg&quot; class=&quot;&quot;&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A. 제가 생각하는 변화의 재정의는&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;간절히 원하는 것을 얻기 위해서&lt;/li&gt;
+&lt;li&gt;엄청난 고통을 감내하고&lt;/li&gt;
+&lt;li&gt;새로운 습관을 만들어 내는 것.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;근데 대부분의 사람들은 간절하지 않아요. 견딜만 한거야. 그래서 내가 볼 때는 90%는 서류전형 탈락이야. &lt;/p&gt;
+&lt;/blockquote&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>Q. 변화를 하려는 사람들에게 팁을 주신다면. 어떻게 해야 더 잘 변화할 수 있는지.</p><img src="/blog/2024/04/02/%EC%82%B6%EC%9D%84-%EB%B3%80%ED%99%94%EC%8B%9C%ED%82%A4%EB%8A%94-%EB%B0%A9%EB%B2%95/capture.jpg" class=""><blockquote><p>A. 제가 생각하는 변화의 재정의는</p><ul><li>간절히 원하는 것을 얻기 위해서</li><li>엄청난 고통을 감내하고</li><li>새로운 습관을 만들어 내는 것.</li></ul><p>근데 대부분의 사람들은 간절하지 않아요. 견딜만 한거야. 그래서 내가 볼 때는 90%는 서류전형 탈락이야. </p></blockquote><span id="more"></span><p>유튜브 <a href="https://youtu.be/qaUQ4KZXEGQ?si=Wm9zjpn72i6yLbj_&t=565">원본 링크는 여기</a>에 걸어둔다.</p><p>작년 말부터 올해 초까지 한참동안 한근태님이란 분의 책과 영상을 많이 찾아보았다. 책을 많이 읽으시고 본인의 것으로 체화한 자산이 많은 분이라고 생각했다. 나는 얼마나 스스로를 계발하고 있는지 자신을 돌아보게 된다. </p><p>유튜브를 보던 도중 삶을 변화하고자 하는 이들을 위한 조언을 묻는 질문의 답변이 무척 인상적이었다. 영상을 본 후에도 변화의 재정의 자체는 작가의 다른 책에서 다시 사용하는 구문에서 읽기도 했지만, 유튜브의 답변에서와 같은 임팩트는 없었다. </p><p>간절함을 가지고 - 꾸준히 인내해서 - 새로운 습관을 만든다. </p><p>그것이 곧 변화.</p><p>답을 얻은 느낌이야.</p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/%ED%95%9C%EA%B7%BC%ED%83%9C/">한근태</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2024/04/02/%EC%82%B6%EC%9D%84-%EB%B3%80%ED%99%94%EC%8B%9C%ED%82%A4%EB%8A%94-%EB%B0%A9%EB%B2%95/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>24년 2월 운동 결산</title>
@@ -467,33 +499,6 @@
       
       
       <comments>http://leafbird.github.io/blog/2023/09/23/Generalist-in-my-own-way/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>vscode에서 닷넷 개발하기</title>
-      <link>http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/</link>
-      <guid>http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/</guid>
-      <pubDate>Sun, 17 Sep 2023 05:49:31 GMT</pubDate>
-      
-      <description>&lt;img src=&quot;/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/vscode.JPG&quot; class=&quot;&quot;&gt;
-
-&lt;p&gt;vscode에서 &lt;a href=&quot;https://code.visualstudio.com/docs/languages/dotnet&quot;&gt;c# 개발을 지원하는 새로운 확장&lt;/a&gt;이 얼마전에 나왔다.&lt;br&gt;요즘 며칠간 둘러보았는데, 생각보다 괜찮은 느낌이다.&lt;/p&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<img src="/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/vscode.JPG" class=""><p>vscode에서 <a href="https://code.visualstudio.com/docs/languages/dotnet">c# 개발을 지원하는 새로운 확장</a>이 얼마전에 나왔다.<br>요즘 며칠간 둘러보았는데, 생각보다 괜찮은 느낌이다.</p><span id="more"></span><h2 id="왜-갑자기"><a href="#왜-갑자기" class="headerlink" title="왜 갑자기"></a>왜 갑자기</h2><p>m1 맥미니가 나왔을 때부터 집에서 macOS을 쓰기 시작했으니, 이제 2년 반 쯤 지났다. 그 뒤로는 집에서 거의 윈도우를 사용하지 않는다. 아이폰, 에어팟, 애플워치 등등 애플 장비가 많으니 여기서 누릴 수 있는 기기들간의 연속성이 윈도우를 깔끔히 잊게 해주었다. 스팀 게임과 프로그래밍에 대한 생각만 양보한다면 아쉬울 것이 없다.</p><p>그러다가 요즘 문득 다시 개인 프로젝트에 대한 갈증이 조금씩 일어난다. 얼마전부터 새로 depot을 하나 열고 조금씩 해보고 있는데, 이번에는 회사 내에서 비슷한 뜻이 있는 멤버들을 모아 같이 <a href="https://www.google.com/search?q=%EB%AA%A8%EA%B0%81%EC%BD%94">모각코</a> 를 진행해 보면 어떨까 싶었고, 2명의 멤버를 추가로 모아 이번주부터 시작하게 됐다. 요즘 읽고 있는 김창준님의 <a href="https://www.yes24.com/Product/Goods/67350256">함께 자라기</a> 에서 어느정도 영향을 받은 듯 하다. </p><p>처음에는 mac에서 굳이 개발을 할 생각은 없었지만.. 이젠 윈도우 장비를 거의 사용하지 않다보니 여기서 닷넷 개발하기 위한 환경을 좀 알아보게 되었다. vscode는 회사에서도 보조 IDE로 사용중(pwsh 디버깅에 code가 필수)이라 익숙한 편이고, 새로 나온 닷넷 개발 확장도 꽤나 괜찮다. 이전에 있었던 <a href="https://visualstudio.microsoft.com/ko/vs/mac/">vs for mac</a> 보다 훨씬 더 나은 느낌이다.</p><h2 id="vs-보다-편할-순-없다-하지만-해-본다"><a href="#vs-보다-편할-순-없다-하지만-해-본다" class="headerlink" title="vs 보다 편할 순 없다. 하지만 해 본다."></a>vs 보다 편할 순 없다. 하지만 해 본다.</h2><img src="/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/dragonball.jpg" class=""><p>많이 좋아지긴 했어도 아쉬움은 있다. 내가 당장 익숙하지 않다는 것이 가장 큰 부분이지만, 디버깅 환경도 vs보단 불편해서 코드 양이 많은 프로젝트라면 여기선 힘들 것 같다. 하지만 간단한 토이 프로젝트 정도는 충분히 가능해보여서, 이번 프로젝트는 불편함을 감수하고 vscode로 완주해볼 생각이다.  </p><p>이번에 mac에서의 개발 환경을 위해 몇 가지 설정을 변경했는데, </p><ul><li>git의 editor, difftool, mergetool을 gvim -&gt; vscode로 변경</li><li>vscode에 <a href="https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim">neovim 플러그인</a> 설치</li><li><del>회사에서 쓰는 vs에 vsvim 설치</del></li></ul><p>느껴지는가. vim으로 deep dive하는 내 마음이.</p><p>vscode에서 좀 더 주류(?) 플러그인이라 할 수 있는 <a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">vscodevim</a>을 여지껏 잘 쓰고 있긴 했는데.. 본격적으로 쓰려고 보니 한글 타이핑에 문제가 있다. 모음+자음 조합을 제대로 하지 못해 글자 조합이 꺠지는 현상이 있는데, neovim으로 갈아타고 해결했다는 검색글이 있어 사용하게 됐다.</p><p>회사에서 가장 메인으로 쓰는 개발환경에 <a href="https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim">VsVim</a> 한 번 설치했다가, 어우… 갑자기 손발이 꽁꽁 묶인 것처럼 너무 답답한 느낌이 들어 바로 퇴각했다. 좀 더 익숙해지고 나면 다시 도전할 생각이다. </p><h2 id="무엇을-얻을-것인가"><a href="#무엇을-얻을-것인가" class="headerlink" title="무엇을 얻을 것인가"></a>무엇을 얻을 것인가</h2><p>비록 협업이 아닌 모각코의 포맷이지만 개인 프로젝트를 다른 분들과 함께 진행하는 것은 처음이다. 모임의 멤버들에게도 공유할 겸 이번 프로젝트의 목표를 정리해본다.</p><ul><li>간단한 크롤러를 만들 예정. 사내 슬랙봇에 붙여서 동료들에게 정보를 제공한다.</li><li>가벼운 툴 정도는 맥북에서 편하게 개발할 수 있다.</li><li>git에 익숙해진다. 이번엔 commit 히스토리도 관리해 가면서 진행할거야.</li><li>vim을 좀 더 익숙하게 사용할 수 있다. 해피해킹을 위해.</li><li>회사 업무에선 적용 못한 요즘의 닷넷 물건들을 살펴본다. (ex: <a href="https://learn.microsoft.com/ko-kr/dotnet/api/system.text.json?view=net-7.0">System.Text.Json</a>)</li></ul><h2 id="느리지만-꾸준히"><a href="#느리지만-꾸준히" class="headerlink" title="느리지만 꾸준히"></a>느리지만 꾸준히</h2><p>바쁘다는 핑계로 오래도록 개인 프로젝트를 진행하지 못했는데, 이번에는 꾸준히 진행해보려고 한다. 오랜만에 공부할 거리들을 뒤적이다 보니, 재밌어 보이는 것도 많고 배우고 싶은 것들도 많이 보인다. 욕심내지 않고 하나씩 익혀 나가보자. </p><p>느리더라도 꾸준히. </p>]]></content:encoded>
-      
-      
-      
-      <category domain="http://leafbird.github.io/blog/tags/mac/">mac</category>
-      
-      <category domain="http://leafbird.github.io/blog/tags/vscode/">vscode</category>
-      
-      <category domain="http://leafbird.github.io/blog/tags/vim/">vim</category>
-      
-      
-      <comments>http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#disqus_thread</comments>
       
     </item>
     
