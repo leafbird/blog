@@ -1,8 +1,9 @@
 ---
 title: '[nvim] config 정리'
 tags:
-- nvim
-- terminal
+  - nvim
+  - terminal
+date: 2025-02-08 21:29:48
 ---
 
 요즘 terminal interface에 엄청난 관심이 생겼습니다. 
@@ -12,6 +13,8 @@ tags:
 {% asset_img thumbnail.png %}
 
 환경에 좀더 빨리 익숙해지고자 늘어가는 플러그인과 단축키들을 한 곳에 정리합니다.
+
+나중에 단축키들은 설정이 끝나면 따로 프린트해서 집이랑 사무실 모니터에 붙여둘까 합니다.
 
 <!--more-->
 
