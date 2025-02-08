@@ -6,6 +6,8 @@ tags:
 date: 2025-02-08 21:29:48
 ---
 
+{% asset_img screenshot.png %}
+
 요즘 terminal interface에 엄청난 관심이 생겼습니다. 
 회사에서 진행하는 업무에서 리눅스 환경을 좀 더 자주 접하게 되었기 때문입니다. 
 
