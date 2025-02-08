@@ -9,8 +9,36 @@
     <atom:link href="http://leafbird.github.io/blog/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 08 Feb 2025 12:19:08 GMT</pubDate>
+    <pubDate>Sat, 08 Feb 2025 12:35:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[nvim] config 정리</title>
+      <link>http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/</link>
+      <guid>http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/</guid>
+      <pubDate>Sat, 08 Feb 2025 12:29:48 GMT</pubDate>
+      
+      <description>&lt;p&gt;요즘 terminal interface에 엄청난 관심이 생겼습니다.&lt;br&gt;회사에서 진행하는 업무에서 리눅스 환경을 좀 더 자주 접하게 되었기 때문입니다. &lt;/p&gt;
+&lt;p&gt;최근에는 &lt;a href=&quot;https://youtu.be/u6S71cpMfw8?si=VEnZWmiz_3HJ60BO&quot;&gt;아래 썸네일의 영상&lt;/a&gt;을 우연히 접하고 난 뒤에 영상의 가이드를 그대로 따라하면서 nvim 설정을 만들어 나가고 있습니다. &lt;/p&gt;
+&lt;img src=&quot;/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/thumbnail.png&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;환경에 좀더 빨리 익숙해지고자 늘어가는 플러그인과 단축키들을 한 곳에 정리합니다.&lt;/p&gt;
+&lt;p&gt;나중에 단축키들은 설정이 끝나면 따로 프린트해서 집이랑 사무실 모니터에 붙여둘까 합니다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<p>요즘 terminal interface에 엄청난 관심이 생겼습니다.<br>회사에서 진행하는 업무에서 리눅스 환경을 좀 더 자주 접하게 되었기 때문입니다. </p><p>최근에는 <a href="https://youtu.be/u6S71cpMfw8?si=VEnZWmiz_3HJ60BO">아래 썸네일의 영상</a>을 우연히 접하고 난 뒤에 영상의 가이드를 그대로 따라하면서 nvim 설정을 만들어 나가고 있습니다. </p><img src="/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/thumbnail.png" class=""><p>환경에 좀더 빨리 익숙해지고자 늘어가는 플러그인과 단축키들을 한 곳에 정리합니다.</p><p>나중에 단축키들은 설정이 끝나면 따로 프린트해서 집이랑 사무실 모니터에 붙여둘까 합니다.</p><span id="more"></span><h2 id="플러그인-목록"><a href="#플러그인-목록" class="headerlink" title="플러그인 목록"></a>플러그인 목록</h2><ul><li>gruvbox : 컬러 테마. 처음에 그대로 따라서 설치했으나 지금은 비활성화.</li><li>everforest-nvim : 녹색 계열의 컬러 테마. 눈에 편할 것 같아 이걸로 변경.</li><li>neo-tree : 파일 탐색기. 좌측 패널에 파일을 트리 구조로 보여준다.</li><li>telescope : 파일 검색기. 파일을 검색하고 열 수 있다.</li><li>treesitter : syntax parser. syntax highlighting과 indenting을 강화한다.<ul><li>처음 설치할 때 c 컴파일러가 필요하다. visual studio에서 쓰는 cl도 사용 가능하다. 처음 한 번만 필요.</li></ul></li><li>indent-blankline : 들여쓰기를 더 명확하게 보여준다.</li><li>comment : 주석 처리를 쉽게 해준다.</li></ul><h2 id="단축키"><a href="#단축키" class="headerlink" title="단축키"></a>단축키</h2><h3 id="globals-lua"><a href="#globals-lua" class="headerlink" title="globals.lua"></a>globals.lua</h3><p>리터키 및 로컬 리더키: <code>space</code></p><h3 id="keymaps-lua"><a href="#keymaps-lua" class="headerlink" title="keymaps.lua"></a>keymaps.lua</h3><ul><li><p><code>space</code> + <code>e</code> : 파일 탐색기(neo-tree) 열기&#x2F;닫기</p></li><li><p><code>space</code> + <code>h</code> : 검색 하이라이트 제거(nohlsearch)</p></li><li><p><code>ctrl</code> + <code>h | j | k | l</code> : 분할 창 이동</p></li><li><p>(visual mode) <code>&lt; | &gt;</code> : indentation 줄이기 &#x2F; 늘이기</p></li></ul><h3 id="comment-lua"><a href="#comment-lua" class="headerlink" title="comment.lua"></a>comment.lua</h3><ul><li><code>gcc</code> : 주석 처리&#x2F;해제</li><li><code>gc</code> : 선택된 라인 주석 처리&#x2F;해제</li></ul><h3 id="telescope-lua"><a href="#telescope-lua" class="headerlink" title="telescope.lua"></a>telescope.lua</h3><ul><li><code>space</code> + <code>ff</code> : 파일 검색 (find_files)</li><li><code>space</code> + <code>fg</code> : 파일 내 검색 (live_grep)</li><li><code>space</code> + <code>fb</code> : 버퍼 목록 검색 (buffers)</li><li><code>space</code> + <code>fh</code> : 도움말 목록 검색 (help_tags)</li></ul><h2 id="See-also"><a href="#See-also" class="headerlink" title="See also"></a>See also</h2><ul><li>raspberry pi에 neovim 설치. 직접 컴파일 해야 한다. - <a href="https://luther.io/articles/how-to-install-neovim-on-raspberry-pi/">Link</a></li><li>neovim 설정, 플러그인, 컬러테마 공유 포털 - <a href="https://dotfyle.com/">https://dotfyle.com/</a></li></ul>]]></content:encoded>
+      
+      
+      
+      <category domain="http://leafbird.github.io/blog/tags/nvim/">nvim</category>
+      
+      <category domain="http://leafbird.github.io/blog/tags/terminal/">terminal</category>
+      
+      
+      <comments>http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>2024년 개인 회고</title>
@@ -470,30 +498,6 @@
       
       
       <comments>http://leafbird.github.io/blog/2024/01/08/2023-%EC%9A%B4%EB%8F%99%EB%AA%A9%ED%91%9C-%ED%9A%8C%EA%B3%A0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>2023년에 읽은 가장 인상적인 책은</title>
-      <link>http://leafbird.github.io/blog/2024/01/01/2023%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/</link>
-      <guid>http://leafbird.github.io/blog/2024/01/01/2023%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/</guid>
-      <pubDate>Mon, 01 Jan 2024 05:24:04 GMT</pubDate>
-      
-      <description>&lt;p&gt;음… 한 권만 꼽으라고 한다면&lt;br&gt;로버트 기요사키의 &lt;code&gt;부자 아빠 가난한 아빠&lt;/code&gt;로 하겠습니다.&lt;/p&gt;
-&lt;img src=&quot;/blog/2024/01/01/2023%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/2023-boty.jpeg&quot; class=&quot;&quot;&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<p>음… 한 권만 꼽으라고 한다면<br>로버트 기요사키의 <code>부자 아빠 가난한 아빠</code>로 하겠습니다.</p><img src="/blog/2024/01/01/2023%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/2023-boty.jpeg" class=""><span id="more"></span><h2 id="생활에-큰-변화를-가져오는-독서-경험"><a href="#생활에-큰-변화를-가져오는-독서-경험" class="headerlink" title="생활에 큰 변화를 가져오는 독서 경험"></a>생활에 큰 변화를 가져오는 독서 경험</h2><p>가끔씩 읽고 나면 생활에 큰 변화를 가져다주는 책이 있다. 이전에 유사했던 경험으로는 <code>도미니크 로로</code>의 책들을 읽었을 때가 그랬는데, 올 해에는 로버트 기요사키의 <code>부자 아빠 가난한 아빠</code>가 그랬다.</p><p>올 해에는 <code>경제</code> 분야에 관심을 많이 가진 한 해였다. 그럴만한 나이가 되었기도 하고. 너무 무관심하게만 지내다 이제야 천천히 알아가고 있다. <code>부자 아빠 가난한 아빠</code>는 딱 지금의 나처럼 경제에 처음 관심을 두는 사람들이 대부분 가장 먼저 읽게 되는 책이 아닌가 싶다.</p><pre><code>- 자산과 부채의 차이를 이해하라.- 부자는 돈으로 자산을 사 모으고, 가난한 사람은 돈으로 부채를 산다.</code></pre><p>내가 이해한 이 책의 핵심 내용이다. 내가 굳이 뭔가를 더 말할 필요가 없는 책이라 여기까지만. 저자의 다른 책도 잠깐 읽어보았는데 이 책만큼 임팩트가 있진 않아서 제대로 읽진 않았다. </p><p>경제 관련 글들을 찾아 읽다보면 저자 기요사키의 이야기가 많이 나온다. 올 해 읽은 다른 책인 <code>세이노의 가르침</code>에서도 이 책에 대한 비판적인 내용이 나온다. 책 내용의 가부를 떠나서.. 일단 내게는 뭐랄까. 눈을 뜨게 해주었다고 할까. 아무튼 생각에 큰 전환을 가져다 준 책이기에 고민없이 2023년 가장 인상적인 책으로 꼽았다. 패러다임의 전환. 생활의 변화. 원래 그러려고 책을 읽는 것 아닌가.</p><h2 id="2023년-목표였던-10권-책-완독하기"><a href="#2023년-목표였던-10권-책-완독하기" class="headerlink" title="2023년 목표였던 10권 책 완독하기"></a>2023년 목표였던 10권 책 완독하기</h2><p>총 12권의 책을 읽었다. 이 중 2권은 완독하지 않았고, 나머지는 끝까지 읽었다. </p><pre><code>1. 죽을 때까지 코딩하며 사는 법2. 배트맨 이어원3. 마법의 연금 굴리기 (2회차)4. 부자 아빠 가난한 아빠-. 원씽 (완독하지 않음)5. 서울 자가에 대기업 다니는 김부장 16. 부의 시나리오7. 나다운 일상을 산다-. 세이노의 가르침 (완독하지 않음)8. 함께 자라기 - 애자일로 가는길9. 진짜 챗gpt api 활용법10. 공부란 무엇인가</code></pre><p>2023년 계획했던 목표중에 독서 분량 채우기는 겨우 턱걸이로 지켰다. 누구에겐 10권이 참 솜털같이 가벼운 분량이겠지만 내겐 아주 뿌듯한 성취다. 연초에는 10권을 달성하지 못할 것 같아, 라이트 노벨(이라 쓰고 만화책이라 읽는) 장르인 프랭크 밀러의 <code>배트맨 이어원</code>도 붙잡고 읽었다.</p><p>앞으로는 <code>완독</code>에 너무 의미를 두지 않으려고 한다. 성격상 끝을 보지 않으면 제대로 안한 것으로 치는 경향이 좀 있는데.. 너무 완독에 강박을 느끼면 되려 독서가 더 어려워진다. 구매해둔 책은 나중에 다른 타이밍에 다시 좋은 만남이 될 수도 있겠지.</p><p>그럼에도 목표 기준을 <code>완독</code>으로 잡는 건 그냥 대략적인 분량의 의미이다. <code>완독 &#39;N권&#39; 으로 해두면 &#39;N + ⍺&#39;의 책을 접하겠지</code> 정도. 새해에도 너무 욕심내지 않고, 12권 완독을 목표로 잡았다. 독서는 계속 이어나가서 습관으로 만들면 좋겠다.</p>]]></content:encoded>
-      
-      
-      
-      <category domain="http://leafbird.github.io/blog/tags/%EB%8F%85%EC%84%9C/">독서</category>
-      
-      <category domain="http://leafbird.github.io/blog/tags/2023-%ED%9A%8C%EA%B3%A0/">2023 회고</category>
-      
-      
-      <comments>http://leafbird.github.io/blog/2024/01/01/2023%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/#disqus_thread</comments>
       
     </item>
     
