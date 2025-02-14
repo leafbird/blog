@@ -55,7 +55,7 @@ date: 2025-02-08 21:29:48
 | `space` `f` `b`          | 버퍼 목록 검색 (buffers) | |
 | `space` `f` `h`          | 도움말 목록 검색 (help_tags) | |
 | `shift` + `k`            | LSP hover | lsp.lua |
-| `g` `d`                  | LSP goto definition | |
+| `g` `d`                  | LSP goto definition (이전 버퍼로 돌아올 땐 Ctrl + 6)| |
 | `space` `c` `a`          | LSP code action | |
 
 
