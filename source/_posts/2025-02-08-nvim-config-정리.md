@@ -76,32 +76,4 @@ date: 2025-02-08 21:29:48
 winget install LuaLS.lua-language-server
 ```
 
-* c# : 일단 `csharp_ls`로 설치를 했는데 잘 되지 않는다. omnisharp가 정통인데, 잘못 선택한 걸까. 
-path를 못찾는다는 오류가 발생해서 dotnet tool로 된 ls 설치.
-
-```
-dotnet tool install -g csharp_ls
-```
-
-이후에 .cs 파일을 열면 msbuild를 패스에서 찾지 못한다는 오류가 발생한다.
-
-```
-Error executing vim.schedule lua callback: ...m Files/Neovim/share/nvim/runtime/lua/vim/lsp/client.lua:588:
-  RPC[Error] code_name = InternalError, message = "System.InvalidOperationException: No instances of MSBuild could be detected.\13\
-  Try calling RegisterInstance or RegisterMSBuildPath to manually register one.\13\
-    at CSharpLanguageServer.Handlers.Initialization.handleInitialize@52-6.Invoke(Unit _arg2) in /_//src/CSharpLanguageServer/Handlers/Initialization.fs:line 55\13\
-    at Microsoft.FSharp.Control.AsyncPrimitives.CallThenInvokeNoHijackCheck[a,b](AsyncActivation`1 ctxt, b result1, FSharpFunc`2 userCode) in D:\\workspace\\_work\\1\\s\\src\\fsharp\\FSharp.Core\\async.fs:line 464\13\
-    at Ionide.LanguageServerProtocol.Server.sendServerNotification@139-3.Invoke(AsyncActivation`1 ctxt)\13\
-    at Microsoft.FSharp.Control.Trampoline.Execute(FSharpFunc`2 firstAction) in D:\\workspace\\_work\\1\\s\\src\\fsharp\\FSharp.Core\\async.fs:line 104"
-  stack traceback:
-    [C]: in function 'assert'
-      ...m Files/Neovim/share/nvim/runtime/lua/vim/lsp/client.lua:588: in function 'fn'
-      vim/_editor.lua:351: in function <vim/_editor.lua:350>
-```
-
-> System.InvalidOperationException: No instances of MSBuild could be detected. 
-> Try calling RegisterInstance or RegisterMSBuildPath to manually register one. 
-
-여기가 핵심. 근데 `where msbuild`가 동작하도록 개발자 커맨드 프롬프트에서 진행해도 동일하다. 
-
-그래서 검색을 해보니 [roslyn.nvim](https://github.com/seblyng/roslyn.nvim)을 설치하는 것이 더 좋은 듯 하다. 이건 메모만 남겨두고 나중에 다시 시도. 
+* c# : [roslyn.nvim](https://github.com/seblyng/roslyn.nvim)를 설치한다. 아직 lsp_config를 정식으로 지원하지 않음. readme에 있는 manual installation을 따라하면 어렵지 않게 설치할 수 있다. `omnisharp`, `csharp_ls`는 예전 배포판이고 roslyn이 최신이다. 
