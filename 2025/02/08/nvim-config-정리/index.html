@@ -28,7 +28,7 @@
 <meta property="og:image" content="http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/screenshot.png">
 <meta property="og:image" content="http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/thumbnail.png">
 <meta property="article:published_time" content="2025-02-08T12:29:48.000Z">
-<meta property="article:modified_time" content="2025-02-23T13:08:26.863Z">
+<meta property="article:modified_time" content="2025-02-28T13:54:22.159Z">
 <meta property="article:author" content="leafbird">
 <meta property="article:tag" content="nvim">
 <meta property="article:tag" content="terminal">
@@ -200,7 +200,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Updated at: 2025-02-23 22:08:26" itemprop="dateModified" datetime="2025-02-23T22:08:26+09:00">2025-02-23</time>
+      <time title="Updated at: 2025-02-28 22:54:22" itemprop="dateModified" datetime="2025-02-28T22:54:22+09:00">2025-02-28</time>
     </span>
 
   
@@ -346,18 +346,8 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">winget install LuaLS.lua-language-server</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>c# : 일단 <code>csharp_ls</code>로 설치를 했는데 잘 되지 않는다. omnisharp가 정통인데, 잘못 선택한 걸까.<br>path를 못찾는다는 오류가 발생해서 dotnet tool로 된 ls 설치.</li>
+<li>c# : <a target="_blank" rel="noopener" href="https://github.com/seblyng/roslyn.nvim">roslyn.nvim</a>를 설치한다. 아직 lsp_config를 정식으로 지원하지 않음. readme에 있는 manual installation을 따라하면 어렵지 않게 설치할 수 있다. <code>omnisharp</code>, <code>csharp_ls</code>는 예전 배포판이고 roslyn이 최신이다.</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dotnet tool install -g csharp_ls</span><br></pre></td></tr></table></figure>
-
-<p>이후에 .cs 파일을 열면 msbuild를 패스에서 찾지 못한다는 오류가 발생한다.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Error executing vim.schedule lua callback: ...m Files/Neovim/share/nvim/runtime/lua/vim/lsp/client.lua:588:</span><br><span class="line">  RPC[Error] code_name = InternalError, message = &quot;System.InvalidOperationException: No instances of MSBuild could be detected.\13\</span><br><span class="line">  Try calling RegisterInstance or RegisterMSBuildPath to manually register one.\13\</span><br><span class="line">    at CSharpLanguageServer.Handlers.Initialization.handleInitialize@52-6.Invoke(Unit _arg2) in /_//src/CSharpLanguageServer/Handlers/Initialization.fs:line 55\13\</span><br><span class="line">    at Microsoft.FSharp.Control.AsyncPrimitives.CallThenInvokeNoHijackCheck[a,b](AsyncActivation`1 ctxt, b result1, FSharpFunc`2 userCode) in D:\\workspace\\_work\\1\\s\\src\\fsharp\\FSharp.Core\\async.fs:line 464\13\</span><br><span class="line">    at Ionide.LanguageServerProtocol.Server.sendServerNotification@139-3.Invoke(AsyncActivation`1 ctxt)\13\</span><br><span class="line">    at Microsoft.FSharp.Control.Trampoline.Execute(FSharpFunc`2 firstAction) in D:\\workspace\\_work\\1\\s\\src\\fsharp\\FSharp.Core\\async.fs:line 104&quot;</span><br><span class="line">  stack traceback:</span><br><span class="line">    [C]: in function &#x27;assert&#x27;</span><br><span class="line">      ...m Files/Neovim/share/nvim/runtime/lua/vim/lsp/client.lua:588: in function &#x27;fn&#x27;</span><br><span class="line">      vim/_editor.lua:351: in function &lt;vim/_editor.lua:350&gt;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>System.InvalidOperationException: No instances of MSBuild could be detected.<br>Try calling RegisterInstance or RegisterMSBuildPath to manually register one. </p>
-</blockquote>
-<p>여기가 핵심. 근데 <code>where msbuild</code>가 동작하도록 개발자 커맨드 프롬프트에서 진행해도 동일하다. </p>
-<p>그래서 검색을 해보니 <a target="_blank" rel="noopener" href="https://github.com/seblyng/roslyn.nvim">roslyn.nvim</a>을 설치하는 것이 더 좋은 듯 하다. 이건 메모만 남겨두고 나중에 다시 시도. </p>
 
     </div>
 
