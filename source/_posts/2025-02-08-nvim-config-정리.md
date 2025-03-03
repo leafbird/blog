@@ -35,6 +35,10 @@ date: 2025-02-08 21:29:48
   * mason-lspconfig : mason - lsp간 설정. 
   * nvim-lspconfig : neovim - lsp간 설정. 단축키 설정 등
 * nvim-autopairs : 자동 괄호 삽입. 괄호를 열면 자동으로 닫히게 해준다.
+* nvim-ufo : 접기/펼치기 플러그인. 코드를 접고 펼치는 기능을 제공한다.
+* cnoform : 코드 정리 플러그인. 코드를 저장할 때 `beautify`를 실행한다.
+* cmp : 자동완성 플러그인. LSP를 기반으로 동작한다.
+  - 첫 동영상에 소개된 설정은 `make` 컴파일러를 필요로 해서 윈도우에서 사용이 곤란. [moaid](https://github.com/MoaidHathot/Neovim-Moaid/blob/main/config/nvim/lua/plugins/cmp.lua)의 설정을 사용한다.
 
 
 ## 단축키
@@ -57,6 +61,9 @@ date: 2025-02-08 21:29:48
 | `shift` + `k`            | LSP hover | lsp.lua |
 | `g` `d`                  | LSP goto definition (이전 버퍼로 돌아올 땐 Ctrl + 6)| |
 | `space` `c` `a`          | LSP code action | |
+| `za`                     | 접기/펼치기 | nvim-ufo.lua |
+| `zM`                     | 모두 접기 | |
+| `zR`                     | 모두 펼치기 | |
 
 
 ## See also
