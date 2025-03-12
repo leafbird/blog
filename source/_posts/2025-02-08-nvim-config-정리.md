@@ -39,7 +39,8 @@ date: 2025-02-08 21:29:48
 * cnoform : 코드 정리 플러그인. 코드를 저장할 때 `beautify`를 실행한다.
 * cmp : 자동완성 플러그인. LSP를 기반으로 동작한다.
   - 첫 동영상에 소개된 설정은 `make` 컴파일러를 필요로 해서 윈도우에서 사용이 곤란. [moaid](https://github.com/MoaidHathot/Neovim-Moaid/blob/main/config/nvim/lua/plugins/cmp.lua)의 설정을 사용한다.
-
+* roslyn.nvim : c# LSP 플러그인. c# 코드를 분석하고 자동완성을 제공한다.
+* toggleterm : 터미널 플러그인. nvim을 벗어나지 않고 터미널을 사용할 수 있다.
 
 ## 단축키
 
@@ -64,6 +65,10 @@ date: 2025-02-08 21:29:48
 | `za`                     | 접기/펼치기 | nvim-ufo.lua |
 | `zM`                     | 모두 접기 | |
 | `zR`                     | 모두 펼치기 | |
+| `ctrl` + `\`             | 터미널 띄우기(floating) | toggleterm |
+| `alt` + `f1`             | 터미널 띄우기(bottom) | |
+| `alt` + `f2`             | 터미널 띄우기(right) | |
+| `alt` + `f3`             | 터미널 띄우기(floating) | |
 
 
 ## See also
