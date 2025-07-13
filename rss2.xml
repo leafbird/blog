@@ -9,7 +9,7 @@
     <atom:link href="http://leafbird.github.io/blog/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 13 Jul 2025 12:11:40 GMT</pubDate>
+    <pubDate>Sun, 13 Jul 2025 12:19:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -20,14 +20,20 @@
       
         
         
-      <description>&lt;img src=&quot;/blog/2025/07/13/superman/image.png&quot; class=&quot;&quot; width=&quot;500&quot;&gt;</description>
+      <description>&lt;img src=&quot;/blog/2025/07/13/superman/image.png&quot; class=&quot;&quot;&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;your choice, your action, that’s what makes you who you are.&lt;/p&gt;
+&lt;</description>
         
       
       
       
-      <content:encoded><![CDATA[<img src="/blog/2025/07/13/superman/image.png" class="" width="500">]]></content:encoded>
+      <content:encoded><![CDATA[<img src="/blog/2025/07/13/superman/image.png" class=""><blockquote><p>your choice, your action, that’s what makes you who you are.</p></blockquote>]]></content:encoded>
       
       
+      
+      <category domain="http://leafbird.github.io/blog/tags/movie/">movie</category>
       
       
       <comments>http://leafbird.github.io/blog/2025/07/13/superman/#disqus_thread</comments>
