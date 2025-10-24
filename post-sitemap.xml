@@ -4,6 +4,24 @@
 
 
     <url>
+        <loc>http://leafbird.github.io/blog/2025/10/24/%EB%A7%88%EC%9D%8C%EC%9D%84-%EB%B6%88%ED%83%9C%EC%9B%8C%EB%9D%BC/</loc>
+        <lastmod>2025-10-24T11:55:13.543Z</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1</priority>
+    
+    
+    </url>
+
+    <url>
+        <loc>http://leafbird.github.io/blog/2025/10/07/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%A3%BC%EB%B0%A9/</loc>
+        <lastmod>2025-10-24T11:46:27.646Z</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1</priority>
+    
+    
+    </url>
+
+    <url>
         <loc>http://leafbird.github.io/blog/2025/09/21/%EB%8D%B0%EC%9D%BC-%EC%B9%B4%EB%84%A4%EA%B8%B0-%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0/</loc>
         <lastmod>2025-10-03T10:22:55.914Z</lastmod>
         <changefreq>always</changefreq>
@@ -40,7 +58,7 @@
     </url>
 
     <url>
-        <loc>http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/</loc>
+        <loc>http://leafbird.github.io/blog/2025/03/11/%EA%B7%B8%EB%83%A5-%EB%8D%98%EC%A7%84%EB%8B%A4-%EC%99%BC%EB%B0%9C-%EC%98%A4%EB%A5%B8%EB%B0%9C/</loc>
         <lastmod>2025-03-23T06:45:29.307Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
@@ -49,7 +67,7 @@
     </url>
 
     <url>
-        <loc>http://leafbird.github.io/blog/2025/03/11/%EA%B7%B8%EB%83%A5-%EB%8D%98%EC%A7%84%EB%8B%A4-%EC%99%BC%EB%B0%9C-%EC%98%A4%EB%A5%B8%EB%B0%9C/</loc>
+        <loc>http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/</loc>
         <lastmod>2025-03-23T06:45:29.307Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
@@ -78,6 +96,15 @@
     <url>
         <loc>http://leafbird.github.io/blog/2024/12/31/2024%EB%85%84-%EA%B0%9C%EC%9D%B8-%ED%9A%8C%EA%B3%A0/</loc>
         <lastmod>2025-03-01T14:25:13.154Z</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1</priority>
+    
+    
+    </url>
+
+    <url>
+        <loc>http://leafbird.github.io/blog/2024/04/11/%EC%95%88%EA%B2%BD%EC%9D%84-%EB%A7%9E%EC%B7%84%EC%8A%B5%EB%8B%88%EB%8B%A4/</loc>
+        <lastmod>2025-03-01T14:25:13.139Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
     
@@ -130,15 +157,6 @@
     </url>
 
     <url>
-        <loc>http://leafbird.github.io/blog/2024/04/11/%EC%95%88%EA%B2%BD%EC%9D%84-%EB%A7%9E%EC%B7%84%EC%8A%B5%EB%8B%88%EB%8B%A4/</loc>
-        <lastmod>2025-03-01T14:25:13.139Z</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1</priority>
-    
-    
-    </url>
-
-    <url>
         <loc>http://leafbird.github.io/blog/2024/05/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9C%A0%EB%AA%85%EC%82%B0/</loc>
         <lastmod>2025-03-01T14:25:13.139Z</lastmod>
         <changefreq>always</changefreq>
@@ -166,15 +184,6 @@
     </url>
 
     <url>
-        <loc>http://leafbird.github.io/blog/2024/02/18/%EC%99%9C-%EA%B8%80%EC%9D%84-%EC%A0%81%EB%8A%94%EA%B0%80/</loc>
-        <lastmod>2025-03-01T14:25:13.123Z</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1</priority>
-    
-    
-    </url>
-
-    <url>
         <loc>http://leafbird.github.io/blog/2024/03/10/24%EB%85%84-2%EC%9B%94-%EC%9A%B4%EB%8F%99-%EA%B2%B0%EC%82%B0/</loc>
         <lastmod>2025-03-01T14:25:13.123Z</lastmod>
         <changefreq>always</changefreq>
@@ -184,7 +193,7 @@
     </url>
 
     <url>
-        <loc>http://leafbird.github.io/blog/2024/04/04/24%EB%85%84-3%EC%9B%94-%EC%9A%B4%EB%8F%99-%EA%B2%B0%EC%82%B0/</loc>
+        <loc>http://leafbird.github.io/blog/2024/02/18/%EC%99%9C-%EA%B8%80%EC%9D%84-%EC%A0%81%EB%8A%94%EA%B0%80/</loc>
         <lastmod>2025-03-01T14:25:13.123Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
@@ -194,6 +203,15 @@
 
     <url>
         <loc>http://leafbird.github.io/blog/2024/04/02/%EC%82%B6%EC%9D%84-%EB%B3%80%ED%99%94%EC%8B%9C%ED%82%A4%EB%8A%94-%EB%B0%A9%EB%B2%95/</loc>
+        <lastmod>2025-03-01T14:25:13.123Z</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1</priority>
+    
+    
+    </url>
+
+    <url>
+        <loc>http://leafbird.github.io/blog/2024/04/04/24%EB%85%84-3%EC%9B%94-%EC%9A%B4%EB%8F%99-%EA%B2%B0%EC%82%B0/</loc>
         <lastmod>2025-03-01T14:25:13.123Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
@@ -265,7 +283,7 @@
     </url>
 
     <url>
-        <loc>http://leafbird.github.io/blog/2023/11/23/Nuphy-Air75-V2/</loc>
+        <loc>http://leafbird.github.io/blog/2023/11/20/%EA%B0%80%EC%8A%B4-%EB%9B%B0%EB%8A%94-%EC%9D%BC%EC%9D%84-%ED%95%98%EB%9D%BC/</loc>
         <lastmod>2025-03-01T14:25:13.092Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
@@ -274,7 +292,7 @@
     </url>
 
     <url>
-        <loc>http://leafbird.github.io/blog/2023/11/20/%EA%B0%80%EC%8A%B4-%EB%9B%B0%EB%8A%94-%EC%9D%BC%EC%9D%84-%ED%95%98%EB%9D%BC/</loc>
+        <loc>http://leafbird.github.io/blog/2023/11/23/Nuphy-Air75-V2/</loc>
         <lastmod>2025-03-01T14:25:13.092Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
@@ -301,15 +319,6 @@
     </url>
 
     <url>
-        <loc>http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/</loc>
-        <lastmod>2025-03-01T14:25:13.013Z</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1</priority>
-    
-    
-    </url>
-
-    <url>
         <loc>http://leafbird.github.io/blog/2023/10/06/%EC%97%AC%EC%A0%84%ED%9E%88-%EC%A2%8B%EC%95%84%ED%95%98%EA%B3%A0-%EC%9E%88%EC%96%B4/</loc>
         <lastmod>2025-03-01T14:25:13.013Z</lastmod>
         <changefreq>always</changefreq>
@@ -319,17 +328,8 @@
     </url>
 
     <url>
-        <loc>http://leafbird.github.io/blog/2023/02/25/%EC%8B%A4%EC%82%AC-%EC%98%81%ED%99%94-%EB%B0%94%EB%9E%8C%EC%9D%98-%EA%B2%80%EC%8B%AC/</loc>
-        <lastmod>2025-03-01T14:25:12.997Z</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1</priority>
-    
-    
-    </url>
-
-    <url>
-        <loc>http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/</loc>
-        <lastmod>2025-03-01T14:25:12.997Z</lastmod>
+        <loc>http://leafbird.github.io/blog/2023/10/01/LakkaOS-%EA%B5%AC%ED%98%95-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%EA%B2%8C%EC%9E%84%EA%B8%B0%EB%A1%9C-%ED%99%9C%EC%9A%A9/</loc>
+        <lastmod>2025-03-01T14:25:13.013Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
     
@@ -338,6 +338,15 @@
 
     <url>
         <loc>http://leafbird.github.io/blog/2023/03/01/%EC%9D%B8%EC%83%9D%EC%9D%84-%EB%B3%B4%EB%8A%94-%EA%B2%B8%ED%97%88%ED%95%9C-%EB%A7%88%EC%9D%8C/</loc>
+        <lastmod>2025-03-01T14:25:12.997Z</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1</priority>
+    
+    
+    </url>
+
+    <url>
+        <loc>http://leafbird.github.io/blog/2023/02/25/%EC%8B%A4%EC%82%AC-%EC%98%81%ED%99%94-%EB%B0%94%EB%9E%8C%EC%9D%98-%EA%B2%80%EC%8B%AC/</loc>
         <lastmod>2025-03-01T14:25:12.997Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
@@ -355,7 +364,7 @@
     </url>
 
     <url>
-        <loc>http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
+        <loc>http://leafbird.github.io/blog/2023/09/17/vscode%EC%97%90%EC%84%9C-%EB%8B%B7%EB%84%B7-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/</loc>
         <lastmod>2025-03-01T14:25:12.997Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
@@ -364,8 +373,8 @@
     </url>
 
     <url>
-        <loc>http://leafbird.github.io/blog/2023/01/21/%EC%86%8C%EC%9A%B8-%ED%83%9C%EC%96%B4%EB%82%9C-%EA%B2%83-%EB%A7%8C%EC%9C%BC%EB%A1%9C%EB%8F%84-%EC%B6%A9%EB%B6%84%ED%9E%88-%EA%B0%80%EC%B9%98%EC%9E%88%EB%8A%94-%EC%82%B6/</loc>
-        <lastmod>2025-03-01T14:25:12.981Z</lastmod>
+        <loc>http://leafbird.github.io/blog/2023/09/28/%EB%A7%A5%EC%97%90%EC%84%9C-%EB%A7%88%EC%A0%9C%EC%8A%A4%ED%84%B0%EC%B9%98-%EC%BB%A8%EB%B2%84%ED%84%B0%EB%B8%94-2-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</loc>
+        <lastmod>2025-03-01T14:25:12.997Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
     
@@ -383,6 +392,15 @@
 
     <url>
         <loc>http://leafbird.github.io/blog/2023/01/29/%EC%A3%BD%EC%9D%84-%EB%95%8C%EA%B9%8C%EC%A7%80-%EC%BD%94%EB%94%A9%ED%95%98%EB%A9%B0-%EC%82%AC%EB%8A%94-%EB%B2%95/</loc>
+        <lastmod>2025-03-01T14:25:12.981Z</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1</priority>
+    
+    
+    </url>
+
+    <url>
+        <loc>http://leafbird.github.io/blog/2023/01/21/%EC%86%8C%EC%9A%B8-%ED%83%9C%EC%96%B4%EB%82%9C-%EA%B2%83-%EB%A7%8C%EC%9C%BC%EB%A1%9C%EB%8F%84-%EC%B6%A9%EB%B6%84%ED%9E%88-%EA%B0%80%EC%B9%98%EC%9E%88%EB%8A%94-%EC%82%B6/</loc>
         <lastmod>2025-03-01T14:25:12.981Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
@@ -409,6 +427,15 @@
     </url>
 
     <url>
+        <loc>http://leafbird.github.io/blog/2023/01/08/%EC%86%8D%EC%B4%88-%EA%B0%80%EC%A1%B1-%EC%97%AC%ED%96%89/</loc>
+        <lastmod>2025-03-01T14:25:12.965Z</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1</priority>
+    
+    
+    </url>
+
+    <url>
         <loc>http://leafbird.github.io/blog/2020/12/14/%EB%9D%BC%EC%A6%88%EB%B2%A0%EB%A6%AC%ED%8C%8C%EC%9D%B4-%EC%95%8C%EB%A3%A8%EB%AF%B8%EB%8A%84-%EB%B0%A9%EC%97%B4-%EC%BC%80%EC%9D%B4%EC%8A%A4/</loc>
         <lastmod>2025-03-01T14:25:12.965Z</lastmod>
         <changefreq>always</changefreq>
@@ -427,16 +454,7 @@
     </url>
 
     <url>
-        <loc>http://leafbird.github.io/blog/2023/01/08/%EC%86%8D%EC%B4%88-%EA%B0%80%EC%A1%B1-%EC%97%AC%ED%96%89/</loc>
-        <lastmod>2025-03-01T14:25:12.965Z</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1</priority>
-    
-    
-    </url>
-
-    <url>
-        <loc>http://leafbird.github.io/blog/2020/12/08/%EB%8B%A4%EC%8B%9C-%EA%B8%80%EC%9D%84-%EC%A0%81%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8B%A4/</loc>
+        <loc>http://leafbird.github.io/blog/2017/08/24/%EB%84%88%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%80/</loc>
         <lastmod>2025-03-01T14:25:12.949Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
@@ -445,7 +463,7 @@
     </url>
 
     <url>
-        <loc>http://leafbird.github.io/blog/2017/08/24/%EB%84%88%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%80/</loc>
+        <loc>http://leafbird.github.io/blog/2020/12/08/%EB%8B%A4%EC%8B%9C-%EA%B8%80%EC%9D%84-%EC%A0%81%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8B%A4/</loc>
         <lastmod>2025-03-01T14:25:12.949Z</lastmod>
         <changefreq>always</changefreq>
         <priority>1</priority>
