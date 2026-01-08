@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/blog/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/blog/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:300,300italic,400,400italic,700,700italic%7CLato:300,300italic,400,400italic,700,700italic%7CJua:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"leafbird.github.io","root":"/blog/","images":"/blog/images","scheme":"Mist","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/blog/js/config.js"></script>
+
+    <meta name="description" content="요즘 terminal interface에 엄청난 관심이 생겼습니다.회사에서 진행하는 업무에서 리눅스 환경을 좀 더 자주 접하게 되었기 때문입니다.  최근에는 아래 썸네일의 영상을 우연히 접하고 난 뒤에 영상의 가이드를 그대로 따라하면서 nvim 설정을 만들어 나가고 있습니다.    환경에 좀더 빨리 익숙해지고자 늘어가는 플러그인과 단축키들을 한 곳에 정">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[nvim] config 정리">
+<meta property="og:url" content="http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/index.html">
+<meta property="og:site_name" content="leafbird&#x2F;blog">
+<meta property="og:description" content="요즘 terminal interface에 엄청난 관심이 생겼습니다.회사에서 진행하는 업무에서 리눅스 환경을 좀 더 자주 접하게 되었기 때문입니다.  최근에는 아래 썸네일의 영상을 우연히 접하고 난 뒤에 영상의 가이드를 그대로 따라하면서 nvim 설정을 만들어 나가고 있습니다.    환경에 좀더 빨리 익숙해지고자 늘어가는 플러그인과 단축키들을 한 곳에 정">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/screenshot.png">
+<meta property="og:image" content="http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/thumbnail.png">
+<meta property="article:published_time" content="2025-02-08T12:29:48.000Z">
+<meta property="article:modified_time" content="2025-03-12T04:17:53.284Z">
+<meta property="article:author" content="leafbird">
+<meta property="article:tag" content="nvim">
+<meta property="article:tag" content="terminal">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/screenshot.png">
+
+
+<link rel="canonical" href="http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"ko","comments":true,"permalink":"http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/","path":"2025/02/08/nvim-config-정리/","title":"[nvim] config 정리"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>[nvim] config 정리 | leafbird/blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DW5ESFBDD"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-0DW5ESFBDD","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/blog/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/blog/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/blog/rss2.xml" title="leafbird/blog" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/blog/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">leafbird/blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="검색" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          목차
+        </li>
+        <li class="sidebar-nav-overview">
+          흝어보기
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EB%AA%A9%EB%A1%9D"><span class="nav-number">1.</span> <span class="nav-text">플러그인 목록</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%EB%8B%A8%EC%B6%95%ED%82%A4"><span class="nav-number">2.</span> <span class="nav-text">단축키</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#See-also"><span class="nav-number">3.</span> <span class="nav-text">See also</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#troubleshooting"><span class="nav-number">4.</span> <span class="nav-text">troubleshooting</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#LSP-%EC%84%A4%EC%B9%98-%EC%9D%B4%EC%8A%88"><span class="nav-number">4.0.1.</span> <span class="nav-text">LSP 설치 이슈</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">leafbird</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/blog/archives/">
+          <span class="site-state-item-count">57</span>
+          <span class="site-state-item-name">포스트</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">52</span>
+        <span class="site-state-item-name">태그</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/leafbird" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;leafbird" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/leafbird_tw" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;leafbird_tw" rel="noopener me" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="ko">
+    <link itemprop="mainEntityOfPage" href="http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="name" content="leafbird">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="leafbird/blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="[nvim] config 정리 | leafbird/blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          [nvim] config 정리
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">작성일</span>
+
+      <time title="Post created: 2025-02-08 21:29:48" itemprop="dateCreated datePublished" datetime="2025-02-08T21:29:48+09:00">2025-02-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Updated at: 2025-03-12 13:17:53" itemprop="dateModified" datetime="2025-03-12T13:17:53+09:00">2025-03-12</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2025/02/08/nvim-config-정리/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><img src="/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/screenshot.png" class="">
+
+<p>요즘 terminal interface에 엄청난 관심이 생겼습니다.<br>회사에서 진행하는 업무에서 리눅스 환경을 좀 더 자주 접하게 되었기 때문입니다. </p>
+<p>최근에는 <a target="_blank" rel="noopener" href="https://youtu.be/u6S71cpMfw8?si=VEnZWmiz_3HJ60BO">아래 썸네일의 영상</a>을 우연히 접하고 난 뒤에 영상의 가이드를 그대로 따라하면서 nvim 설정을 만들어 나가고 있습니다. </p>
+<img src="/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/thumbnail.png" class="">
+
+<p>환경에 좀더 빨리 익숙해지고자 늘어가는 플러그인과 단축키들을 한 곳에 정리합니다.</p>
+<p>나중에 단축키들은 설정이 끝나면 따로 프린트해서 집이랑 사무실 모니터에 붙여둘까 합니다.</p>
+<span id="more"></span>
+
+<h2 id="플러그인-목록"><a href="#플러그인-목록" class="headerlink" title="플러그인 목록"></a>플러그인 목록</h2><ul>
+<li>gruvbox : 컬러 테마. 처음에 그대로 따라서 설치했으나 지금은 비활성화.</li>
+<li>everforest-nvim : 녹색 계열의 컬러 테마. 눈에 편할 것 같아 이걸로 변경.</li>
+<li>neo-tree : 파일 탐색기. 좌측 패널에 파일을 트리 구조로 보여준다.</li>
+<li>telescope : 파일 검색기. 파일을 검색하고 열 수 있다.</li>
+<li>treesitter : syntax parser. syntax highlighting과 indenting을 강화한다.<ul>
+<li>처음 설치할 때 c 컴파일러가 필요하다. visual studio에서 쓰는 cl도 사용 가능하다. 처음 한 번만 필요.</li>
+</ul>
+</li>
+<li>indent-blankline : 들여쓰기를 더 명확하게 보여준다.</li>
+<li>comment : 주석 처리를 쉽게 해준다.</li>
+<li>lualine : 상태바를 꾸며준다. 독자적인 테마설정이 있는데, 현 메인테마(everforest)와 맞춰준다.</li>
+<li>mason : LSP 버전 관리. 플러그인 및 의존성 관리 등<ul>
+<li>mason-lspconfig : mason - lsp간 설정. </li>
+<li>nvim-lspconfig : neovim - lsp간 설정. 단축키 설정 등</li>
+</ul>
+</li>
+<li>nvim-autopairs : 자동 괄호 삽입. 괄호를 열면 자동으로 닫히게 해준다.</li>
+<li>nvim-ufo : 접기&#x2F;펼치기 플러그인. 코드를 접고 펼치는 기능을 제공한다.</li>
+<li>cnoform : 코드 정리 플러그인. 코드를 저장할 때 <code>beautify</code>를 실행한다.</li>
+<li>cmp : 자동완성 플러그인. LSP를 기반으로 동작한다.<ul>
+<li>첫 동영상에 소개된 설정은 <code>make</code> 컴파일러를 필요로 해서 윈도우에서 사용이 곤란. <a target="_blank" rel="noopener" href="https://github.com/MoaidHathot/Neovim-Moaid/blob/main/config/nvim/lua/plugins/cmp.lua">moaid</a>의 설정을 사용한다.</li>
+</ul>
+</li>
+<li>roslyn.nvim : c# LSP 플러그인. c# 코드를 분석하고 자동완성을 제공한다.</li>
+<li>toggleterm : 터미널 플러그인. nvim을 벗어나지 않고 터미널을 사용할 수 있다.</li>
+</ul>
+<h2 id="단축키"><a href="#단축키" class="headerlink" title="단축키"></a>단축키</h2><p>더하기는 함께 누르는 것, 그냥 공백은 연속으로 누르는 것을 의미한다.</p>
+<table>
+<thead>
+<tr>
+<th>단축키</th>
+<th>설명</th>
+<th>위치</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>space</code></td>
+<td>리더키</td>
+<td>globals.lua</td>
+</tr>
+<tr>
+<td><code>space</code> <code>e</code></td>
+<td>파일 탐색기(neo-tree) 열기&#x2F;닫기</td>
+<td>keymaps.lua</td>
+</tr>
+<tr>
+<td><code>space</code> <code>h</code></td>
+<td>검색 하이라이트 제거(nohlsearch)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>ctrl</code> + <code>h , j , k , l</code></td>
+<td>분할 창 이동</td>
+<td></td>
+</tr>
+<tr>
+<td>(visual mode) <code>&lt; , &gt;</code></td>
+<td>indentation 줄이기 &#x2F; 늘이기</td>
+<td></td>
+</tr>
+<tr>
+<td><code>gcc</code></td>
+<td>주석 처리&#x2F;해제</td>
+<td>comment.lua</td>
+</tr>
+<tr>
+<td><code>gc</code></td>
+<td>선택된 라인 주석 처리&#x2F;해제</td>
+<td></td>
+</tr>
+<tr>
+<td><code>space</code> <code>f</code> <code>f</code></td>
+<td>파일 검색 (find_files)</td>
+<td>telescope.lua</td>
+</tr>
+<tr>
+<td><code>space</code> <code>f</code> <code>g</code></td>
+<td>파일 내 검색 (live_grep)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>space</code> <code>f</code> <code>b</code></td>
+<td>버퍼 목록 검색 (buffers)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>space</code> <code>f</code> <code>h</code></td>
+<td>도움말 목록 검색 (help_tags)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>shift</code> + <code>k</code></td>
+<td>LSP hover</td>
+<td>lsp.lua</td>
+</tr>
+<tr>
+<td><code>g</code> <code>d</code></td>
+<td>LSP goto definition (이전 버퍼로 돌아올 땐 Ctrl + 6)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>space</code> <code>c</code> <code>a</code></td>
+<td>LSP code action</td>
+<td></td>
+</tr>
+<tr>
+<td><code>za</code></td>
+<td>접기&#x2F;펼치기</td>
+<td>nvim-ufo.lua</td>
+</tr>
+<tr>
+<td><code>zM</code></td>
+<td>모두 접기</td>
+<td></td>
+</tr>
+<tr>
+<td><code>zR</code></td>
+<td>모두 펼치기</td>
+<td></td>
+</tr>
+<tr>
+<td><code>ctrl</code> + <code>\</code></td>
+<td>터미널 띄우기(floating)</td>
+<td>toggleterm</td>
+</tr>
+<tr>
+<td><code>alt</code> + <code>f1</code></td>
+<td>터미널 띄우기(bottom)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>alt</code> + <code>f2</code></td>
+<td>터미널 띄우기(right)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>alt</code> + <code>f3</code></td>
+<td>터미널 띄우기(floating)</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="See-also"><a href="#See-also" class="headerlink" title="See also"></a>See also</h2><ul>
+<li>raspberry pi에 neovim 설치. 직접 컴파일 해야 한다. - <a target="_blank" rel="noopener" href="https://luther.io/articles/how-to-install-neovim-on-raspberry-pi/">Link</a></li>
+<li>neovim 설정, 플러그인, 컬러테마 공유 포털 - <a target="_blank" rel="noopener" href="https://dotfyle.com/">https://dotfyle.com/</a></li>
+<li>c# in neovim - <a target="_blank" rel="noopener" href="https://www.reddit.com/r/neovim/comments/1eikoyu/does_anyone_tried_omnisharp_in_neovim/?rdt=46411">Link</a></li>
+</ul>
+<h2 id="troubleshooting"><a href="#troubleshooting" class="headerlink" title="troubleshooting"></a>troubleshooting</h2><h4 id="LSP-설치-이슈"><a href="#LSP-설치-이슈" class="headerlink" title="LSP 설치 이슈"></a>LSP 설치 이슈</h4><ul>
+<li>lua: path상에 lua lsp가 있어야 한다. winget으로 설치해준다.</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">winget install LuaLS.lua-language-server</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>c# : <a target="_blank" rel="noopener" href="https://github.com/seblyng/roslyn.nvim">roslyn.nvim</a>를 설치한다. 아직 lsp_config를 정식으로 지원하지 않음. readme에 있는 manual installation을 따라하면 어렵지 않게 설치할 수 있다. <code>omnisharp</code>, <code>csharp_ls</code>는 예전 배포판이고 roslyn이 최신이다.</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/blog/tags/nvim/" rel="tag"># nvim</a>
+              <a href="/blog/tags/terminal/" rel="tag"># terminal</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/blog/2024/12/31/2024%EB%85%84-%EA%B0%9C%EC%9D%B8-%ED%9A%8C%EA%B3%A0/" rel="prev" title="2024년 개인 회고">
+                  <i class="fa fa-angle-left"></i> 2024년 개인 회고
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/blog/2025/03/11/%EA%B7%B8%EB%83%A5-%EB%8D%98%EC%A7%84%EB%8B%A4-%EC%99%BC%EB%B0%9C-%EC%98%A4%EB%A5%B8%EB%B0%9C/" rel="next" title="그냥 던진다. 왼발, 오른발.">
+                  그냥 던진다. 왼발, 오른발. <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">leafbird</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/blog/js/comments.js"></script><script src="/blog/js/utils.js"></script><script src="/blog/js/schemes/muse.js"></script><script src="/blog/js/sidebar.js"></script><script src="/blog/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"leafbird","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/blog/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>
