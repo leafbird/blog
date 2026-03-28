@@ -6,14 +6,14 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server",
-    "preinstall": "npx npm-force-resolutions"
+    "server": "hexo server"
   },
   "hexo": {
-    "version": "7.3.0"
+    "version": "8.1.1"
   },
   "dependencies": {
-    "hexo": "^7.0.0",
+    "hexo": "^8.1.1",
+    "hexo-browser-reloader-websocket": "^1.1.1",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-better-sitemap": "^1.0.8",
@@ -28,11 +28,5 @@
     "hexo-server": "^3.0.0",
     "hexo-tag-embed": "^1.0.0",
     "hexo-theme-next": "^8.0.2"
-  },
-  "devDependencies": {
-    "npm-force-resolutions": "^0.0.10"
-  },
-  "resolutions": {
-    "brace-expansion": "^1.1.12"
   }
 }
