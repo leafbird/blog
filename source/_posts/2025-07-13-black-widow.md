@@ -5,7 +5,7 @@ tags:
 - movie
 ---
 
-{% asset_img image.png %}
+{% asset_img image.webp %}
 
 {% asset_img caption.png %}
 

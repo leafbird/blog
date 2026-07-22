@@ -13,7 +13,7 @@ what are you doing?
 뭐하고 있어?
 "순간을 만끽하는 중이야"
 
-{% asset_img moment.jpg %}
+{% asset_img moment.webp %}
 
 <!--more-->
 

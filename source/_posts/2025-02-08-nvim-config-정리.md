@@ -6,13 +6,13 @@ tags:
 date: 2025-02-08 21:29:48
 ---
 
-{% asset_img screenshot.png %}
+{% asset_img screenshot.webp %}
 
 요즘 terminal interface에 엄청난 관심이 생겼습니다. 
 회사에서 진행하는 업무에서 리눅스 환경을 좀 더 자주 접하게 되었기 때문입니다. 
 
 최근에는 [아래 썸네일의 영상](https://youtu.be/u6S71cpMfw8?si=VEnZWmiz_3HJ60BO)을 우연히 접하고 난 뒤에 영상의 가이드를 그대로 따라하면서 nvim 설정을 만들어 나가고 있습니다. 
-{% asset_img thumbnail.png %}
+{% asset_img thumbnail.webp %}
 
 환경에 좀더 빨리 익숙해지고자 늘어가는 플러그인과 단축키들을 한 곳에 정리합니다.
 
