@@ -21,10 +21,13 @@ function summarize(html) {
   return text.substring(0, space > 0 ? space : MAX_LENGTH) + '…';
 }
 
-// Hexo's open_graph cuts a missing description at 200 chars mid-word; run after the excerpt filter (priority 10).
-hexo.extend.filter.register('after_post_render', data => {
-  if (data.description) return data;
-  const summary = summarize(data.excerpt || '') || summarize(data.content || '');
-  if (summary) data.description = summary;
-  return data;
-}, 20);
+// Hexo's open_graph cuts a missing description at 200 chars mid-word. Wrap the helper instead of setting
+// page.description, because NexT renders page.description under the title and on the index.
+const openGraph = hexo.extend.helper.get('open_graph');
+
+hexo.extend.helper.register('open_graph', function(options = {}) {
+  const { page } = this;
+  if (options.description || page.description) return openGraph.call(this, options);
+  const summary = summarize(page.excerpt || '') || summarize(page.content || '');
+  return openGraph.call(this, summary ? { ...options, description: summary } : options);
+});
