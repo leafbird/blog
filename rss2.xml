@@ -4,18 +4,18 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>leafbird/blog</title>
-    <link>http://leafbird.github.io/blog/</link>
+    <link>https://leafbird.github.io/blog/</link>
     
-    <atom:link href="http://leafbird.github.io/blog/rss2.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://leafbird.github.io/blog/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 02 Oct 2026 00:15:15 GMT</pubDate>
+    <pubDate>Tue, 06 Oct 2026 15:12:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>having a moment</title>
-      <link>http://leafbird.github.io/blog/2026/03/29/having-a-moment/</link>
-      <guid>http://leafbird.github.io/blog/2026/03/29/having-a-moment/</guid>
+      <link>https://leafbird.github.io/blog/2026/03/29/having-a-moment/</link>
+      <guid>https://leafbird.github.io/blog/2026/03/29/having-a-moment/</guid>
       <pubDate>Sun, 29 Mar 2026 12:04:49 GMT</pubDate>
       
       <description>&lt;p&gt;what are you doing?&lt;br&gt;“I’m having a moment” &lt;/p&gt;
@@ -28,19 +28,19 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/movie/">movie</category>
+      <category domain="https://leafbird.github.io/blog/tags/movie/">movie</category>
       
-      <category domain="http://leafbird.github.io/blog/tags/life/">life</category>
+      <category domain="https://leafbird.github.io/blog/tags/life/">life</category>
       
       
-      <comments>http://leafbird.github.io/blog/2026/03/29/having-a-moment/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2026/03/29/having-a-moment/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>2025년에 읽은 가장 인상적인 책은</title>
-      <link>http://leafbird.github.io/blog/2026/01/08/2025%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/</link>
-      <guid>http://leafbird.github.io/blog/2026/01/08/2025%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/</guid>
+      <link>https://leafbird.github.io/blog/2026/01/08/2025%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/</link>
+      <guid>https://leafbird.github.io/blog/2026/01/08/2025%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/</guid>
       <pubDate>Thu, 08 Jan 2026 13:02:57 GMT</pubDate>
       
       <description>&lt;p&gt;두 권 중에서 고민을 하다가 올해는 이 책, &lt;code&gt;Let Them&lt;/code&gt;으로 정했습니다.&lt;/p&gt;
@@ -52,17 +52,17 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/%EB%8F%85%EC%84%9C/">독서</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EB%8F%85%EC%84%9C/">독서</category>
       
       
-      <comments>http://leafbird.github.io/blog/2026/01/08/2025%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2026/01/08/2025%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>마음을 불태워라</title>
-      <link>http://leafbird.github.io/blog/2025/10/24/%EB%A7%88%EC%9D%8C%EC%9D%84-%EB%B6%88%ED%83%9C%EC%9B%8C%EB%9D%BC/</link>
-      <guid>http://leafbird.github.io/blog/2025/10/24/%EB%A7%88%EC%9D%8C%EC%9D%84-%EB%B6%88%ED%83%9C%EC%9B%8C%EB%9D%BC/</guid>
+      <link>https://leafbird.github.io/blog/2025/10/24/%EB%A7%88%EC%9D%8C%EC%9D%84-%EB%B6%88%ED%83%9C%EC%9B%8C%EB%9D%BC/</link>
+      <guid>https://leafbird.github.io/blog/2025/10/24/%EB%A7%88%EC%9D%8C%EC%9D%84-%EB%B6%88%ED%83%9C%EC%9B%8C%EB%9D%BC/</guid>
       <pubDate>Fri, 24 Oct 2025 11:55:13 GMT</pubDate>
       
       <description>&lt;img src=&quot;/blog/2025/10/24/%EB%A7%88%EC%9D%8C%EC%9D%84-%EB%B6%88%ED%83%9C%EC%9B%8C%EB%9D%BC/image.webp&quot; class=&quot;&quot;&gt;</description>
@@ -73,17 +73,17 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/%EA%B7%80%EB%A9%B8%EC%9D%98-%EC%B9%BC%EB%82%A0/">귀멸의 칼날</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EA%B7%80%EB%A9%B8%EC%9D%98-%EC%B9%BC%EB%82%A0/">귀멸의 칼날</category>
       
       
-      <comments>http://leafbird.github.io/blog/2025/10/24/%EB%A7%88%EC%9D%8C%EC%9D%84-%EB%B6%88%ED%83%9C%EC%9B%8C%EB%9D%BC/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2025/10/24/%EB%A7%88%EC%9D%8C%EC%9D%84-%EB%B6%88%ED%83%9C%EC%9B%8C%EB%9D%BC/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>새로운 주방</title>
-      <link>http://leafbird.github.io/blog/2025/10/07/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%A3%BC%EB%B0%A9/</link>
-      <guid>http://leafbird.github.io/blog/2025/10/07/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%A3%BC%EB%B0%A9/</guid>
+      <link>https://leafbird.github.io/blog/2025/10/07/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%A3%BC%EB%B0%A9/</link>
+      <guid>https://leafbird.github.io/blog/2025/10/07/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%A3%BC%EB%B0%A9/</guid>
       <pubDate>Tue, 07 Oct 2025 10:46:53 GMT</pubDate>
       
       <description>&lt;img src=&quot;/blog/2025/10/07/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%A3%BC%EB%B0%A9/illust.webp&quot; class=&quot;&quot;&gt;
@@ -98,14 +98,14 @@
       
       
       
-      <comments>http://leafbird.github.io/blog/2025/10/07/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%A3%BC%EB%B0%A9/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2025/10/07/%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%A3%BC%EB%B0%A9/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>데일 카네기 인간관계론</title>
-      <link>http://leafbird.github.io/blog/2025/09/21/%EB%8D%B0%EC%9D%BC-%EC%B9%B4%EB%84%A4%EA%B8%B0-%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0/</link>
-      <guid>http://leafbird.github.io/blog/2025/09/21/%EB%8D%B0%EC%9D%BC-%EC%B9%B4%EB%84%A4%EA%B8%B0-%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0/</guid>
+      <link>https://leafbird.github.io/blog/2025/09/21/%EB%8D%B0%EC%9D%BC-%EC%B9%B4%EB%84%A4%EA%B8%B0-%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0/</link>
+      <guid>https://leafbird.github.io/blog/2025/09/21/%EB%8D%B0%EC%9D%BC-%EC%B9%B4%EB%84%A4%EA%B8%B0-%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0/</guid>
       <pubDate>Sun, 21 Sep 2025 12:57:04 GMT</pubDate>
       
       <description>&lt;img src=&quot;/blog/2025/09/21/%EB%8D%B0%EC%9D%BC-%EC%B9%B4%EB%84%A4%EA%B8%B0-%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0/image.webp&quot; class=&quot;&quot; width=&quot;350&quot;&gt;
@@ -120,14 +120,14 @@
       
       
       
-      <comments>http://leafbird.github.io/blog/2025/09/21/%EB%8D%B0%EC%9D%BC-%EC%B9%B4%EB%84%A4%EA%B8%B0-%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2025/09/21/%EB%8D%B0%EC%9D%BC-%EC%B9%B4%EB%84%A4%EA%B8%B0-%EC%9D%B8%EA%B0%84%EA%B4%80%EA%B3%84%EB%A1%A0/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>아빠가 좋아</title>
-      <link>http://leafbird.github.io/blog/2025/07/30/%EC%95%84%EB%B9%A0%EA%B0%80-%EC%A2%8B%EC%95%84/</link>
-      <guid>http://leafbird.github.io/blog/2025/07/30/%EC%95%84%EB%B9%A0%EA%B0%80-%EC%A2%8B%EC%95%84/</guid>
+      <link>https://leafbird.github.io/blog/2025/07/30/%EC%95%84%EB%B9%A0%EA%B0%80-%EC%A2%8B%EC%95%84/</link>
+      <guid>https://leafbird.github.io/blog/2025/07/30/%EC%95%84%EB%B9%A0%EA%B0%80-%EC%A2%8B%EC%95%84/</guid>
       <pubDate>Wed, 30 Jul 2025 12:55:34 GMT</pubDate>
       
       <description>&lt;img src=&quot;/blog/2025/07/30/%EC%95%84%EB%B9%A0%EA%B0%80-%EC%A2%8B%EC%95%84/image.webp&quot; class=&quot;&quot;&gt;</description>
@@ -139,14 +139,14 @@
       
       
       
-      <comments>http://leafbird.github.io/blog/2025/07/30/%EC%95%84%EB%B9%A0%EA%B0%80-%EC%A2%8B%EC%95%84/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2025/07/30/%EC%95%84%EB%B9%A0%EA%B0%80-%EC%A2%8B%EC%95%84/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>black widow</title>
-      <link>http://leafbird.github.io/blog/2025/07/13/black-widow/</link>
-      <guid>http://leafbird.github.io/blog/2025/07/13/black-widow/</guid>
+      <link>https://leafbird.github.io/blog/2025/07/13/black-widow/</link>
+      <guid>https://leafbird.github.io/blog/2025/07/13/black-widow/</guid>
       <pubDate>Sun, 13 Jul 2025 12:30:10 GMT</pubDate>
       
         
@@ -165,17 +165,17 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/movie/">movie</category>
+      <category domain="https://leafbird.github.io/blog/tags/movie/">movie</category>
       
       
-      <comments>http://leafbird.github.io/blog/2025/07/13/black-widow/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2025/07/13/black-widow/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>superman</title>
-      <link>http://leafbird.github.io/blog/2025/07/13/superman/</link>
-      <guid>http://leafbird.github.io/blog/2025/07/13/superman/</guid>
+      <link>https://leafbird.github.io/blog/2025/07/13/superman/</link>
+      <guid>https://leafbird.github.io/blog/2025/07/13/superman/</guid>
       <pubDate>Sun, 13 Jul 2025 11:55:12 GMT</pubDate>
       
         
@@ -193,17 +193,17 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/movie/">movie</category>
+      <category domain="https://leafbird.github.io/blog/tags/movie/">movie</category>
       
       
-      <comments>http://leafbird.github.io/blog/2025/07/13/superman/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2025/07/13/superman/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>그냥 던진다. 왼발, 오른발.</title>
-      <link>http://leafbird.github.io/blog/2025/03/11/%EA%B7%B8%EB%83%A5-%EB%8D%98%EC%A7%84%EB%8B%A4-%EC%99%BC%EB%B0%9C-%EC%98%A4%EB%A5%B8%EB%B0%9C/</link>
-      <guid>http://leafbird.github.io/blog/2025/03/11/%EA%B7%B8%EB%83%A5-%EB%8D%98%EC%A7%84%EB%8B%A4-%EC%99%BC%EB%B0%9C-%EC%98%A4%EB%A5%B8%EB%B0%9C/</guid>
+      <link>https://leafbird.github.io/blog/2025/03/11/%EA%B7%B8%EB%83%A5-%EB%8D%98%EC%A7%84%EB%8B%A4-%EC%99%BC%EB%B0%9C-%EC%98%A4%EB%A5%B8%EB%B0%9C/</link>
+      <guid>https://leafbird.github.io/blog/2025/03/11/%EA%B7%B8%EB%83%A5-%EB%8D%98%EC%A7%84%EB%8B%A4-%EC%99%BC%EB%B0%9C-%EC%98%A4%EB%A5%B8%EB%B0%9C/</guid>
       <pubDate>Tue, 11 Mar 2025 12:15:04 GMT</pubDate>
       
       <description>&lt;p&gt;아직 저녁날씨는 춥기도 하고, 저녁밥 먹은지도 얼마 안됐고, 오늘 좀 피곤한 거 같기도 하고…&lt;/p&gt;
@@ -220,17 +220,17 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/%EC%9A%B4%EB%8F%99/">운동</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EC%9A%B4%EB%8F%99/">운동</category>
       
       
-      <comments>http://leafbird.github.io/blog/2025/03/11/%EA%B7%B8%EB%83%A5-%EB%8D%98%EC%A7%84%EB%8B%A4-%EC%99%BC%EB%B0%9C-%EC%98%A4%EB%A5%B8%EB%B0%9C/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2025/03/11/%EA%B7%B8%EB%83%A5-%EB%8D%98%EC%A7%84%EB%8B%A4-%EC%99%BC%EB%B0%9C-%EC%98%A4%EB%A5%B8%EB%B0%9C/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>[nvim] config 정리</title>
-      <link>http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/</link>
-      <guid>http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/</guid>
+      <link>https://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/</link>
+      <guid>https://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/</guid>
       <pubDate>Sat, 08 Feb 2025 12:29:48 GMT</pubDate>
       
       <description>&lt;img src=&quot;/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/screenshot.webp&quot; class=&quot;&quot;&gt;
@@ -248,19 +248,19 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/nvim/">nvim</category>
+      <category domain="https://leafbird.github.io/blog/tags/nvim/">nvim</category>
       
-      <category domain="http://leafbird.github.io/blog/tags/terminal/">terminal</category>
+      <category domain="https://leafbird.github.io/blog/tags/terminal/">terminal</category>
       
       
-      <comments>http://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2025/02/08/nvim-config-%EC%A0%95%EB%A6%AC/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>2024년 개인 회고</title>
-      <link>http://leafbird.github.io/blog/2024/12/31/2024%EB%85%84-%EA%B0%9C%EC%9D%B8-%ED%9A%8C%EA%B3%A0/</link>
-      <guid>http://leafbird.github.io/blog/2024/12/31/2024%EB%85%84-%EA%B0%9C%EC%9D%B8-%ED%9A%8C%EA%B3%A0/</guid>
+      <link>https://leafbird.github.io/blog/2024/12/31/2024%EB%85%84-%EA%B0%9C%EC%9D%B8-%ED%9A%8C%EA%B3%A0/</link>
+      <guid>https://leafbird.github.io/blog/2024/12/31/2024%EB%85%84-%EA%B0%9C%EC%9D%B8-%ED%9A%8C%EA%B3%A0/</guid>
       <pubDate>Tue, 31 Dec 2024 09:56:38 GMT</pubDate>
       
       <description>&lt;p&gt;연초에 세웠던 목표들의 달성 상황을 정리하면서 한 해를 짚어봅니다. &lt;/p&gt;
@@ -272,21 +272,21 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/%EC%8A%B5%EA%B4%80/">습관</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EC%8A%B5%EA%B4%80/">습관</category>
       
-      <category domain="http://leafbird.github.io/blog/tags/%EC%83%9D%ED%99%9C/">생활</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EC%83%9D%ED%99%9C/">생활</category>
       
-      <category domain="http://leafbird.github.io/blog/tags/%EB%AA%A9%ED%91%9C/">목표</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EB%AA%A9%ED%91%9C/">목표</category>
       
       
-      <comments>http://leafbird.github.io/blog/2024/12/31/2024%EB%85%84-%EA%B0%9C%EC%9D%B8-%ED%9A%8C%EA%B3%A0/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2024/12/31/2024%EB%85%84-%EA%B0%9C%EC%9D%B8-%ED%9A%8C%EA%B3%A0/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>2024년에 읽은 가장 인상적인 책은</title>
-      <link>http://leafbird.github.io/blog/2024/08/17/2024%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/</link>
-      <guid>http://leafbird.github.io/blog/2024/08/17/2024%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/</guid>
+      <link>https://leafbird.github.io/blog/2024/08/17/2024%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/</link>
+      <guid>https://leafbird.github.io/blog/2024/08/17/2024%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/</guid>
       <pubDate>Sat, 17 Aug 2024 07:14:57 GMT</pubDate>
       
       <description>&lt;p&gt;아직 올 해가 다 지나진 않았지만요.&lt;br&gt;그래도 이 책에 대해 한 번 글을 적어보고 싶었습니다. &lt;/p&gt;
@@ -299,17 +299,17 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/%EB%8F%85%EC%84%9C/">독서</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EB%8F%85%EC%84%9C/">독서</category>
       
       
-      <comments>http://leafbird.github.io/blog/2024/08/17/2024%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2024/08/17/2024%EB%85%84%EC%97%90-%EC%9D%BD%EC%9D%80-%EA%B0%80%EC%9E%A5-%EC%9D%B8%EC%83%81%EC%A0%81%EC%9D%B8-%EC%B1%85%EC%9D%80/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>등산일지-울산바위</title>
-      <link>http://leafbird.github.io/blog/2024/08/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9A%B8%EC%82%B0%EB%B0%94%EC%9C%84/</link>
-      <guid>http://leafbird.github.io/blog/2024/08/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9A%B8%EC%82%B0%EB%B0%94%EC%9C%84/</guid>
+      <link>https://leafbird.github.io/blog/2024/08/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9A%B8%EC%82%B0%EB%B0%94%EC%9C%84/</link>
+      <guid>https://leafbird.github.io/blog/2024/08/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9A%B8%EC%82%B0%EB%B0%94%EC%9C%84/</guid>
       <pubDate>Fri, 16 Aug 2024 09:12:15 GMT</pubDate>
       
       <description>&lt;img src=&quot;/blog/2024/08/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9A%B8%EC%82%B0%EB%B0%94%EC%9C%84/top.webp&quot; class=&quot;&quot;&gt;
@@ -323,21 +323,21 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/%EB%93%B1%EC%82%B0/">등산</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EB%93%B1%EC%82%B0/">등산</category>
       
-      <category domain="http://leafbird.github.io/blog/tags/%EC%84%A4%EC%95%85%EC%82%B0/">설악산</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EC%84%A4%EC%95%85%EC%82%B0/">설악산</category>
       
-      <category domain="http://leafbird.github.io/blog/tags/%EC%9A%B8%EC%82%B0%EB%B0%94%EC%9C%84/">울산바위</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EC%9A%B8%EC%82%B0%EB%B0%94%EC%9C%84/">울산바위</category>
       
       
-      <comments>http://leafbird.github.io/blog/2024/08/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9A%B8%EC%82%B0%EB%B0%94%EC%9C%84/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2024/08/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9A%B8%EC%82%B0%EB%B0%94%EC%9C%84/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>등산일지-유명산</title>
-      <link>http://leafbird.github.io/blog/2024/05/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9C%A0%EB%AA%85%EC%82%B0/</link>
-      <guid>http://leafbird.github.io/blog/2024/05/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9C%A0%EB%AA%85%EC%82%B0/</guid>
+      <link>https://leafbird.github.io/blog/2024/05/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9C%A0%EB%AA%85%EC%82%B0/</link>
+      <guid>https://leafbird.github.io/blog/2024/05/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9C%A0%EB%AA%85%EC%82%B0/</guid>
       <pubDate>Thu, 16 May 2024 13:10:03 GMT</pubDate>
       
       <description>&lt;img src=&quot;/blog/2024/05/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9C%A0%EB%AA%85%EC%82%B0/top.webp&quot; class=&quot;&quot;&gt;
@@ -351,17 +351,17 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/%EB%93%B1%EC%82%B0/">등산</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EB%93%B1%EC%82%B0/">등산</category>
       
       
-      <comments>http://leafbird.github.io/blog/2024/05/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9C%A0%EB%AA%85%EC%82%B0/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2024/05/16/%EB%93%B1%EC%82%B0%EC%9D%BC%EC%A7%80-%EC%9C%A0%EB%AA%85%EC%82%B0/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>24년 4월 운동 결산</title>
-      <link>http://leafbird.github.io/blog/2024/05/03/24%EB%85%84-4%EC%9B%94-%EC%9A%B4%EB%8F%99-%EA%B2%B0%EC%82%B0/</link>
-      <guid>http://leafbird.github.io/blog/2024/05/03/24%EB%85%84-4%EC%9B%94-%EC%9A%B4%EB%8F%99-%EA%B2%B0%EC%82%B0/</guid>
+      <link>https://leafbird.github.io/blog/2024/05/03/24%EB%85%84-4%EC%9B%94-%EC%9A%B4%EB%8F%99-%EA%B2%B0%EC%82%B0/</link>
+      <guid>https://leafbird.github.io/blog/2024/05/03/24%EB%85%84-4%EC%9B%94-%EC%9A%B4%EB%8F%99-%EA%B2%B0%EC%82%B0/</guid>
       <pubDate>Fri, 03 May 2024 13:02:26 GMT</pubDate>
       
       <description>&lt;p&gt;4월에도 열심히. 주로 등산을 하며 운동 목표를 채웠습니다. &lt;/p&gt;
@@ -373,17 +373,17 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/%EC%9A%B4%EB%8F%99/">운동</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EC%9A%B4%EB%8F%99/">운동</category>
       
       
-      <comments>http://leafbird.github.io/blog/2024/05/03/24%EB%85%84-4%EC%9B%94-%EC%9A%B4%EB%8F%99-%EA%B2%B0%EC%82%B0/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2024/05/03/24%EB%85%84-4%EC%9B%94-%EC%9A%B4%EB%8F%99-%EA%B2%B0%EC%82%B0/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>나는 읽고 쓰고 버린다</title>
-      <link>http://leafbird.github.io/blog/2024/04/28/%EB%82%98%EB%8A%94-%EC%9D%BD%EA%B3%A0-%EC%93%B0%EA%B3%A0-%EB%B2%84%EB%A6%B0%EB%8B%A4/</link>
-      <guid>http://leafbird.github.io/blog/2024/04/28/%EB%82%98%EB%8A%94-%EC%9D%BD%EA%B3%A0-%EC%93%B0%EA%B3%A0-%EB%B2%84%EB%A6%B0%EB%8B%A4/</guid>
+      <link>https://leafbird.github.io/blog/2024/04/28/%EB%82%98%EB%8A%94-%EC%9D%BD%EA%B3%A0-%EC%93%B0%EA%B3%A0-%EB%B2%84%EB%A6%B0%EB%8B%A4/</link>
+      <guid>https://leafbird.github.io/blog/2024/04/28/%EB%82%98%EB%8A%94-%EC%9D%BD%EA%B3%A0-%EC%93%B0%EA%B3%A0-%EB%B2%84%EB%A6%B0%EB%8B%A4/</guid>
       <pubDate>Sun, 28 Apr 2024 14:03:43 GMT</pubDate>
       
       <description>&lt;p&gt;이번주 화요일에 책을 사서, 토요일에 다 읽었다. 근래에 내가 책을 이렇게 빨리 읽은 적이 있던가. &lt;/p&gt;
@@ -395,19 +395,19 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/%EB%8F%85%EC%84%9C/">독서</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EB%8F%85%EC%84%9C/">독서</category>
       
-      <category domain="http://leafbird.github.io/blog/tags/%EC%86%90%EC%9B%85%EC%A0%95/">손웅정</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EC%86%90%EC%9B%85%EC%A0%95/">손웅정</category>
       
       
-      <comments>http://leafbird.github.io/blog/2024/04/28/%EB%82%98%EB%8A%94-%EC%9D%BD%EA%B3%A0-%EC%93%B0%EA%B3%A0-%EB%B2%84%EB%A6%B0%EB%8B%A4/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2024/04/28/%EB%82%98%EB%8A%94-%EC%9D%BD%EA%B3%A0-%EC%93%B0%EA%B3%A0-%EB%B2%84%EB%A6%B0%EB%8B%A4/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>모든 것은 기본에서 시작한다</title>
-      <link>http://leafbird.github.io/blog/2024/04/21/%EB%AA%A8%EB%93%A0-%EA%B2%83%EC%9D%80-%EA%B8%B0%EB%B3%B8%EC%97%90%EC%84%9C-%EC%8B%9C%EC%9E%91%ED%95%9C%EB%8B%A4/</link>
-      <guid>http://leafbird.github.io/blog/2024/04/21/%EB%AA%A8%EB%93%A0-%EA%B2%83%EC%9D%80-%EA%B8%B0%EB%B3%B8%EC%97%90%EC%84%9C-%EC%8B%9C%EC%9E%91%ED%95%9C%EB%8B%A4/</guid>
+      <link>https://leafbird.github.io/blog/2024/04/21/%EB%AA%A8%EB%93%A0-%EA%B2%83%EC%9D%80-%EA%B8%B0%EB%B3%B8%EC%97%90%EC%84%9C-%EC%8B%9C%EC%9E%91%ED%95%9C%EB%8B%A4/</link>
+      <guid>https://leafbird.github.io/blog/2024/04/21/%EB%AA%A8%EB%93%A0-%EA%B2%83%EC%9D%80-%EA%B8%B0%EB%B3%B8%EC%97%90%EC%84%9C-%EC%8B%9C%EC%9E%91%ED%95%9C%EB%8B%A4/</guid>
       <pubDate>Sun, 21 Apr 2024 07:45:27 GMT</pubDate>
       
       <description>&lt;img src=&quot;/blog/2024/04/21/%EB%AA%A8%EB%93%A0-%EA%B2%83%EC%9D%80-%EA%B8%B0%EB%B3%B8%EC%97%90%EC%84%9C-%EC%8B%9C%EC%9E%91%ED%95%9C%EB%8B%A4/cover.webp&quot; class=&quot;&quot; width=&quot;500&quot;&gt;
@@ -423,21 +423,21 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/%EB%8F%85%EC%84%9C/">독서</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EB%8F%85%EC%84%9C/">독서</category>
       
-      <category domain="http://leafbird.github.io/blog/tags/%EC%86%90%EC%9B%85%EC%A0%95/">손웅정</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EC%86%90%EC%9B%85%EC%A0%95/">손웅정</category>
       
-      <category domain="http://leafbird.github.io/blog/tags/%EB%B0%80%EB%A6%AC%EC%9D%98-%EC%84%9C%EC%9E%AC/">밀리의 서재</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EB%B0%80%EB%A6%AC%EC%9D%98-%EC%84%9C%EC%9E%AC/">밀리의 서재</category>
       
       
-      <comments>http://leafbird.github.io/blog/2024/04/21/%EB%AA%A8%EB%93%A0-%EA%B2%83%EC%9D%80-%EA%B8%B0%EB%B3%B8%EC%97%90%EC%84%9C-%EC%8B%9C%EC%9E%91%ED%95%9C%EB%8B%A4/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2024/04/21/%EB%AA%A8%EB%93%A0-%EA%B2%83%EC%9D%80-%EA%B8%B0%EB%B3%B8%EC%97%90%EC%84%9C-%EC%8B%9C%EC%9E%91%ED%95%9C%EB%8B%A4/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>당신은 재밌게 일하고 있나요</title>
-      <link>http://leafbird.github.io/blog/2024/04/15/%EB%8B%B9%EC%8B%A0%EC%9D%80-%EC%A6%90%EA%B2%81%EA%B2%8C-%EC%9D%BC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%82%98%EC%9A%94/</link>
-      <guid>http://leafbird.github.io/blog/2024/04/15/%EB%8B%B9%EC%8B%A0%EC%9D%80-%EC%A6%90%EA%B2%81%EA%B2%8C-%EC%9D%BC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%82%98%EC%9A%94/</guid>
+      <link>https://leafbird.github.io/blog/2024/04/15/%EB%8B%B9%EC%8B%A0%EC%9D%80-%EC%A6%90%EA%B2%81%EA%B2%8C-%EC%9D%BC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%82%98%EC%9A%94/</link>
+      <guid>https://leafbird.github.io/blog/2024/04/15/%EB%8B%B9%EC%8B%A0%EC%9D%80-%EC%A6%90%EA%B2%81%EA%B2%8C-%EC%9D%BC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%82%98%EC%9A%94/</guid>
       <pubDate>Mon, 15 Apr 2024 02:09:19 GMT</pubDate>
       
       <description>&lt;img src=&quot;/blog/2024/04/15/%EB%8B%B9%EC%8B%A0%EC%9D%80-%EC%A6%90%EA%B2%81%EA%B2%8C-%EC%9D%BC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%82%98%EC%9A%94/intro.webp&quot; class=&quot;&quot;&gt;
@@ -451,14 +451,14 @@
       
       
       
-      <comments>http://leafbird.github.io/blog/2024/04/15/%EB%8B%B9%EC%8B%A0%EC%9D%80-%EC%A6%90%EA%B2%81%EA%B2%8C-%EC%9D%BC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%82%98%EC%9A%94/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2024/04/15/%EB%8B%B9%EC%8B%A0%EC%9D%80-%EC%A6%90%EA%B2%81%EA%B2%8C-%EC%9D%BC%ED%95%98%EA%B3%A0-%EC%9E%88%EB%82%98%EC%9A%94/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>안경을 맞췄습니다</title>
-      <link>http://leafbird.github.io/blog/2024/04/11/%EC%95%88%EA%B2%BD%EC%9D%84-%EB%A7%9E%EC%B7%84%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
-      <guid>http://leafbird.github.io/blog/2024/04/11/%EC%95%88%EA%B2%BD%EC%9D%84-%EB%A7%9E%EC%B7%84%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
+      <link>https://leafbird.github.io/blog/2024/04/11/%EC%95%88%EA%B2%BD%EC%9D%84-%EB%A7%9E%EC%B7%84%EC%8A%B5%EB%8B%88%EB%8B%A4/</link>
+      <guid>https://leafbird.github.io/blog/2024/04/11/%EC%95%88%EA%B2%BD%EC%9D%84-%EB%A7%9E%EC%B7%84%EC%8A%B5%EB%8B%88%EB%8B%A4/</guid>
       <pubDate>Thu, 11 Apr 2024 00:44:48 GMT</pubDate>
       
       <description>&lt;img src=&quot;/blog/2024/04/11/%EC%95%88%EA%B2%BD%EC%9D%84-%EB%A7%9E%EC%B7%84%EC%8A%B5%EB%8B%88%EB%8B%A4/glasses.webp&quot; class=&quot;&quot;&gt;
@@ -471,17 +471,17 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/%EC%95%88%EA%B2%BD/">안경</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EC%95%88%EA%B2%BD/">안경</category>
       
       
-      <comments>http://leafbird.github.io/blog/2024/04/11/%EC%95%88%EA%B2%BD%EC%9D%84-%EB%A7%9E%EC%B7%84%EC%8A%B5%EB%8B%88%EB%8B%A4/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2024/04/11/%EC%95%88%EA%B2%BD%EC%9D%84-%EB%A7%9E%EC%B7%84%EC%8A%B5%EB%8B%88%EB%8B%A4/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>어떤 일을 탁월하게 해내는 유일한 방법</title>
-      <link>http://leafbird.github.io/blog/2024/04/07/%EC%96%B4%EB%96%A4-%EC%9D%BC%EC%9D%84-%ED%83%81%EC%9B%94%ED%95%98%EA%B2%8C-%ED%95%B4%EB%82%B4%EB%8A%94-%EC%9C%A0%EC%9D%BC%ED%95%9C-%EB%B0%A9%EB%B2%95/</link>
-      <guid>http://leafbird.github.io/blog/2024/04/07/%EC%96%B4%EB%96%A4-%EC%9D%BC%EC%9D%84-%ED%83%81%EC%9B%94%ED%95%98%EA%B2%8C-%ED%95%B4%EB%82%B4%EB%8A%94-%EC%9C%A0%EC%9D%BC%ED%95%9C-%EB%B0%A9%EB%B2%95/</guid>
+      <link>https://leafbird.github.io/blog/2024/04/07/%EC%96%B4%EB%96%A4-%EC%9D%BC%EC%9D%84-%ED%83%81%EC%9B%94%ED%95%98%EA%B2%8C-%ED%95%B4%EB%82%B4%EB%8A%94-%EC%9C%A0%EC%9D%BC%ED%95%9C-%EB%B0%A9%EB%B2%95/</link>
+      <guid>https://leafbird.github.io/blog/2024/04/07/%EC%96%B4%EB%96%A4-%EC%9D%BC%EC%9D%84-%ED%83%81%EC%9B%94%ED%95%98%EA%B2%8C-%ED%95%B4%EB%82%B4%EB%8A%94-%EC%9C%A0%EC%9D%BC%ED%95%9C-%EB%B0%A9%EB%B2%95/</guid>
       <pubDate>Sun, 07 Apr 2024 11:27:19 GMT</pubDate>
       
         
@@ -495,10 +495,10 @@
       
       
       
-      <category domain="http://leafbird.github.io/blog/tags/%EC%8A%B5%EA%B4%80/">습관</category>
+      <category domain="https://leafbird.github.io/blog/tags/%EC%8A%B5%EA%B4%80/">습관</category>
       
       
-      <comments>http://leafbird.github.io/blog/2024/04/07/%EC%96%B4%EB%96%A4-%EC%9D%BC%EC%9D%84-%ED%83%81%EC%9B%94%ED%95%98%EA%B2%8C-%ED%95%B4%EB%82%B4%EB%8A%94-%EC%9C%A0%EC%9D%BC%ED%95%9C-%EB%B0%A9%EB%B2%95/#disqus_thread</comments>
+      <comments>https://leafbird.github.io/blog/2024/04/07/%EC%96%B4%EB%96%A4-%EC%9D%BC%EC%9D%84-%ED%83%81%EC%9B%94%ED%95%98%EA%B2%8C-%ED%95%B4%EB%82%B4%EB%8A%94-%EC%9C%A0%EC%9D%BC%ED%95%9C-%EB%B0%A9%EB%B2%95/#disqus_thread</comments>
       
     </item>
     
