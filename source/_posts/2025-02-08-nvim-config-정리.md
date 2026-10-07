@@ -4,6 +4,7 @@ tags:
   - nvim
   - terminal
 date: 2025-02-08 21:29:48
+summary: "유튜브 가이드를 따라 만든 Neovim 설정의 플러그인 목록과 단축키 정리입니다. neo-tree, telescope, mason, roslyn.nvim 등의 역할과 윈도우 LSP 설치 이슈 해결법을 담았습니다."
 ---
 
 {% asset_img screenshot.webp %}

@@ -4,6 +4,7 @@ date: 2023-09-23 12:27:41
 tags:
 - programming
 - generalist
+summary: "스페셜리스트를 꿈꾸던 게임 서버 프로그래머가 CTO로 일하며 제너럴리스트로서의 가치를 다시 보게 된 이야기. 책 함께 자라기의 제너럴리스트 대목에서 얻은 안도감을 적었다."
 ---
 
 {% asset_img namecard.webp %}
